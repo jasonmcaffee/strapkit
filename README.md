@@ -41,4 +41,12 @@ cd into the build directory and run
 `grunt`
 this will run the default task defined in build/grunt.js, and will place the built files into the dist directory
 
+### Build Steps
+
+#### build-app
+
+#### compile-handlebars-templates
+
+
+
 

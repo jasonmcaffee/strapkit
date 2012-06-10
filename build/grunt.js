@@ -15,6 +15,7 @@ module.exports = function(grunt) {
     };
     config.cssDistDir = config.distPublic + '/css';
     config.jsDistDir = config.distPublic + '/js';
+    config.cssDistFile = config.cssDistDir + '/app.css';
 
     // Project configuration.
     grunt.initConfig({});
@@ -83,29 +84,24 @@ module.exports = function(grunt) {
      * Builds a single dist/public/css/core-built.css for core css files in src/public/css/core
      */
     grunt.registerTask("build-css", function(){
-        var cssSource = config.cssSource + '/core';
-        var cssDistFile = config.cssDistFileForCore;
+        //iterate over all css files in the directory and dynamically create list of css files to combine
+        var cssFiles = recursivelyScanDirectoryAndBuildArrayOfFilePaths(config.cssSource);
+        console.log('build-css has found ' + cssFiles.length + ' css files to concat.');
 
-        //todo: iterate over all css files in the directory and dynamically create list
-        var concatenatedCss = grunt.helper('concat', [
-            cssSource + '/app-large-phone.css',
-            cssSource + '/app-phone.css',
-            cssSource + '/app-tablet.css',
-            cssSource + '/app.css'
-        ]);
-
+        //concat all css files into 1.
+        var concatenatedCss = grunt.helper('concat', cssFiles);
 
         //write the new file
         var taskDone = this.async();//grunt async task management
         var fs = require('fs');
 
         //write the css file
-        fs.writeFile(cssDistFile, concatenatedCss, function(err){
+        fs.writeFile(config.cssDistFile, concatenatedCss, function(err){
             if(err){
-                console.log('buildCss task failed in creating '+ cssDistFile +' with error: ' + err);
+                console.log('build-css task failed in creating '+ config.cssDistFile +' with error: ' + err);
                 taskDone(false);
             }else{
-                console.log('buildCss-accounts success');
+                console.log('build-css success');
                 taskDone(true);
             }
         });
@@ -124,9 +120,7 @@ module.exports = function(grunt) {
      * Handlebars.templates['templateName'] and
      * Handlebars.registerPartial('templateName', Handlebars.templates['templateName']);
      * will happen immediately.
-     * todo: verify that there is no potential issue with the way that the templates and partials are loaded (no race conditions)
      * todo: instead of coding the template below inline, move to a template. INCEPTION
-     * todo: just use handlebars runtime, not full handlebars (lib-third-party)
      * todo: right now template names must be unique, regardless of directory, as handlebars only allows letters in registered templates?? using _ or - to indicate accounts_accountsPageTemplate doesn't work.
      * https://github.com/jwietelmann/node-handlebars-precompiler/blob/master/handlebars-precompiler.js
      */
@@ -230,77 +224,9 @@ module.exports = function(grunt) {
 
 
 //============================================================================================================== Helpers
-    /**
-     * Ensures that the dist/public folder exists, or if it doesn't, creates the directory.
-     */
-    grunt.registerHelper('ensureDistPublicDirectoryExists', function(callback){
-        console.log('ensureDistPublicDirectoryExists has been called.');
-
-        grunt.helper('ensureDirectoryExists', config.distPublic, function(err){
-            if(err){
-                console.log('error ensuring dist/public directory exists: ' + err);
-                callback(err);
-            }else{
-                console.log('directory dist/public does exist');
-                callback();
-            }
-        });
-    });
 
     /**
-     * Ensures that the dist/public/js folder exists, or if it doesn't, creates the directory.
-     */
-    grunt.registerHelper('ensureDistPublicJsDirectoryExists', function(callback){
-
-        console.log('ensureDistPublicJsDirectoryExists has been called.');
-
-        grunt.helper('ensureDistPublicDirectoryExists', function(err){
-            if(err){
-                console.log('error calling ensureDistPublicDirectoryExists: ' + err);
-                callback(err);
-            }else{
-                grunt.helper('ensureDirectoryExists', config.jsDistDir, function(err){
-                    if(err){
-                        console.log('error ensuring dist/public/js directory exists: ' + err);
-                        callback(err);
-                    }else{
-                        console.log('directory dist/public/js does exist');
-                        callback();
-                    }
-                });
-            }
-        });
-
-    });
-
-    /**
-     * Ensures that the dist/public/css directory exists, or if it doesn't, creates the directory.
-     */
-    grunt.registerHelper('ensureDistPublicCssDirectoryExists', function(callback){
-
-        console.log('ensureDistPublicCssDirectoryExists has been called.');
-
-        grunt.helper('ensureDistPublicDirectoryExists', function(err){
-            if(err){
-                console.log('error calling ensureDistPublicDirectoryExists: ' + err);
-                callback(err);
-            }else{
-                grunt.helper('ensureDirectoryExists', config.cssDistDir, function(err){
-                    if(err){
-                        console.log('error ensuring dist/public/css directory exists: ' + err);
-                        callback(err);
-                    }else{
-                        console.log('directory dist/public/css does exist');
-                        callback();
-                    }
-                });
-            }
-        });
-
-    });
-
-    /**
-     *
+     * Iterates over each folder and subfolder under src/templates and ensures/creates a corresponding folder under src/js/compiled templates.
      */
     grunt.registerHelper('ensureCompiledTemplatesDirHasSameFoldersAsSrcTemplates', function(filesAndDirectories, callback){
         var filesAndDirectories = filesAndDirectories || recursivelyScanDirectoryAndBuildArrayOfFilePathsAndBuildArrayOfDirPaths(config.templatesSourceDir);
@@ -472,37 +398,6 @@ module.exports = function(grunt) {
             arrayOfFilePaths : arrayOfFilePaths,
             arrayOfDirPaths: arrayOfDirPaths
         };
-    }
-
-    /**
-     * Returns an array of strings which can be passed to the requirejs optimizer for exclusions.
-     * eg ['lib/core/controllers/Controller', 'lib/core/models/Model']
-     * This allows us to break up pieces of functionality without having to download all of core when a new feature is requested.
-     * eg user is on accounts page, so we've loaded core libraries. when user clicks on quick pay, we just want quick pay code, and not the core libraries.
-     * using exclusions allows us to bundle features together (eg accountscontroller, accountsmodel, accountstemplate) without bundling core libs as well.
-     */
-        //var arrayOfFormattedExcludes;//we cache once we build the array of excludes in order to avoid redundancy.
-    function getArrayOfExcludesForCoreLib(){
-        //if(arrayOfFormattedExcludes){return arrayOfFormattedExcludes;} //cache as several tasks call this
-        var arrayOfExcludes = recursivelyScanDirectoryAndBuildArrayOfFilePaths(config.coreLibSource);
-        var arrayOfFormattedExcludes = [];
-        console.log('found excludes length: ' + arrayOfExcludes.length);
-
-        //iterate over each one and modify its path so it's in the form of lib/core/controllers/Controller
-        for(var i=0; i<arrayOfExcludes.length; ++i){
-
-            var fullPath = arrayOfExcludes[i];
-            console.log('evaluating path : ' + fullPath);
-            if(fullPath.indexOf('DS_Store') >=0){continue;} //don't do any DS_Store files
-
-            var indexToCutAt = fullPath.indexOf('core/');
-            var newPath = fullPath.substring(indexToCutAt);
-            newPath = newPath.replace('.js', ''); //we don't need the file extension
-            console.log('newPath is : ' + newPath);
-
-            arrayOfFormattedExcludes.push(newPath);
-        }
-        return arrayOfFormattedExcludes;
     }
 
     //major build tasks
