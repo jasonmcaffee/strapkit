@@ -5,6 +5,8 @@
 var express = require('express');
 var path = require('path');
 var connect = require('connect');
+var gzippo = require('gzippo');
+
 var port = 4000;
 
 //where we are serving our static files from
@@ -22,8 +24,12 @@ app.configure(function(){
     // The methodOverride middleware allows Express apps to behave like RESTful apps, as popularised by Rails; HTTP methods like PUT can be used through hidden inputs
     app.use(express.methodOverride());
 
-    app.use(express.static(public));//jason's poc
+    //gzip all static files in public folder (js, css, etc)
+    app.use(gzippo.staticGzip(public));
+
+    //gzips the server side template views
     app.use(connect.compress());//gzip functionality
+
     app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 
     app.use(express.logger({

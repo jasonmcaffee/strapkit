@@ -10,6 +10,7 @@
         "connect": "2.1.0",
         "ejs": ">= 0.7.1",
         "requirejs" : "1.0.7",
-        "handlebars" : "1.0.5beta"
+        "handlebars" : "1.0.5beta",
+        "gzippo": ">= 0.1.4"
     }
 }

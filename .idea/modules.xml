@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/modernmobile.iml" filepath="$PROJECT_DIR$/modernmobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/strapkit.iml" filepath="$PROJECT_DIR$/strapkit.iml" />
     </modules>
   </component>
 </project>
