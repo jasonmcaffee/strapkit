@@ -1,4 +1,27 @@
 
+##Overview
+This project is meant to provide a nice starting point for developing a web application targeting modern browsers.
+
+##Libraries Used
+### Server Side
+* Node.js
+* express.js
+* ejs - server side templating
+* r.js/require.js - amd optimization (build modules into 1 js)
+* grunt.js - for running the build of javascript & css source
+
+### Client Side
+* Backbone - Model and View definitions, routing.
+* Handlebars - Just the runtime, as we precompile templates at build
+* Require.js - For asynchronous module definitions.
+* Jquery - dom event and manipulation. feel free to replace with zepto, etc.
+
+##Patterns
+### Single Page Application (Optional)
+### MVC (Optional)
+### Client Side Templating
+
+
 ##Installation
 Pre-requisites:
 * node.js
@@ -6,7 +29,7 @@ Pre-requisites:
 
 ### run npm install
 from the modern-mobile directory, run the following command:
-`npm install'
+`npm install`
 This will install the dependencies found in package.json and should result in a folder called node_modules under the modern-mobile directory
 
 ##Building
