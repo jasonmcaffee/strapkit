@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <head>
+        <title>modern-mobile</title>
+        <!-- core styling -->
+
+        <!-- app styling -->
+        <link rel="stylesheet" href="css/core-built.css">
+        <link rel="stylesheet" href="css/accounts-built.css">
+
+        <!--[if gte IE 9]>
+        <link rel="stylesheet" type="text/css" href="css/ie.css" />
+        <![endif]-->
+
+        <!-- initial view should be zoomed correctly on mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+        <!-- apple ios specific styling. fullscreen and translucent status bar. -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <!-- Load the script "js/main.js" as our entry point, along with requirejs -->
+        <script data-main="js/app-built" src="js/app-built.js"></script>
+
+    </head>
+
+    <body>
+
+        <h1>Modern Mobile</h1>
+
+
+        <!-- scripts at the bottom -->
+        <!-- media query support for ie 6-8. do this after css has been loaded -->
+        <!--[if lte IE 8]>
+        <script type="text/javascript" src="js/lib/responsive/responsive.min.js"></script>
+        <![endif]-->
+
+        <!-- initial load of the page will contain json data for template rendering. -->
+        <script type="text/javascript">
+            var viewModel = µ- JSON.stringify(viewModel)µ;
+        </script>
+
+
+    </body>
+</html>

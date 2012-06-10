@@ -1,0 +1,15 @@
+{
+    "name": "modern-mobile",
+    "version": "0.0.1",
+    "engines": {
+        "node": ">= 0.6.0"
+    },
+    "dependencies": {
+        "express": "2.5.8",
+        "grunt": "0.2.15",
+        "connect": "2.1.0",
+        "ejs": ">= 0.7.1",
+        "requirejs" : "1.0.7",
+        "handlebars" : "1.0.5beta"
+    }
+}
