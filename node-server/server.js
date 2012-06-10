@@ -7,10 +7,12 @@ var path = require('path');
 var connect = require('connect');
 var port = 4000;
 
-var public = path.resolve(__dirname + '/../dist'); //jason's initial poc
+//where we are serving our static files from
+var public = path.resolve(__dirname + '/../dist');
 
 var app = express.createServer();
 
+var fs = require('fs');
 app.configure(function(){
 
 
@@ -24,13 +26,16 @@ app.configure(function(){
     app.use(connect.compress());//gzip functionality
     app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 
+    app.use(express.logger({
+        'stream' : fs.createWriteStream(__dirname+'/../logs/node.log',{flags: 'a'})
+    }));
 
 });
 
 
 //server side templating =========================================================================
 var ejs = require('ejs');//view engine for templates
-ejs.open = 'µ';
+ejs.open = 'µ';//eliminate conflicts with clientside templating by using our own open and close tags for ejs templates.
 ejs.close = 'µ';
 app.set('view engine', 'ejs');//we are using ejs for server side templating
 app.set('view options', { layout: false }); //i don't need layouts right now
@@ -42,7 +47,7 @@ var config = {
 
 
 app.get('/', function(req,res){
-    console.log('modern-mobile home');
+    console.log('strapkit home');
     var viewModel = {
         viewModel:{
 
