@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node-server/logs/test.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node-server/logs/node.log-file-will-be-created" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="modernmobile.iws" />
@@ -115,10 +115,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="node.log-file-will-be-created" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/node-server/logs/node.log-file-will-be-created">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="91" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,7 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../modern-mobile/README.md" />
         <option value="$PROJECT_DIR$/../modern-mobile/build/grunt.js" />
         <option value="$PROJECT_DIR$/../modern-mobile/src/js/app.js" />
         <option value="$PROJECT_DIR$/../modern-mobile/node-server/server.js" />
@@ -166,6 +174,7 @@
         <option value="$PROJECT_DIR$/node-server/server.js" />
         <option value="$PROJECT_DIR$/node-server/logs/test.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/node-server/logs/node.log-file-will-be-created" />
       </list>
     </option>
   </component>
@@ -657,7 +666,11 @@
       <created>1339376211157</created>
       <updated>1339376211157</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="adding documentation">
+      <created>1339376252146</created>
+      <updated>1339376252146</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -836,6 +849,13 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node-server/logs/node.log-file-will-be-created">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="91" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
