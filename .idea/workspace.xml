@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/grunt.js" afterPath="$PROJECT_DIR$/build/grunt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,7 +63,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="119" selection-start="139" selection-end="139" vertical-scroll-proportion="0.06936416">
+            <state line="17" column="77" selection-start="897" selection-end="897" vertical-scroll-proportion="0.3699422">
               <folding />
             </state>
           </provider>
@@ -155,6 +152,9 @@
     <option name="LINE_SEPARATORS_CONVERSION" value="ASK" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -178,8 +178,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="445" />
-    <option name="y" value="225" />
+    <option name="x" value="320" />
+    <option name="y" value="101" />
     <option name="width" value="2113" />
     <option name="height" value="1193" />
   </component>
@@ -641,11 +641,15 @@
       <created>1339372822793</created>
       <updated>1339372822793</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adding documentation">
+      <created>1339374466423</created>
+      <updated>1339374466423</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="445" y="225" width="2113" height="1193" extended-state="0" />
+    <frame x="320" y="101" width="2113" height="1193" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -705,7 +709,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="gzip working for js, css, etc, as well as dynamic server side views." />
+    <option name="LAST_COMMIT_MESSAGE" value="adding documentation" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -722,6 +726,7 @@
     <MESSAGE value="build-css fixed to recursively scan src/css dir and build to dist/css/app.css" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="gzip working for js, css, etc, as well as dynamic server side views." />
+    <MESSAGE value="adding documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -818,7 +823,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="119" selection-start="139" selection-end="139" vertical-scroll-proportion="0.06936416">
+        <state line="17" column="77" selection-start="897" selection-end="897" vertical-scroll-proportion="0.3699422">
           <folding />
         </state>
       </provider>
