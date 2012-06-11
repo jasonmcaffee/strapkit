@@ -1,4 +1,8 @@
 #Strapkit
+http://strapkit.com
+https://twitter.com/#!/strapkit
+strapkit@gmail.com
+
 
 ##Overview
 This project is meant to provide a starting point for rapidly developing a web application targeting modern browsers.
