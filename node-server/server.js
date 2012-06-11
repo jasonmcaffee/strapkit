@@ -1,20 +1,25 @@
-/**
- * Module dependencies.
- */
-
+//module dependencies ========================================================================================================
 var express = require('express');
 var path = require('path');
 var connect = require('connect');
 var gzippo = require('gzippo');
+var fs = require('fs');
 
-var port = 4000;
 
 //where we are serving our static files from
-var public = path.resolve(__dirname + '/../dist');
+//var public = path.resolve(__dirname + '/../dist');
+//var port = 4000;
 
+//create the app server
 var app = express.createServer();
 
-var fs = require('fs');
+
+//configuration ===============================================================================================================
+var config = {
+    viewsDirectory : __dirname + '/views/',
+    port: 4000,
+    publicStaticFiles :  path.resolve(__dirname + '/../dist')
+};
 app.configure(function(){
 
 
@@ -25,21 +30,23 @@ app.configure(function(){
     app.use(express.methodOverride());
 
     //gzip all static files in public folder (js, css, etc)
-    app.use(gzippo.staticGzip(public));
+    app.use(gzippo.staticGzip(config.publicStaticFiles));
 
     //gzips the server side template views
     app.use(connect.compress());//gzip functionality
 
+    //show stacktraces to the public
     app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 
+    //log incoming requests
     app.use(express.logger({
-        'stream' : fs.createWriteStream(__dirname+'/../logs/node.log',{flags: 'a'})
+        'stream' : fs.createWriteStream(__dirname+'/../node-server/logs/node.log',{flags: 'a'})
     }));
 
 });
 
 
-//server side templating =========================================================================
+//server side templating ========================================================================================================
 var ejs = require('ejs');//view engine for templates
 ejs.open = 'µ';//eliminate conflicts with clientside templating by using our own open and close tags for ejs templates.
 ejs.close = 'µ';
@@ -47,11 +54,10 @@ app.set('view engine', 'ejs');//we are using ejs for server side templating
 app.set('view options', { layout: false }); //i don't need layouts right now
 app.register('.html', require('ejs'));//all .html files served up will be considered ejs templates.
 
-var config = {
-    viewsDirectory : __dirname + '/views/'
-};
 
 
+
+//server response functions =====================================================================================================
 app.get('/', function(req,res){
     console.log('strapkit home');
     var viewModel = {
@@ -63,15 +69,8 @@ app.get('/', function(req,res){
 });
 
 
-
-//================================================================================
-
-
-
-
-
-// Start server.
-console.log('Starting modern-browser server on port ' + port);
-app.listen(port);
+// Start server ===================================================================================================================
+console.log('Starting modern-browser server on port ' + config.port);
+app.listen(config.port);
 
 
