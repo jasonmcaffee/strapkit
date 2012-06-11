@@ -68,10 +68,6 @@ module.exports = function(grunt) {
 
 
         requirejs.optimize(config, function (buildResponse) {
-            //buildResponse is just a text output of the modules
-            //included. Load the built file for the contents.
-            //Use config.out to get the optimized file contents.
-            //var contents = fs.readFileSync(config.out, 'utf8');
             taskDone(true);
         });
 
@@ -341,7 +337,8 @@ module.exports = function(grunt) {
     }
 
     /**
-     *
+     * Scans an entire directory and subdirectories and builds a list of full file paths to files contained in folders,
+     * as well as a list of folder paths.
      * @param basePath - required - starting point for the scan
      * @param filesAndDirectories - optional - array of files and directories directly under the base path.
      * @param arrayOfFilePaths - optional - used for recursion

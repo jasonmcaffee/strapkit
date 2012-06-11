@@ -1,14 +1,29 @@
 #Strapkit
 
 ##Overview
-This project is meant to provide a nice starting point for developing a web application targeting modern browsers.
+This project is meant to provide a starting point for rapidly developing a web application targeting modern browsers.
 
+##Features
+###Predefined Build Process
+Strapkit utilizes node.js and grunt.js to facilitate building optimized code.
+Currently all js and css is combined into 1 file, to mitigate http requests, but we will soon provide an Enterprise version of strapkit to allow for logical bundling and downloading of modules/resources.
+
+###Glues Together Popular Libraries
+We've done the research and performance testing, and have chosen the best js libraries and frameworks so you can get to producing a top-notch, modern site as quickly as possible.
+
+###Demos
+http://strapkit.com is built using strapkit, and is included in the source so that you can examine and learn best practices, as well as gain insight on how to solve common problems.
+
+###Focused on Performance
+
+###Meaningful and Intuitive Project Structure
 
 ##Libraries Used
 ### Server Side
-* Node.js
-* express.js
+* Node.js - server js runtime
+* express.js - mvc framework
 * ejs - server side templating
+* gzippo - static file gzip compression
 * r.js/require.js - amd optimization (build modules into 1 js)
 * grunt.js - for running the build of javascript & css source
 
@@ -20,8 +35,10 @@ This project is meant to provide a nice starting point for developing a web appl
 
 ##Patterns
 ### Single Page Application (Optional)
+
 ### MVC (Optional)
-### Client Side Templating
+
+### Client Side Templating & Precompilation
 
 
 ##Installation
