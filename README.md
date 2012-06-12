@@ -30,6 +30,7 @@ http://strapkit.com is built using strapkit, and is included in the source so th
 * gzippo - static file gzip compression
 * r.js/require.js - amd optimization (build modules into 1 js)
 * grunt.js - for running the build of javascript & css source
+* stylus - css preprocessor with extend and mixins.
 
 ### Client Side
 * Backbone - Model and View definitions, routing.

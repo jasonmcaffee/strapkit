@@ -17,8 +17,13 @@ module.exports = function(grunt) {
     config.jsDistDir = config.distPublic + '/js';
     config.cssDistFile = config.cssDistDir + '/app.css';
 
+
     // Project configuration.
-    grunt.initConfig({});
+    grunt.initConfig({
+        stylus : {
+            sourceDir : rootDirectory + '/src/css-preprocess'
+        }
+    });
 
 
 //============================================================================================================== Build Tasks
@@ -401,6 +406,9 @@ module.exports = function(grunt) {
     grunt.registerTask("build", "compile-handlebars-templates build-app build-css");
     grunt.registerTask("dist", "build");
     grunt.registerTask("default", "dist");
+
+    //load our tasks from the tasks folder
+    grunt.loadTasks('build/tasks');
 
 };
 
