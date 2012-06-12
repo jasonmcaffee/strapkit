@@ -1,16 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/tasks/grunt-css-stylus.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/tasks/grunt-css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/robots.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/sitemap.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css-preprocess/demo-one.styl" />
+    <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="stylus preprocessor integration (in progress). breaking grunt tasks into separate files (in progress)&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/node_modules/mime/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/node_modules/mime/types/mime.types" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/node_modules/mime/types/node.types" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/test/fixtures/space the final frontier/tomg.co.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/test/fixtures/test.js.gzip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/test/fixtures/tomg.co.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/test/fixtures/user.gzip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/test/fixtures/utf8.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/test/fixtures/utf8.txt.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/bin/stylus" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/.gitignore.orig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/.gitignore.rej" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/README.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/examples/pow.js.orig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/examples/pow.js.rej" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/tasks/grunt-directory-helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/stylus" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/lib/compress.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/lib/staticGzip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/node_modules/mime/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/node_modules/mime/mime.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/node_modules/mime/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/node_modules/mime/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/test/fixtures/js/nestedTest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/test/fixtures/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/test/fixtures/user.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/test/fixtures/utf8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/test/prefexTest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gzippo/test/staticGzipTest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/bm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/colors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/convert/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/errors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/functions/image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/functions/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/functions/index.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/functions/url.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/lexer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/middleware.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/arguments.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/binop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/block.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/boolean.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/call.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/charset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/comment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/each.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/expression.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/extend.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/fontface.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/function.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/group.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/hsla.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/ident.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/if.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/import.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/jsliteral.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/keyframes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/literal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/media.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/null.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/page.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/params.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/property.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/return.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/rgba.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/root.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/selector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/string.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/ternary.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/unaryop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/unit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/renderer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/stack/frame.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/stack/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/stack/scope.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/stylus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/token.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/units.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/visitor/compiler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/visitor/evaluator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/visitor/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/visitor/normalizer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/.gitmodules" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSImportRule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSKeyframeRule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSKeyframesRule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSMediaRule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSRule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSStyleDeclaration.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSStyleRule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSStyleSheet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/MediaList.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/StyleSheet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/clone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/parse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/debug.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/example/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/example/browser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/example/wildcards.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/example/worker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/head.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/lib/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/debug/tail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/examples/pow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/chmod.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/clobber.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/mkdirp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/perm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/perm_sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/race.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/rel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/return.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/return_sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/root.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/umask.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/umask_sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/testing/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/testing/small.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/stylus/testing/test.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css-preprocess/t2.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/demo-one.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/t2.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/grunt.js" afterPath="$PROJECT_DIR$/build/grunt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tasks/grunt-css-stylus.js" afterPath="$PROJECT_DIR$/build/tasks/grunt-css-stylus.js" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,33 +213,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="robots.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/robots.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="13" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="83" selection-start="1206" selection-end="1206" vertical-scroll-proportion="-14.08">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="node.log" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node-server/logs/node.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="132" selection-start="8134" selection-end="8134" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="demo-one.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/demos/demo-one.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,25 +234,43 @@
       <file leaf-file-name="grunt.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/grunt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="83" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
+            <state line="163" column="60" selection-start="7517" selection-end="7583" vertical-scroll-proportion="-12.923077">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grunt-css-stylus.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="grunt-directory-helpers.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/tasks/grunt-directory-helpers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="8" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grunt-css-stylus.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build/tasks/grunt-css-stylus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="43" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
+            <state line="32" column="124" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.48995215">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="t2.styl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/t2.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="81" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="51" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.48995215">
+            <state line="30" column="63" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,16 +279,7 @@
       <file leaf-file-name="grunt-css.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/tasks/grunt-css.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="4" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="robots.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/robots.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="50" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="38" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -175,8 +302,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../modern-device-strapup/node-server/views/test.html" />
-        <option value="$PROJECT_DIR$/logs/node.log" />
         <option value="$PROJECT_DIR$/node-server/server.js" />
         <option value="$PROJECT_DIR$/node-server/logs/test.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -188,9 +313,11 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/css-preprocess/demo-one.styl" />
         <option value="$PROJECT_DIR$/build/tasks/grunt-css.js" />
-        <option value="$PROJECT_DIR$/build/grunt.js" />
-        <option value="$PROJECT_DIR$/build/tasks/grunt-css-stylus.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/build/tasks/grunt-directory-helpers.js" />
+        <option value="$PROJECT_DIR$/build/grunt.js" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/t2.styl" />
+        <option value="$PROJECT_DIR$/build/tasks/grunt-css-stylus.js" />
       </list>
     </option>
   </component>
@@ -423,6 +550,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modernmobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strapkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="compiled-css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -731,7 +880,11 @@
       <created>1339380395616</created>
       <updated>1339380395616</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="stylus preprocessor integration (in progress). breaking grunt tasks into separate files (in progress)&#10;">
+      <created>1339460760280</created>
+      <updated>1339460760280</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -795,7 +948,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="seo optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="stylus preprocessor integration (in progress). breaking grunt tasks into separate files (in progress)&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -814,46 +967,12 @@
     <MESSAGE value="gzip working for js, css, etc, as well as dynamic server side views." />
     <MESSAGE value="adding documentation" />
     <MESSAGE value="seo optimization" />
+    <MESSAGE value="stylus preprocessor integration (in progress). breaking grunt tasks into separate files (in progress)&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node-server/logs/node.log-file-will-be-created">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="54" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="21" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sitemap.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="52" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robots.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="83" selection-start="1206" selection-end="1206" vertical-scroll-proportion="-14.08">
@@ -903,30 +1022,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="63" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build/tasks/grunt-css.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="38" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/grunt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="83" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
+        <state line="163" column="60" selection-start="7517" selection-end="7583" vertical-scroll-proportion="-12.923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/tasks/grunt-directory-helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="8" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/t2.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="81" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/tasks/grunt-css-stylus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="43" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="51" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.48995215">
+        <state line="32" column="124" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.48995215">
           <folding />
         </state>
       </provider>

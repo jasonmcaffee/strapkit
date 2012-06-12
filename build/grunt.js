@@ -21,7 +21,8 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
         stylus : {
-            sourceDir : rootDirectory + '/src/css-preprocess'
+            sourceDir : rootDirectory + '/src/css-preprocess',
+            outputDir : rootDirectory + '/src/css/compiled-css'
         }
     });
 
