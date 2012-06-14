@@ -1,4 +1,13 @@
 
+.button-type-1 {
+  background-color: #f00;
+  font-size: 24px;
+}
+
+body {
+  background-color: #000;
+}
+
 
 .header{
     position:fixed;

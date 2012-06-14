@@ -66,14 +66,27 @@ this will run the default task defined in build/grunt.js, and will place the bui
 
 ### Build Steps
 
-#### build-app
+#### optimize js by uglifying it, minimizing it, and combining it into 1 .js file
 Command `grunt build-app`
 
-#### compile-handlebars-templates
-Command `grunt build-app`
+#### compile html templates to handlebars template functions
+Command `grunt compile-handlebars-templates`
+
+#### compile stylus files to css
+Command `grunt compile-stylus-files`
+
+#### concat css files into 1 .css file
+Command `grunt build-css`
 
 ## useful resources
 http://www.w3counter.com/globalstats.php
+
+##Automated Building
+You probably don't want to manually run the build each time you modify a template or preprocessed css file (.styl).
+We've included watch tasks which monitor the appropriate source directories, and call the needed build commands.
+To get this functionality, you'll need to open a new tab or terminal window and run:
+`grunt watch`
+Now when you make changes to the src files, you should see the watch console indicate that the building of the app is occurring.
 
 
 

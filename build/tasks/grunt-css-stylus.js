@@ -38,6 +38,11 @@ module.exports = function(grunt) {
 
     });
 
+    /**
+     *  Compiles a single .styl file into a .css, which is written to the specified cssOutputFilePath
+     *  @param - stylusFilePath - the full path the the stylus file which you wish to have compiled to css. e.g. "/Users/jason/dev/app/src/stylus-files/my.styl"
+     *
+     */
     grunt.registerHelper('compile-stylus-file', function(stylusFilePath, cssOutputFilePath, errorCallback, successCallback){
         var stylus = require('stylus');
         var fs = require('fs');

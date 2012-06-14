@@ -1,8 +1,8 @@
 define([
     'core/util/log',
     'jquery',
-    'compiled-templates/demos/demo-one'
-], function(log, $, demoOneTemplateFunction){
+    'compiled-templates/demos/buttonsDemoPage'
+], function(log, $, buttonsDemoPageTemplateFunction){
 
     function app(){
 
@@ -10,7 +10,7 @@ define([
 
     $(function(){
        log('document ready.');
-        $('body').append(demoOneTemplateFunction());
+        $('body').append(buttonsDemoPageTemplateFunction());
     });
 
     return new app();

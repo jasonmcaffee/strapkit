@@ -20,9 +20,22 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
+        general:{
+            cssSource : config.cssSource
+        },
+        //css preprocessor
         stylus : {
             sourceDir : rootDirectory + '/src/css-preprocess',
             outputDir : rootDirectory + '/src/css/compiled-css'
+        },
+        //stylus file watcher - compile to css then concat css to dist
+        watch:{
+            files: [rootDirectory + '/src/css-preprocess/*.styl'],
+            tasks: 'compile-stylus-files build-css'
+        },
+        watch:{
+            files: [config.templatesSourceDir + '/**/*.html'],
+            tasks: 'compile-handlebars-templates build-app'
         }
     });
 
