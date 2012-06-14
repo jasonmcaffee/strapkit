@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css-preprocess/t2.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/compiled-css/t2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/compiled-templates/demos/demo-one.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css-preprocess/demo-one.styl" afterPath="$PROJECT_DIR$/src/css-preprocess/buttonsDemo.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/templates/demos/demo-one.html" afterPath="$PROJECT_DIR$/src/templates/demos/buttonsDemoPage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/buttonsDemo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/compiled-templates/demos/buttonsDemoPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/grunt.js" afterPath="$PROJECT_DIR$/build/grunt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tasks/grunt-css-stylus.js" afterPath="$PROJECT_DIR$/build/tasks/grunt-css-stylus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/app.css" afterPath="$PROJECT_DIR$/dist/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app-built.js" afterPath="$PROJECT_DIR$/dist/js/app-built.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app.js" afterPath="$PROJECT_DIR$/src/js/app.js" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,7 +84,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="128" selection-start="3241" selection-end="3241" vertical-scroll-proportion="0.954067">
+            <state line="53" column="47" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.3416268">
               <folding />
             </state>
           </provider>
@@ -737,7 +729,11 @@
       <created>1339464116747</created>
       <updated>1339464116747</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="watch tasks for stylus and templates directories">
+      <created>1339641262771</created>
+      <updated>1339641262772</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -801,7 +797,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="stylus preprocessor integration (in progress). breaking grunt tasks into separate files (in progress)&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="watch tasks for stylus and templates directories" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -821,6 +817,7 @@
     <MESSAGE value="adding documentation" />
     <MESSAGE value="seo optimization" />
     <MESSAGE value="stylus preprocessor integration (in progress). breaking grunt tasks into separate files (in progress)&#10;" />
+    <MESSAGE value="watch tasks for stylus and templates directories" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -926,7 +923,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="128" selection-start="3241" selection-end="3241" vertical-scroll-proportion="0.954067">
+        <state line="53" column="47" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.3416268">
           <folding />
         </state>
       </provider>

@@ -78,8 +78,6 @@ Command `grunt compile-stylus-files`
 #### concat css files into 1 .css file
 Command `grunt build-css`
 
-## useful resources
-http://www.w3counter.com/globalstats.php
 
 ##Automated Building
 You probably don't want to manually run the build each time you modify a template or preprocessed css file (.styl).
@@ -87,6 +85,9 @@ We've included watch tasks which monitor the appropriate source directories, and
 To get this functionality, you'll need to open a new tab or terminal window and run:
 `grunt watch`
 Now when you make changes to the src files, you should see the watch console indicate that the building of the app is occurring.
+
+## useful resources
+http://www.w3counter.com/globalstats.php
 
 
 
