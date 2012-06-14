@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/buttonsDemo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/compiled-templates/demos/buttonsDemoPage.js" />
+    <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="watch task is broken. compile-templates not finishing before build-app is called, resulting in broken template functions.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/grunt.js" afterPath="$PROJECT_DIR$/build/grunt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/app.css" afterPath="$PROJECT_DIR$/dist/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app-built.js" afterPath="$PROJECT_DIR$/dist/js/app-built.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/buttonsDemo.styl" afterPath="$PROJECT_DIR$/src/css-preprocess/buttonsDemo.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/buttonsDemo.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/buttonsDemo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/compiled-templates/demos/buttonsDemoPage.js" afterPath="$PROJECT_DIR$/src/js/compiled-templates/demos/buttonsDemoPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/demos/buttonsDemoPage.html" afterPath="$PROJECT_DIR$/src/templates/demos/buttonsDemoPage.html" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,7 +70,7 @@
       <file leaf-file-name="buttonsDemoPage.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/demos/buttonsDemoPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="57" selection-start="80" selection-end="80" vertical-scroll-proportion="-0.64">
+            <state line="4" column="57" selection-start="254" selection-end="254" vertical-scroll-proportion="-2.56">
               <folding />
             </state>
           </provider>
@@ -75,16 +79,16 @@
       <file leaf-file-name="buttonsDemo.styl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/buttonsDemo.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="19" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+            <state line="17" column="6" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="47" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.3416268">
+            <state line="53" column="47" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -99,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grunt.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="grunt.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build/grunt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="152" selection-start="398" selection-end="398" vertical-scroll-proportion="48.0">
+            <state line="36" column="140" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.47105005">
               <folding />
             </state>
           </provider>
@@ -155,16 +159,16 @@
         <option value="$PROJECT_DIR$/src/css-preprocess/t2.styl" />
         <option value="$PROJECT_DIR$/build/tasks/grunt-css-stylus.js" />
         <option value="$PROJECT_DIR$/src/js/app.js" />
-        <option value="$PROJECT_DIR$/src/css-preprocess/buttonsDemo.styl" />
-        <option value="$PROJECT_DIR$/build/grunt.js" />
-        <option value="$PROJECT_DIR$/src/templates/demos/buttonsDemoPage.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/buttonsDemo.styl" />
+        <option value="$PROJECT_DIR$/src/templates/demos/buttonsDemoPage.html" />
+        <option value="$PROJECT_DIR$/build/grunt.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="213" />
-    <option name="y" value="189" />
+    <option name="x" value="482" />
+    <option name="y" value="187" />
     <option name="width" value="2113" />
     <option name="height" value="1193" />
   </component>
@@ -733,11 +737,15 @@
       <created>1339641262771</created>
       <updated>1339641262772</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="watch tasks for stylus and templates directories">
+      <created>1339641384488</created>
+      <updated>1339641384488</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="213" y="189" width="2113" height="1193" extended-state="0" />
+    <frame x="482" y="187" width="2113" height="1193" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -797,7 +805,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="watch tasks for stylus and templates directories" />
+    <option name="LAST_COMMIT_MESSAGE" value="watch task is broken. compile-templates not finishing before build-app is called, resulting in broken template functions." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -818,6 +826,7 @@
     <MESSAGE value="seo optimization" />
     <MESSAGE value="stylus preprocessor integration (in progress). breaking grunt tasks into separate files (in progress)&#10;" />
     <MESSAGE value="watch tasks for stylus and templates directories" />
+    <MESSAGE value="watch task is broken. compile-templates not finishing before build-app is called, resulting in broken template functions." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -886,13 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/demos/buttonsDemoPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="57" selection-start="80" selection-end="80" vertical-scroll-proportion="-0.64">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="19" selection-start="62" selection-end="62" vertical-scroll-proportion="0.045933016">
@@ -907,23 +909,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="47" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/buttonsDemo.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+        <state line="17" column="6" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/demos/buttonsDemoPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="57" selection-start="254" selection-end="254" vertical-scroll-proportion="-2.56">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/grunt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="152" selection-start="398" selection-end="398" vertical-scroll-proportion="48.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="47" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.3416268">
+        <state line="36" column="140" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.47105005">
           <folding />
         </state>
       </provider>

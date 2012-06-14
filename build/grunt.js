@@ -30,12 +30,17 @@ module.exports = function(grunt) {
         },
         //stylus file watcher - compile to css then concat css to dist
         watch:{
-            files: [rootDirectory + '/src/css-preprocess/*.styl'],
-            tasks: 'compile-stylus-files build-css'
-        },
-        watch:{
-            files: [config.templatesSourceDir + '/**/*.html'],
-            tasks: 'compile-handlebars-templates build-app'
+            stylusWatch:{
+                files: [rootDirectory + '/src/css-preprocess/*.styl'],
+                tasks: 'compile-stylus-files build-css'
+            },
+            templateWatch:{       //this currently doesn't work well. the compile-template task is not finishing before build-app is called.
+                files: [config.templatesSourceDir + '/**/*.html'],
+                tasks: 'compile-handlebars-templates build-app'
+            },
+            compiledTemplateWatch:{
+
+            }
         }
     });
 
