@@ -1,26 +1,62 @@
 .button-type{
-   font-size:24px;
+    font-size:24px;
+    //make it round and have color
+    background-color: #f7f7f7;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+    background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7);
+
+    margin: 36px;
+    width: 144px;
+    height: 144px;
+    position: relative;
+    text-align: center;
+    line-height: 144px;
+    border-radius: 50%;
+    //box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+
+    //pseudo selectors
+    &:active {
+        font-size:50px;
+    }
+}
+
+.button-type-with-gpu{
+    @extends .button-type;
+    //kick in the gpu. EXTREME improvement in responsiveness on android galaxy tab and nexus.
+    -webkit-backface-visibility: hidden;
+    background-color:red;
 }
 
 .button-type-1{
-    background-color:red;
+    @extends .button-type-with-gpu;
+    &:active{
+        color:orange;
+    }
 }
 
 .button-type-2{
-    background-color:red;
+    @extends .button-type;
+    background-color:orange;
 }
 .button-type-3{
-    background-color:red;
+    @extends .button-type;
+    background-color:yellow;
 }
 
 .button-type-4{
-    background-color:red;
+    @extends .button-type;
+    background-color:green;
 }
 
 .button-type-5{
-    background-color:red;
+    @extends .button-type;
+    background-color:blue;
 }
 
 .button-type-6{
-    background-color:red;
+    @extends .button-type;
+    background-color:indigo;
 }

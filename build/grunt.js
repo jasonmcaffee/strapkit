@@ -36,10 +36,11 @@ module.exports = function(grunt) {
             },
             templateWatch:{       //this currently doesn't work well. the compile-template task is not finishing before build-app is called.
                 files: [config.templatesSourceDir + '/**/*.html'],
-                tasks: 'compile-handlebars-templates build-app'
+                tasks: 'compile-handlebars-templates'
             },
             compiledTemplateWatch:{
-
+                files: [config.templatesDistDir + '/**/*.js'],
+                tasks: 'build-app'
             }
         }
     });
@@ -422,7 +423,8 @@ module.exports = function(grunt) {
     }
 
     //major build tasks
-    grunt.registerTask("build", "compile-handlebars-templates build-app build-css");
+    grunt.registerTask('compile-stylus-and-build-css', 'compile-stylus-files build-css');
+    grunt.registerTask("build", "compile-handlebars-templates build-app compile-stylus-files build-css");
     grunt.registerTask("dist", "build");
     grunt.registerTask("default", "dist");
 

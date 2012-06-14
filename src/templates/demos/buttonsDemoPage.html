@@ -1,6 +1,20 @@
-<div id="buttonsDemo">
+<div id="buttonsDemo" ontouchstart="">
+    <h2>Buttons</h2>
+
+    <h3>Demo</h3>
+
+    <h4>without gpu</h4>
+    <span>with gpu:</span>
     <input type="submit" class="button-type-1" value="1">
+
+    <span>without gpu:</span>
     <input type="submit" class="button-type-2" value="2">
     <input type="submit" class="button-type-3" value="3">
     <input type="submit" class="button-type-4" value="4">
+    <input type="submit" class="button-type-5" value="5">
+    <input type="submit" class="button-type-6" value="6">
+
+    <h3>Caveats</h3>
+    <p>You'll notice that the containing div id="buttonsDemo" contains an attribute ontouchstart=""</p>
+    <p>This allows the :active pseudo selector to actually fire on android and ios</p>
 </div>
