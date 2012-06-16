@@ -1,4 +1,10 @@
 
+.button-demo:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+.demo-notes {
+  font-size: 80%;
+}
 .button-type,
 .button-type-with-gpu,
 .button-type-1,
@@ -8,12 +14,13 @@
 .button-type-5,
 .button-type-6 {
   font-size: 24px;
-  background-color: #f7f7f7;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
-  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7);
-  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
-  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
-  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7);
+  background: #a9e4f7;
+  background: -moz-linear-gradient(left, #a9e4f7 0%, #0fb4e7 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #a9e4f7), color-stop(100%, #0fb4e7));
+  background: -webkit-linear-gradient(left, #a9e4f7 0%, #0fb4e7 100%);
+  background: -o-linear-gradient(left, #a9e4f7 0%, #0fb4e7 100%);
+  background: -ms-linear-gradient(left, #a9e4f7 0%, #0fb4e7 100%);
+  background: linear-gradient(left, #a9e4f7 0%, #0fb4e7 100%);
   margin: 36px;
   width: 144px;
   height: 144px;
@@ -30,15 +37,18 @@
 .button-type-4:active,
 .button-type-5:active,
 .button-type-6:active {
-  font-size: 50px;
+  background: #f2825b;
+  background: -moz-linear-gradient(left, #f2825b 0%, #e55b2b 50%, #f07146 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #f2825b), color-stop(50%, #e55b2b), color-stop(100%, #f07146));
+  background: -webkit-linear-gradient(left, #f2825b 0%, #e55b2b 50%, #f07146 100%);
+  background: -o-linear-gradient(left, #f2825b 0%, #e55b2b 50%, #f07146 100%);
+  background: -ms-linear-gradient(left, #f2825b 0%, #e55b2b 50%, #f07146 100%);
+  background: linear-gradient(left, #f2825b 0%, #e55b2b 50%, #f07146 100%);
 }
 .button-type-with-gpu,
 .button-type-1 {
   -webkit-backface-visibility: hidden;
   background-color: #f00;
-}
-.button-type-1:active {
-  color: #ffa500;
 }
 .button-type-2 {
   background-color: #ffa500;

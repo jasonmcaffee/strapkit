@@ -1,12 +1,28 @@
+.buttons-demo{
+
+}
+
+//container for an individual button demonstration
+.button-demo:nth-child(odd){
+    background-color: #f7f7f7;
+
+}
+
+.demo-notes{
+    font-size: 80%;
+}
+
+
 .button-type{
     font-size:24px;
     //make it round and have color
-    background-color: #f7f7f7;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
-    background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7);
-    background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
-    background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
-    background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background: rgb(169,228,247);
+    background: -moz-linear-gradient(left,  rgba(169,228,247,1) 0%, rgba(15,180,231,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(169,228,247,1)), color-stop(100%,rgba(15,180,231,1)));
+    background: -webkit-linear-gradient(left,  rgba(169,228,247,1) 0%,rgba(15,180,231,1) 100%);
+    background: -o-linear-gradient(left,  rgba(169,228,247,1) 0%,rgba(15,180,231,1) 100%);
+    background: -ms-linear-gradient(left,  rgba(169,228,247,1) 0%,rgba(15,180,231,1) 100%);
+    background: linear-gradient(left,  rgba(169,228,247,1) 0%,rgba(15,180,231,1) 100%);
 
     margin: 36px;
     width: 144px;
@@ -19,7 +35,13 @@
 
     //pseudo selectors
     &:active {
-        font-size:50px;
+        background: rgb(242,130,91);
+        background: -moz-linear-gradient(left,  rgba(242,130,91,1) 0%, rgba(229,91,43,1) 50%, rgba(240,113,70,1) 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(242,130,91,1)), color-stop(50%,rgba(229,91,43,1)), color-stop(100%,rgba(240,113,70,1)));
+        background: -webkit-linear-gradient(left,  rgba(242,130,91,1) 0%,rgba(229,91,43,1) 50%,rgba(240,113,70,1) 100%);
+        background: -o-linear-gradient(left,  rgba(242,130,91,1) 0%,rgba(229,91,43,1) 50%,rgba(240,113,70,1) 100%);
+        background: -ms-linear-gradient(left,  rgba(242,130,91,1) 0%,rgba(229,91,43,1) 50%,rgba(240,113,70,1) 100%);
+        background: linear-gradient(left,  rgba(242,130,91,1) 0%,rgba(229,91,43,1) 50%,rgba(240,113,70,1) 100%);
     }
 }
 
@@ -33,7 +55,7 @@
 .button-type-1{
     @extends .button-type-with-gpu;
     &:active{
-        color:orange;
+
     }
 }
 
@@ -60,3 +82,4 @@
     @extends .button-type;
     background-color:indigo;
 }
+

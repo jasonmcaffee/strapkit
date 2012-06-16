@@ -32,16 +32,16 @@ module.exports = function(grunt) {
         watch:{
             stylusWatch:{
                 files: [rootDirectory + '/src/css-preprocess/*.styl'],
-                tasks: 'compile-stylus-files build-css'
+                tasks: 'compile-stylus-and-build-css'
             },
             templateWatch:{       //this currently doesn't work well. the compile-template task is not finishing before build-app is called.
                 files: [config.templatesSourceDir + '/**/*.html'],
-                tasks: 'compile-handlebars-templates'
-            },
-            compiledTemplateWatch:{
-                files: [config.templatesDistDir + '/**/*.js'],
-                tasks: 'build-app'
-            }
+                tasks: 'compile-templates-and-build-app'
+            }//,
+//            compiledTemplateWatch:{
+//                files: [config.templatesDistDir + '/**/*.js'],
+//                tasks: 'build-app'
+//            }
         }
     });
 
@@ -423,6 +423,7 @@ module.exports = function(grunt) {
     }
 
     //major build tasks
+    grunt.registerTask("compile-templates-and-build-app", "compile-handlebars-templates build-app");
     grunt.registerTask('compile-stylus-and-build-css', 'compile-stylus-files build-css');
     grunt.registerTask("build", "compile-handlebars-templates build-app compile-stylus-files build-css");
     grunt.registerTask("dist", "build");
