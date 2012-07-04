@@ -1,15 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/compiled-templates/demos/buttonsDemoPageTemplate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/lib/controllers/DemosController.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/compiled-templates/demos/buttonsDemoPage.js" afterPath="$PROJECT_DIR$/src/js/compiled-templates/demos/buttonsDemoPageTemplate.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/templates/demos/buttonsDemoPage.html" afterPath="$PROJECT_DIR$/src/templates/demos/buttonsDemoPageTemplate.html" />
+    <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="worked on designing home page">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/jason.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css-preprocess/homePage.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css-preprocess/navigationBar.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/_variables.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/homePage.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/navigationBar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/responsiveDemo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/compiled-templates/demos/responsiveDemoPageTemplate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/compiled-templates/homePageTemplate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/lib-third-party/FastButton.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/lib/views/ButtonsDemoView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/lib/views/HomeView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/lib/views/ResponsiveDemoView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/homePageTemplate.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css/app.css" afterPath="$PROJECT_DIR$/src/css-preprocess/_variables.styl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/lib/controllers/demosController.js" afterPath="$PROJECT_DIR$/src/js/lib/controllers/DemosController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tasks/grunt-css-stylus.js" afterPath="$PROJECT_DIR$/build/tasks/grunt-css-stylus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/app.css" afterPath="$PROJECT_DIR$/dist/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app-built.js" afterPath="$PROJECT_DIR$/dist/js/app-built.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node-server/views/test.html" afterPath="$PROJECT_DIR$/node-server/views/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/buttonsDemo.styl" afterPath="$PROJECT_DIR$/src/css-preprocess/buttonsDemo.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/buttonsDemo.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/buttonsDemo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/strapkit.css" afterPath="$PROJECT_DIR$/src/css/strapkit.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app.js" afterPath="$PROJECT_DIR$/src/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/compiled-templates/demos/buttonsDemoPageTemplate.js" afterPath="$PROJECT_DIR$/src/js/compiled-templates/demos/buttonsDemoPageTemplate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/demos/buttonsDemoPageTemplate.html" afterPath="$PROJECT_DIR$/src/templates/demos/buttonsDemoPageTemplate.html" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,37 +90,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="buttonsDemoPageTemplate.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/demos/buttonsDemoPageTemplate.html">
+      <file leaf-file-name="homePage.styl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/homePage.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="187" column="86" selection-start="8678" selection-end="8678" vertical-scroll-proportion="-26.72">
+            <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DemosController.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/DemosController.js">
+      <file leaf-file-name="navigationBar.styl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="45" selection-start="352" selection-end="352" vertical-scroll-proportion="0.16842106">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="54" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ButtonsDemoView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/lib/views/ButtonsDemoView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="16" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
+            <state line="13" column="78" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -106,16 +111,34 @@
       <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="27" selection-start="1541" selection-end="1541" vertical-scroll-proportion="-23.04">
+            <state line="36" column="36" selection-start="1584" selection-end="1584" vertical-scroll-proportion="-23.04">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buttonsDemo.styl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css-preprocess/buttonsDemo.styl">
+      <file leaf-file-name="strapkit.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/css/strapkit.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="120" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
+            <state line="17" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.26028708">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grunt-css-stylus.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/tasks/grunt-css-stylus.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="60" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_variables.styl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/_variables.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="29" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,7 +147,7 @@
       <file leaf-file-name="grunt.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/grunt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="55" selection-start="1666" selection-end="1666" vertical-scroll-proportion="158.15384">
+            <state line="94" column="63" selection-start="3602" selection-end="3602" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,25 +156,16 @@
       <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="63" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
+            <state line="93" column="80" selection-start="3069" selection-end="3069" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/app.css">
+      <file leaf-file-name="homePageTemplate.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/homePageTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strapkit.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/strapkit.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="3" column="53" selection-start="44" selection-end="44" vertical-scroll-proportion="-1.92">
               <folding />
             </state>
           </provider>
@@ -174,28 +188,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/build/tasks/grunt-css.js" />
-        <option value="$PROJECT_DIR$/build/tasks/grunt-directory-helpers.js" />
-        <option value="$PROJECT_DIR$/src/css-preprocess/t2.styl" />
-        <option value="$PROJECT_DIR$/build/tasks/grunt-css-stylus.js" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/js/compiled-templates/demos/buttonsDemoPage.js" />
-        <option value="$PROJECT_DIR$/build/grunt.js" />
-        <option value="$PROJECT_DIR$/dist/css/app.css" />
-        <option value="$PROJECT_DIR$/src/css-preprocess/buttonsDemo.styl" />
-        <option value="$PROJECT_DIR$/src/templates/demos/buttonsDemoPage.html" />
-        <option value="$PROJECT_DIR$/node-server/views/test.html" />
-        <option value="$PROJECT_DIR$/src/js/lib/views/buttonsDemoView.js" />
-        <option value="$PROJECT_DIR$/src/js/lib/controllers/demosController.js" />
+        <option value="$PROJECT_DIR$/src/templates/demos/buttonsDemoPageTemplate.html" />
+        <option value="$PROJECT_DIR$/src/js/lib/views/ResponsiveDemoView.js" />
         <option value="$PROJECT_DIR$/src/js/lib/controllers/DemosController.js" />
+        <option value="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.styl" />
+        <option value="$PROJECT_DIR$/src/js/lib/views/HomeView.js" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/homePage.styl" />
+        <option value="$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js" />
         <option value="$PROJECT_DIR$/src/js/app.js" />
-        <option value="$PROJECT_DIR$/src/js/lib/views/ButtonsDemoView.js" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/_variables.styl" />
+        <option value="$PROJECT_DIR$/build/tasks/grunt-css-stylus.js" />
+        <option value="$PROJECT_DIR$/dist/css/app.css" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/navigationBar.styl" />
+        <option value="$PROJECT_DIR$/src/templates/homePageTemplate.html" />
+        <option value="$PROJECT_DIR$/node-server/views/test.html" />
+        <option value="$PROJECT_DIR$/src/css/strapkit.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="326" />
-    <option name="y" value="145" />
+    <option name="x" value="309" />
+    <option name="y" value="96" />
     <option name="width" value="2113" />
     <option name="height" value="1193" />
   </component>
@@ -225,16 +239,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -270,10 +274,6 @@
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -290,28 +290,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modernmobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="strapkit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib-third-party" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -436,6 +414,28 @@
               <option name="myItemId" value="compiled-templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modernmobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strapkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="compiled-templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="demos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -496,20 +496,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="compiled-css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modernmobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="strapkit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -650,19 +636,29 @@
       <pane id="PackagesPane">
         <subPane />
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -850,17 +846,21 @@
       <created>1339819180925</created>
       <updated>1339819180925</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="have fast button working, but has a side effect in honeycomb">
+      <created>1339824938786</created>
+      <updated>1339824938815</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="326" y="145" width="2113" height="1193" extended-state="0" />
+    <frame x="309" y="96" width="2113" height="1193" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929105" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2492823" sideWeight="0.67070895" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -871,7 +871,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -914,7 +914,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="have fast button working, but has a side effect in honeycomb" />
+    <option name="LAST_COMMIT_MESSAGE" value="worked on designing home page" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -938,116 +938,163 @@
     <MESSAGE value="watch task is broken. compile-templates not finishing before build-app is called, resulting in broken template functions." />
     <MESSAGE value="buttons demo page work. in progress." />
     <MESSAGE value="have fast button working, but has a side effect in honeycomb" />
+    <MESSAGE value="worked on designing home page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="modernmobile" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="strapkit" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/tasks/grunt-directory-helpers.js">
+    <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/DemosController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
+        <state line="19" column="42" selection-start="0" selection-end="730" vertical-scroll-proportion="0.29716522">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/tasks/grunt-css.js">
+    <entry file="file://$PROJECT_DIR$/src/js/lib/views/ResponsiveDemoView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="80" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
+        <state line="14" column="79" selection-start="0" selection-end="679" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/tasks/grunt-css-stylus.js">
+    <entry file="file://$PROJECT_DIR$/src/js/lib/views/HomeView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="107" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
+        <state line="16" column="38" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/compiled-css/buttonsDemo.css">
+    <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1784" selection-end="1784" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="47" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/strapkit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/grunt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="55" selection-start="1666" selection-end="1666" vertical-scroll-proportion="158.15384">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="63" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/buttonsDemo.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="120" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/demos/buttonsDemoPageTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="86" selection-start="8678" selection-end="8678" vertical-scroll-proportion="-26.72">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="27" selection-start="1541" selection-end="1541" vertical-scroll-proportion="-23.04">
+        <state line="12" column="41" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="54" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
+        <state line="14" column="28" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/views/ButtonsDemoView.js">
+    <entry file="file://$PROJECT_DIR$/src/css/compiled-css/homePage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/DemosController.js">
+    <entry file="file://$PROJECT_DIR$/build/tasks/grunt-css-stylus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="45" selection-start="352" selection-end="352" vertical-scroll-proportion="0.16842106">
+        <state line="7" column="60" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/compiled-templates/homePageTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/homePageTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="53" selection-start="44" selection-end="44" vertical-scroll-proportion="-1.92">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/homePage.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="78" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/_variables.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/grunt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="63" selection-start="3602" selection-end="3602" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="80" selection-start="3069" selection-end="3069" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="36" selection-start="1584" selection-end="1584" vertical-scroll-proportion="-23.04">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/strapkit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.26028708">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

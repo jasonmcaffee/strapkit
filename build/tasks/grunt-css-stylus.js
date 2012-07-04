@@ -26,7 +26,9 @@ module.exports = function(grunt) {
 
             grunt.helper('compile-stylus-file', stylusFilePath, cssFilePath,
                 function(err){
+                    console.log('!!!!!!error - ' + err);
                     taskDone(false);
+
                     throw err;
                 },
                 function(){
