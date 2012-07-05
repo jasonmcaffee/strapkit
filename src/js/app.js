@@ -3,8 +3,9 @@ define([
     'jquery',
     'backbone',
     'lib/controllers/DemosController',
-    'lib/controllers/StrapkitController'
-], function(log, $, Backbone, DemosController, StrapkitController){
+    'lib/controllers/StrapkitController',
+    'lib/widgets/NavigationBar'
+], function(log, $, Backbone, DemosController, StrapkitController, NavigationBar){
 
     function App(){
         log('app constructor called.');
@@ -12,9 +13,13 @@ define([
         this.strapkitController = new StrapkitController();
         this.setupRoutes();
 
+        this.navigationBar = new NavigationBar();
+
         //load the home page
         this.router.navigate('home', {trigger:true});
     }
+
+
 
     App.prototype.setupRoutes = function(){
         log('App.setupRoutes called.');
