@@ -16,6 +16,9 @@
   -moz-box-shadow: 0px 1px 11px rgba(49,50,50,0.39);
   box-shadow: 0px 1px 11px rgba(49,50,50,0.39);
 }
+#menuItemsCollapsed {
+  display: none;
+}
 .navigation-bar ul {
   height: 100%;
   list-style: none;
@@ -39,4 +42,11 @@
 }
 /* tablet portrait and below */
 @media (max-width:989px) {
+  #menuItemsCollapsed {
+    display: block;
+    float: right;
+  }
+  #menuItemsExpanded {
+    display: none;
+  }
 }

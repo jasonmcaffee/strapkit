@@ -29,6 +29,9 @@
 
 }
 
+#menuItemsCollapsed{
+    display: none;
+}
 .navigation-bar ul{
     height:100%;
     list-style:none;
@@ -70,7 +73,12 @@
 
 /* tablet portrait and below */
 @media (max-width:989px){
-    .navigation-bar{
-
+    #menuItemsCollapsed{
+        display: block;
+        float:right;
     }
+    #menuItemsExpanded{
+        display: none;
+    }
+
 }
