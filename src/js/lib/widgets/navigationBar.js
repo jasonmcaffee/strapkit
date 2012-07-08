@@ -6,7 +6,9 @@ define([
     function NavigationBar(options){
         log('NavigationBar constructor called.');
         this.options = {
-            navigationBarId : 'navigationBar'
+            navigationBarId : 'navigationBar',
+            menuItemsExpandedId : 'menuItemsExpanded',
+            menuButtonSelector : 'li > a > img' //menu button selector for touch events to expand menu
         };
 
         $.extend(this.options, options);
@@ -15,6 +17,7 @@ define([
         //init
         $(function(){
             self.$navigationBar = $('#'+self.options.navigationBarId);
+            self.$menuItemsExpanded = self.$navigationBar.find('#'+self.options.menuItemsExpandedId);
             self.registerTouchHandlers();
         });
 
@@ -25,19 +28,43 @@ define([
      */
     NavigationBar.prototype.registerTouchHandlers = function(){
         var originalUrl;
-        this.$navigationBar.on('touchstart', 'li > a > img', function(){
+        var self = this;
+
+        this.$navigationBar.on('touchstart', this.options.menuButtonSelector, function(){
             var $this = $(this);
             log('touchstart fired for : {0}', $this.attr('alt'));
 
+            //image for button should change to pressed
             originalUrl = $this.attr('src');
             $this.attr('src', 'images/menu-button-pressed.png');
 
+            //reposition menuitems expanded to be right under the menu button img
+            var menuButtonOffset = $this.position();
+            log('offset top: {0} offset left: {1}', menuButtonOffset.top, menuButtonOffset.left);
+
+            var menuButtonHeight = $this.height();
+            //var menuButtonWidth = $this.width();
+            //log('menuButton height: {0} width: {1}', menuButtonHeight, menuButtonWidth);
+
+            var menuItemsExpandedWidth = self.$menuItemsExpanded.width();
+
+            self.$menuItemsExpanded.css({
+                'top': menuButtonOffset.top + menuButtonHeight,
+                'left' : menuButtonOffset.left - menuItemsExpandedWidth
+            });
+
+            //show menuitems expanded
+            self.$menuItemsExpanded.toggle();
+
         });
-        this.$navigationBar.on('touchend', 'li > a > img', function(){
+        this.$navigationBar.on('touchend', this.options.menuButtonSelector, function(){
             var $this = $(this);
             log('touchsend fired for : {0}', $this.attr('alt'));
 
+            //image back to original
             $this.attr('src', originalUrl);
+
+
         });
 
     };

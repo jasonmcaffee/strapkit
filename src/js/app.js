@@ -9,14 +9,24 @@ define([
 
     function App(){
         log('app constructor called.');
+
+        //create controllers
         this.demosController = new DemosController();
         this.strapkitController = new StrapkitController();
+
+        //setup routes
         this.setupRoutes();
 
+        //create global widgets
         this.navigationBar = new NavigationBar();
 
-        //load the home page
-        this.router.navigate('home', {trigger:true});
+        //if there is no relative route, send them to the home page.
+        log('current route is : ' + Backbone.history.fragment);
+        if(Backbone.history.fragment == ""){
+            //load the home page
+            this.router.navigate('home', {trigger:true});
+        }
+
     }
 
 
