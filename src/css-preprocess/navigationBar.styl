@@ -32,6 +32,8 @@
 #menuItemsCollapsed{
     display: none;
 }
+
+//menu container - general (there are 2 uls in nav bar currently)
 .navigation-bar ul{
     height:100%;
     list-style:none;
@@ -40,6 +42,7 @@
     line-height:40px;
 }
 
+//menu items
 .navigation-bar ul li{
     display: inline-block;
     height: 90%;
@@ -74,13 +77,16 @@
 /* tablet portrait and below */
 @media (max-width:989px){
     #menuItemsCollapsed{
-        display: inline-block;
+        display: inline;
         float:right;
     }
     #menuItemsExpanded{
         display: none;
         position: absolute;
-        height:100%;
+      height:150%; //increase the height so we can fit all the menu items in. essentially escape the height constraint of nav-bar
+      width:50%;
+
+      padding: 2%;
       //box shadow
       -moz-box-shadow: 2px 5px 16px #000000;
       -webkit-box-shadow: 2px 5px 16px #000000;
@@ -104,6 +110,7 @@
     #menuItemsExpanded li{
       display:block;
       text-align: right;
+      height:30%; //decrease the height so we can fit all the menu items in. essentially escape height constraint of nav-bar
 
     }
 

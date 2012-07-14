@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/lib/widgets/navigationBar.js" afterPath="$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/app.css" afterPath="$PROJECT_DIR$/dist/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app-built.js" afterPath="$PROJECT_DIR$/dist/js/app-built.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/navigationBar.styl" afterPath="$PROJECT_DIR$/src/css-preprocess/navigationBar.styl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/navigationBar.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/navigationBar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app.js" afterPath="$PROJECT_DIR$/src/js/app.js" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,10 +64,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="navigationBar.styl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="navigationBar.styl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="124" selection-start="3532" selection-end="3532" vertical-scroll-proportion="0.45736435">
+            <state line="88" column="18" selection-start="3773" selection-end="3773" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -78,7 +76,7 @@
       <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="33" selection-start="1950" selection-end="1950" vertical-scroll-proportion="0.0">
+            <state line="65" column="33" selection-start="2066" selection-end="2066" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,16 +85,7 @@
       <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="118" selection-start="1928" selection-end="1928" vertical-scroll-proportion="-24.96">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strapkit.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/strapkit.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="4" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
+            <state line="49" column="100" selection-start="1999" selection-end="1999" vertical-scroll-proportion="-27.4">
               <folding />
             </state>
           </provider>
@@ -138,10 +127,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NavigationBar.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="NavigationBar.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="62" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.0">
+            <state line="39" column="87" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.4058722">
               <folding />
             </state>
           </provider>
@@ -187,16 +176,16 @@
         <option value="$PROJECT_DIR$/src/js/lib/widgets/navigationBar.js" />
         <option value="$PROJECT_DIR$/node-server/views/test.html" />
         <option value="$PROJECT_DIR$/src/js/app.js" />
-        <option value="$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js" />
         <option value="$PROJECT_DIR$/src/css-preprocess/navigationBar.styl" />
+        <option value="$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="153" />
-    <option name="y" value="92" />
-    <option name="width" value="2113" />
-    <option name="height" value="1193" />
+    <option name="x" value="16" />
+    <option name="y" value="57" />
+    <option name="width" value="2376" />
+    <option name="height" value="1306" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -224,16 +213,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -650,6 +629,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane />
       </pane>
@@ -659,13 +648,13 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="preferences.fileTypes" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="preferences.fileTypes" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -877,19 +866,22 @@
       <created>1341754398708</created>
       <updated>1341754398708</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="nav bar show hide menu buttons on touch. height is broken...">
+      <created>1341788627931</created>
+      <updated>1341788627931</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="153" y="92" width="2113" height="1193" extended-state="0" />
+    <frame x="16" y="57" width="2376" height="1306" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2492823" sideWeight="0.67070895" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22141947" sideWeight="0.9875312" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -899,6 +891,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929105" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -941,7 +934,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="responsive nav bar in progress." />
+    <option name="LAST_COMMIT_MESSAGE" value="nav bar show hide menu buttons on touch. height is broken..." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -969,6 +962,7 @@
     <MESSAGE value="created menu button image" />
     <MESSAGE value="touch events for nav bar" />
     <MESSAGE value="responsive nav bar in progress." />
+    <MESSAGE value="nav bar show hide menu buttons on touch. height is broken..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -986,11 +980,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="41" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/compiled-css/homePage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -1021,16 +1010,31 @@
         <state line="11" column="4" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node-server/logs/node.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-17.093023" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="33" selection-start="2066" selection-end="2066" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/_variables.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="29" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build/grunt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="63" selection-start="3602" selection-end="3602" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/homePageTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="53" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="53" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/lib/views/HomeView.js">
@@ -1040,40 +1044,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="71" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="35" column="71" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/grunt.js">
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="63" selection-start="3602" selection-end="3602" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="33" selection-start="1950" selection-end="1950" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="62" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.0">
+        <state line="88" column="18" selection-start="3773" selection-end="3773" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="118" selection-start="1928" selection-end="1928" vertical-scroll-proportion="-24.96">
+        <state line="49" column="100" selection-start="1999" selection-end="1999" vertical-scroll-proportion="-27.4">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.styl">
+    <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="124" selection-start="3532" selection-end="3532" vertical-scroll-proportion="0.45736435">
+        <state line="39" column="87" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.4058722">
           <folding />
         </state>
       </provider>
