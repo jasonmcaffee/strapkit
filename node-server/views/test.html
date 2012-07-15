@@ -17,8 +17,8 @@
 
         <!-- initial view should be zoomed correctly on mobile -->
         <!--<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, maximum-scale=1.0, minimum-scale=1.0">-->
-        <!--easiest fix for ipad rotate resize issue-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;">
+        <!--easiest fix for ipad rotate resize issue. user scalable needed for android to support position:fixed in nav bar-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
         <!-- apple ios specific styling. fullscreen and translucent status bar. -->
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -31,6 +31,14 @@
     <body>
 
         <div id="navigationBar" class="navigation-bar">
+            <ul id="menuItemsCollapsed">
+                <li>
+                    <a href="javascript:null">
+                        <img alt="menu button" src="images/menu-button.png">
+                    </a>
+                </li>
+            </ul>
+
             <ul id="menuItemsExpanded">
                 <li>
                     <a href="#demos/buttonsDemo">
@@ -46,13 +54,7 @@
                     Strapkit
                 </li>
             </ul>
-            <ul id="menuItemsCollapsed">
-                <li>
-                    <a href="javascript:null">
-                        <img alt="menu button" src="images/menu-button.png">
-                    </a>
-                </li>
-            </ul>
+
 
 
         </div>

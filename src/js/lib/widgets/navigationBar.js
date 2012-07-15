@@ -56,8 +56,14 @@ define([
 
             //show or hide menuitems expanded
             // self.$menuItemsExpanded.toggle();   //we don't want block, we want inline block, so we'll have to do our own toggle
-            var displayTypeForMenuItemsExpanded = isMenuExpanded ? 'none' : 'inline-block';
-            self.$menuItemsExpanded.css({'display':displayTypeForMenuItemsExpanded});
+            //var displayTypeForMenuItemsExpanded = isMenuExpanded ? 'none' : 'inline-block';
+            //self.$menuItemsExpanded.css({'display':displayTypeForMenuItemsExpanded});
+            if(!isMenuExpanded){
+                self.$menuItemsExpanded.addClass('menuItemsExpanded-shown');
+            }else{
+                self.$menuItemsExpanded.removeClass('menuItemsExpanded-shown');
+            }
+
             isMenuExpanded = !isMenuExpanded;
 
         });

@@ -96,7 +96,13 @@
     #menuItemsCollapsed{
         display: inline-block;
         float:right;
+        //vertical-align: top;
     }
+    .menuItemsExpanded-shown{
+      display: inline-block !important; //must override #menu... id selector as it has priority
+      //float:left;
+    }
+
     #menuItemsExpanded{
         display: none; //start off not visible. click of menu button makes it visible.
         //position: absolute;
@@ -104,8 +110,8 @@
       width:50%;
 
       padding: 2%;
-      margin-left: 35%; //push it over
-      margin-top: 50px;
+      margin-left: 45%; //push it over
+      margin-top: -15px;
 
       -moz-border-radius: 4px;
       -webkit-border-radius: 4px;

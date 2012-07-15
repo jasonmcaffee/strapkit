@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css-preprocess/reset.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/lib/widgets/navigationBar.js" afterPath="$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/app.css" afterPath="$PROJECT_DIR$/dist/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app-built.js" afterPath="$PROJECT_DIR$/dist/js/app-built.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node-server/views/test.html" afterPath="$PROJECT_DIR$/node-server/views/test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/navigationBar.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/navigationBar.css" />
@@ -65,19 +67,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="navigationBar.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="navigationBar.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="102" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
+            <state line="113" column="20" selection-start="5721" selection-end="5721" vertical-scroll-proportion="0.43537414">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="reset.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/reset.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="51" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NavigationBar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="101" selection-start="912" selection-end="912" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="52" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.2611684">
+            <state line="19" column="123" selection-start="1141" selection-end="1141" vertical-scroll-proportion="-12.16">
               <folding />
             </state>
           </provider>
@@ -88,28 +108,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="59" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigationBar.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/compiled-css/navigationBar.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="21" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1342322948000" expanded="true" signature="5167:5169" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/css/app.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="38" selection-start="4420" selection-end="4420" vertical-scroll-proportion="10.538462">
-              <folding>
-                <marker date="1342322949000" expanded="true" signature="5624:7478" placeholder="/*...*/" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -132,28 +130,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grunt-directory-helpers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/tasks/grunt-directory-helpers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="22" selection-start="1900" selection-end="1900" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="grunt-css-stylus.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/tasks/grunt-css-stylus.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="5" selection-start="40" selection-end="82" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css-preprocess/_variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,11 +156,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/templates/homePageTemplate.html" />
         <option value="$PROJECT_DIR$/src/css/strapkit.css" />
         <option value="$PROJECT_DIR$/src/js/lib/widgets/navigationBar.js" />
         <option value="$PROJECT_DIR$/src/js/app.js" />
-        <option value="$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js" />
         <option value="$PROJECT_DIR$/src/css-preprocess/navigationBar.styl" />
         <option value="$PROJECT_DIR$/src/css-preprocess/_variables.scss" />
         <option value="$PROJECT_DIR$/package.json" />
@@ -190,14 +168,16 @@
         <option value="$PROJECT_DIR$/dist/css/app.css" />
         <option value="$PROJECT_DIR$/build/tasks/grunt-css.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" />
+        <option value="$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/reset.scss" />
         <option value="$PROJECT_DIR$/node-server/views/test.html" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="200" />
-    <option name="y" value="475" />
+    <option name="x" value="145" />
+    <option name="y" value="222" />
     <option name="width" value="2209" />
     <option name="height" value="1337" />
   </component>
@@ -266,6 +246,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modernmobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strapkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modernmobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strapkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modernmobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strapkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -682,11 +728,15 @@
       <created>1342320942299</created>
       <updated>1342320942299</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fixed ipad rotation issue resizing.">
+      <created>1342323873137</created>
+      <updated>1342323873137</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="200" y="475" width="2209" height="1337" extended-state="0" />
+    <frame x="145" y="222" width="2209" height="1337" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -746,7 +796,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="sass-watch grunt task functioning with build-css. 2 sass events fire though, so to build-css for 1 file save occurring.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed ipad rotation issue resizing." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -778,6 +828,7 @@
     <MESSAGE value="menu items expanded is looking a little better" />
     <MESSAGE value="replaced stylus with sass." />
     <MESSAGE value="sass-watch grunt task functioning with build-css. 2 sass events fire though, so to build-css for 1 file save occurring.&#10;" />
+    <MESSAGE value="fixed ipad rotation issue resizing." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -798,13 +849,6 @@
     <entry file="file://$PROJECT_DIR$/src/js/lib/views/HomeView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="38" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="14" selection-start="1507" selection-end="2067" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/app.js">
@@ -861,12 +905,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/reset.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="51" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/compiled-css/navigationBar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="21" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1342322948000" expanded="true" signature="5167:5169" placeholder="{...}" />
-          </folding>
+        <state line="35" column="21" selection-start="2550" selection-end="2550" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="38" selection-start="5353" selection-end="5353" vertical-scroll-proportion="-0.23826087">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -877,25 +933,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/app.css">
+    <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="38" selection-start="4420" selection-end="4420" vertical-scroll-proportion="10.538462">
-          <folding>
-            <marker date="1342322949000" expanded="true" signature="5624:7478" placeholder="/*...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="102" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
+        <state line="30" column="101" selection-start="912" selection-end="912" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="52" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.2611684">
+        <state line="19" column="123" selection-start="1141" selection-end="1141" vertical-scroll-proportion="-12.16">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="20" selection-start="5721" selection-end="5721" vertical-scroll-proportion="0.43537414">
           <folding />
         </state>
       </provider>
