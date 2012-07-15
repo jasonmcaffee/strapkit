@@ -3,7 +3,6 @@ html, body{
     width: 100%;
     padding:0;
     margin:0;
-    z-index:-3;
 }
 
 .pages{
@@ -12,8 +11,7 @@ html, body{
     height:100%;
 
     /*!!needed to allow menu to be placed below navbar*/
-    z-index:-2;
-    position:relative;
+    z-index:2;
 
     /*color*/
     background: rgb(255,255,255);

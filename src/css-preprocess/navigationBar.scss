@@ -2,15 +2,13 @@
 
 
 
-.navigation-bar{
-    //size
-    height:50px;
-
-    //positioning
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
+#navbar{
+  position:fixed;
+  height: 50px;
+  z-index: 5;
+  top:0;
+  left:0;
+  width:100%;
 
   border:none 5px #000000;
   -moz-border-radius-topleft: 0px;
@@ -45,12 +43,18 @@
 
 }
 
-#menuItemsCollapsed{
+#menuCollapsed{
     display: none;
 }
 
+#menuExpanded{
+  margin-top:0px;
+  z-index: 6;
+  position:relative;
+}
+
 //menu container - general (there are 2 uls in nav bar currently)
-.navigation-bar ul{
+#menuExpanded ul{
     height:100%;
     list-style:none;
     padding:0;
@@ -59,7 +63,7 @@
 }
 
 //menu items
-.navigation-bar ul li{
+#menuExpanded ul li{
     display: inline-block;
     height: 90%;
 
@@ -92,31 +96,28 @@
 
 /* tablet portrait and below */
 @media (max-width:989px){
-    #menuItemsCollapsed{
+    #menuCollapsed{
         display: inline-block;
         float:right;
         //vertical-align: top;
     }
     .menuItemsExpanded-shown{
-      display: inline-block !important; //must override #menu... id selector as it has priority
+      display: block !important; //must override #menu... id selector as it has priority
       //float:left;
       //z-index: 1 !important;
       //position:relative;
 
     }
 
-    #menuItemsExpanded{
-        display: none; //start off not visible. click of menu button makes it visible.
-      z-index: -1;
-      position:relative;
+    #menuExpanded{
+      display: none;
+      margin-top:-5px;
 
-        ////position: absolute;
-      height:150%; //increase the height so we can fit all the menu items in. essentially escape the height constraint of nav-bar
-      width:50%;
-
-      padding: 2%;
-      margin-left: 45%; //push it over
-      margin-top: -25px;
+      height:20%;
+      list-style:none;
+      padding:0;
+      z-index:3;
+      position:fixed;
 
       -moz-border-radius: 4px;
       -webkit-border-radius: 4px;
@@ -141,34 +142,8 @@
 
     }
 
-    #menuItemsExpanded li{
-      display:block;
-      text-align: right;
-      height:30%; //decrease the height so we can fit all the menu items in. essentially escape height constraint of nav-bar
-
-      //we don't need vertical align, as its a pain to deal with
-      vertical-align: top;
-      line-height: 100%;
-
-
-      -moz-border-radius: 4px;
-      -webkit-border-radius: 4px;
-      border-radius: 4px;
-      -moz-background-clip: padding;
-      -webkit-background-clip: padding-box;
-      background-clip: padding-box;
-      background-color: #ccc;
-      -moz-box-shadow:
-        0 5px 4.7px 0 rgba(0,0,0,.72), inset 0 1px 7.28px 0.72px rgba(0,0,0,.41), 0 0 0 1px #4e4e4e;
-      -webkit-box-shadow: 0 5px 4.7px 0 rgba(0,0,0,.72), inset 0 1px 7.28px 0.72px rgba(0,0,0,.41), 0 0 0 1px #4e4e4e;
-      box-shadow: 0 5px 4.7px 0 rgba(0,0,0,.72), inset 0 1px 7.28px 0.72px rgba(0,0,0,.41), 0 0 0 1px #4e4e4e;
-      //background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSIwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM5NjkxOTEiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjcyJSIgc3RvcC1jb2xvcj0iI2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2hhdDApIiAvPgo8L3N2Zz4=);
-      background-image: -moz-linear-gradient(90deg, #969191 0%, #ccc 72.19%, #fff 100%);
-      background-image: -o-linear-gradient(90deg, #969191 0%, #ccc 72.19%, #fff 100%);
-      background-image: -webkit-linear-gradient(90deg, #969191 0%, #ccc 72.19%, #fff 100%);
-      background-image: linear-gradient(90deg, #969191 0%, #ccc 72.19%, #fff 100%);
-
-
+    #menuCollapsed #menuButton{
+      height:100%;
     }
     //#menuItemsExpanded li{
     //  display:block;
@@ -179,14 +154,23 @@
     //  vertical-align: top;
     //  line-height: 100%;
     //
-    //  //we want line divisions and background gradients for each menu item
-    //  background: -moz-linear-gradient(45deg,  rgba(255,255,255,0.78) 0%, rgba(246,246,246,0.78) 47%, rgba(237,237,237,0.78) 100%);
-    //  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(255,255,255,0.78)), color-stop(47%,rgba(246,246,246,0.78)), color-stop(100%,rgba(237,237,237,0.78)));
-    //  background: -webkit-linear-gradient(45deg,  rgba(255,255,255,0.78) 0%,rgba(246,246,246,0.78) 47%,rgba(237,237,237,0.78) 100%);
-    //  background: -o-linear-gradient(45deg,  rgba(255,255,255,0.78) 0%,rgba(246,246,246,0.78) 47%,rgba(237,237,237,0.78) 100%);
-    //  background: -ms-linear-gradient(45deg,  rgba(255,255,255,0.78) 0%,rgba(246,246,246,0.78) 47%,rgba(237,237,237,0.78) 100%);
-    //  background: linear-gradient(45deg,  rgba(255,255,255,0.78) 0%,rgba(246,246,246,0.78) 47%,rgba(237,237,237,0.78) 100%);
-    //  filter: unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7ffffff', endColorstr='#c7ededed',GradientType=1 );");
+    //
+    //  -moz-border-radius: 4px;
+    //  -webkit-border-radius: 4px;
+    //  border-radius: 4px;
+    //  -moz-background-clip: padding;
+    //  -webkit-background-clip: padding-box;
+    //  background-clip: padding-box;
+    //  background-color: #ccc;
+    //  -moz-box-shadow:
+    //    0 5px 4.7px 0 rgba(0,0,0,.72), inset 0 1px 7.28px 0.72px rgba(0,0,0,.41), 0 0 0 1px #4e4e4e;
+    //  -webkit-box-shadow: 0 5px 4.7px 0 rgba(0,0,0,.72), inset 0 1px 7.28px 0.72px rgba(0,0,0,.41), 0 0 0 1px #4e4e4e;
+    //  box-shadow: 0 5px 4.7px 0 rgba(0,0,0,.72), inset 0 1px 7.28px 0.72px rgba(0,0,0,.41), 0 0 0 1px #4e4e4e;
+    //  //background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSIwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM5NjkxOTEiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjcyJSIgc3RvcC1jb2xvcj0iI2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2hhdDApIiAvPgo8L3N2Zz4=);
+    //  background-image: -moz-linear-gradient(90deg, #969191 0%, #ccc 72.19%, #fff 100%);
+    //  background-image: -o-linear-gradient(90deg, #969191 0%, #ccc 72.19%, #fff 100%);
+    //  background-image: -webkit-linear-gradient(90deg, #969191 0%, #ccc 72.19%, #fff 100%);
+    //  background-image: linear-gradient(90deg, #969191 0%, #ccc 72.19%, #fff 100%);
     //
     //
     //}

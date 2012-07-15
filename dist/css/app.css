@@ -83,9 +83,10 @@
   background-color: #00f;
 }
 
-.navigation-bar {
-  height: 50px;
+#navbar {
   position: fixed;
+  height: 50px;
+  z-index: 5;
   top: 0;
   left: 0;
   width: 100%;
@@ -115,16 +116,21 @@
   background: linear-gradient(to bottom, #abaaa7 0%, #ced0d3 5.76%, #dfe0e1 18.04%, #d0cece 93.99%, #555556 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#abaaa7', endColorstr='#555556',GradientType=0 ); }
 
-#menuItemsCollapsed {
+#menuCollapsed {
   display: none; }
 
-.navigation-bar ul {
+#menuExpanded {
+  margin-top: 0px;
+  z-index: 6;
+  position: relative; }
+
+#menuExpanded ul {
   height: 100%;
   list-style: none;
   padding: 0;
   margin-top: 1px; }
 
-.navigation-bar ul li {
+#menuExpanded ul li {
   display: inline-block;
   height: 90%;
   padding: 0px 3px 0px 3px;
@@ -141,22 +147,21 @@
 
 /* tablet portrait and below */
 @media (max-width:989px) {
-  #menuItemsCollapsed {
+  #menuCollapsed {
     display: inline-block;
     float: right; }
 
   .menuItemsExpanded-shown {
-    display: inline-block !important; }
+    display: block !important; }
 
-  #menuItemsExpanded {
+  #menuExpanded {
     display: none;
-    z-index: -1;
-    position: relative;
-    height: 150%;
-    width: 50%;
-    padding: 2%;
-    margin-left: 45%;
-    margin-top: -25px;
+    margin-top: -5px;
+    height: 20%;
+    list-style: none;
+    padding: 0;
+    z-index: 3;
+    position: fixed;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -174,26 +179,8 @@
     background: linear-gradient(to bottom, #babbbd 0%, #ced0d3 2.76%, #dfe0e1 18.04%, silver 97%, #a4a4a5 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#babbbd', endColorstr='#a4a4a5',GradientType=0 ); }
 
-  #menuItemsExpanded li {
-    display: block;
-    text-align: right;
-    height: 30%;
-    vertical-align: top;
-    line-height: 100%;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    background-color: #ccc;
-    -moz-box-shadow: 0 5px 4.7px 0 rgba(0, 0, 0, 0.72), inset 0 1px 7.28px 0.72px rgba(0, 0, 0, 0.41), 0 0 0 1px #4e4e4e;
-    -webkit-box-shadow: 0 5px 4.7px 0 rgba(0, 0, 0, 0.72), inset 0 1px 7.28px 0.72px rgba(0, 0, 0, 0.41), 0 0 0 1px #4e4e4e;
-    box-shadow: 0 5px 4.7px 0 rgba(0, 0, 0, 0.72), inset 0 1px 7.28px 0.72px rgba(0, 0, 0, 0.41), 0 0 0 1px #4e4e4e;
-    background-image: -moz-linear-gradient(90deg, #969191 0%, #cccccc 72.19%, white 100%);
-    background-image: -o-linear-gradient(90deg, #969191 0%, #cccccc 72.19%, white 100%);
-    background-image: -webkit-linear-gradient(90deg, #969191 0%, #cccccc 72.19%, white 100%);
-    background-image: linear-gradient(90deg, #969191 0%, #cccccc 72.19%, white 100%); } }
+  #menuCollapsed #menuButton {
+    height: 100%; } }
 
 * {
   -webkit-box-sizing: border-box;
@@ -212,7 +199,6 @@ html, body{
     width: 100%;
     padding:0;
     margin:0;
-    z-index:-3;
 }
 
 .pages{
@@ -221,8 +207,7 @@ html, body{
     height:100%;
 
     /*!!needed to allow menu to be placed below navbar*/
-    z-index:-2;
-    position:relative;
+    z-index:2;
 
     /*color*/
     background: rgb(255,255,255);
