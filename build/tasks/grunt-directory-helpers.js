@@ -34,7 +34,8 @@ module.exports = function(grunt){
                     var newBasePath = basePath + '/' + fileOrDirectory;
                     var newFilesAndDirectories = fs.readdirSync(newBasePath);//get the files and directories in this directory
 
-                    recursivelyScanDirectoryAndBuildArrayOfFilePaths(newBasePath, newFilesAndDirectories, arrayOfFilePaths);
+                    //recursivelyScanDirectoryAndBuildArrayOfFilePaths(newBasePath, newFilesAndDirectories, arrayOfFilePaths);
+                    grunt.helper('recursivelyScanDirectoryAndBuildArrayOfFilePaths', newBasePath, newFilesAndDirectories, arrayOfFilePaths);
                 }else if(stats.isFile()){ //it's a file
 
                     arrayOfFilePaths.push(fullFileOrDirectoryPath);

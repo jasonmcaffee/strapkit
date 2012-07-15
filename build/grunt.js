@@ -24,9 +24,13 @@ module.exports = function(grunt) {
             cssSource : config.cssSource
         },
         //css preprocessor
-        stylus : {
-            sourceDir : rootDirectory + '/src/css-preprocess',
-            outputDir : rootDirectory + '/src/css/compiled-css'
+        css : {
+            preprocessSourceDir : rootDirectory + '/src/css-preprocess',
+            preprocessOutputDir : rootDirectory + '/src/css/compiled-css',
+            cssDistDir: config.cssDistDir,
+            cssDistFile: config.cssDistFile,
+            cssSource: config.cssSource
+
         },
         //stylus file watcher - compile to css then concat css to dist
         watch:{
@@ -105,11 +109,10 @@ module.exports = function(grunt) {
 
 
 
-
     /**
      * Builds a single dist/public/css/core-built.css for core css files in src/public/css/core
      */
-    grunt.registerTask("build-css", function(){
+    grunt.registerTask("build-css-old", function(){
         //iterate over all css files in the directory and dynamically create list of css files to combine
         var cssFiles = recursivelyScanDirectoryAndBuildArrayOfFilePaths(config.cssSource);
         console.log('build-css has found ' + cssFiles.length + ' css files to concat.');
@@ -134,6 +137,7 @@ module.exports = function(grunt) {
 
 
     });
+
 
 
 
