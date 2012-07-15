@@ -15,7 +15,7 @@ html, body{
     z-index:-2;
     position:relative;
 
-    /*color  todo: this background causes menuitemsexpanded not to show*/
+    /*color*/
     background: rgb(255,255,255);
     background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1)));

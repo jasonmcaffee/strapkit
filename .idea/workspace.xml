@@ -64,10 +64,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="navigationBar.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="navigationBar.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="28" selection-start="5567" selection-end="5567" vertical-scroll-proportion="0.0">
+            <state line="119" column="61" selection-start="5831" selection-end="5831" vertical-scroll-proportion="0.42857143">
               <folding />
             </state>
           </provider>
@@ -100,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strapkit.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="strapkit.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/strapkit.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="103" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.37678722">
+            <state line="17" column="11" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,8 +185,8 @@
         <option value="$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js" />
         <option value="$PROJECT_DIR$/src/css-preprocess/reset.scss" />
         <option value="$PROJECT_DIR$/node-server/views/test.html" />
-        <option value="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" />
         <option value="$PROJECT_DIR$/src/css/strapkit.css" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" />
       </list>
     </option>
   </component>
@@ -769,7 +769,11 @@
       <created>1342326909373</created>
       <updated>1342326909373</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="menuitemsexpanded is now under navbar! that was tricky.">
+      <created>1342360372387</created>
+      <updated>1342360372387</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -801,8 +805,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <value>
         <are-packages-shown value="false" />
@@ -833,7 +837,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="nav bar working decently with responsive. still need to style menu items" />
+    <option name="LAST_COMMIT_MESSAGE" value="menuitemsexpanded is now under navbar! that was tricky." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -867,6 +871,7 @@
     <MESSAGE value="sass-watch grunt task functioning with build-css. 2 sass events fire though, so to build-css for 1 file save occurring.&#10;" />
     <MESSAGE value="fixed ipad rotation issue resizing." />
     <MESSAGE value="nav bar working decently with responsive. still need to style menu items" />
+    <MESSAGE value="menuitemsexpanded is now under navbar! that was tricky." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -982,16 +987,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.scss">
+    <entry file="file://$PROJECT_DIR$/src/css/strapkit.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="28" selection-start="5567" selection-end="5567" vertical-scroll-proportion="0.0">
+        <state line="17" column="11" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/strapkit.css">
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="103" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.37678722">
+        <state line="119" column="61" selection-start="5831" selection-end="5831" vertical-scroll-proportion="0.42857143">
           <folding />
         </state>
       </provider>
