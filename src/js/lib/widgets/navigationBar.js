@@ -29,6 +29,7 @@ define([
     NavigationBar.prototype.registerTouchHandlers = function(){
         var originalUrl;
         var self = this;
+        var isMenuExpanded = false;
 
         this.$navigationBar.on('touchstart', this.options.menuButtonSelector, function(){
             var $this = $(this);
@@ -36,27 +37,31 @@ define([
 
             //image for button should change to pressed
             originalUrl = $this.attr('src');
-            $this.attr('src', 'images/menu-button-pressed.png');
+            $this.attr('src', 'images/menu-button-pressed.png');    //todo: use sprites
 
             //reposition menuitems expanded to be right under the menu button img
-            var menuButtonOffset = $this.position();
-            log('offset top: {0} offset left: {1}', menuButtonOffset.top, menuButtonOffset.left);
+            //but only do this work if we are showing. not necessary when hiding
+//            if(!isMenuExpanded){
+//                var menuButtonOffset = $this.position();
+//                log('offset top: {0} offset left: {1}', menuButtonOffset.top, menuButtonOffset.left);
+//
+//                var menuButtonHeight = $this.height();
+//                var menuItemsExpandedWidth = self.$menuItemsExpanded.width();
+//
+//                self.$menuItemsExpanded.css({
+//                    'top': menuButtonOffset.top + menuButtonHeight,
+//                    'left' : menuButtonOffset.left - menuItemsExpandedWidth
+//                });
+//            }
 
-            var menuButtonHeight = $this.height();
-            //var menuButtonWidth = $this.width();
-            //log('menuButton height: {0} width: {1}', menuButtonHeight, menuButtonWidth);
-
-            var menuItemsExpandedWidth = self.$menuItemsExpanded.width();
-
-            self.$menuItemsExpanded.css({
-                'top': menuButtonOffset.top + menuButtonHeight,
-                'left' : menuButtonOffset.left - menuItemsExpandedWidth
-            });
-
-            //show menuitems expanded
-            self.$menuItemsExpanded.toggle();
+            //show or hide menuitems expanded
+            // self.$menuItemsExpanded.toggle();   //we don't want block, we want inline block, so we'll have to do our own toggle
+            var displayTypeForMenuItemsExpanded = isMenuExpanded ? 'none' : 'inline-block';
+            self.$menuItemsExpanded.css({'display':displayTypeForMenuItemsExpanded});
+            isMenuExpanded = !isMenuExpanded;
 
         });
+
         this.$navigationBar.on('touchend', this.options.menuButtonSelector, function(){
             var $this = $(this);
             log('touchsend fired for : {0}', $this.attr('alt'));
@@ -71,3 +76,45 @@ define([
 
     return NavigationBar;
 });
+
+//
+//this.$navigationBar.on('touchstart', this.options.menuButtonSelector, function(){
+//    var $this = $(this);
+//    log('touchstart fired for : {0}', $this.attr('alt'));
+//
+//    //image for button should change to pressed
+//    originalUrl = $this.attr('src');
+//    $this.attr('src', 'images/menu-button-pressed.png');    //todo: use sprites
+//
+//    //reposition menuitems expanded to be right under the menu button img
+//    //but only do this work if we are showing. not necessary when hiding
+//    if(!isMenuExpanded){
+//        var menuButtonOffset = $this.position();
+//        log('offset top: {0} offset left: {1}', menuButtonOffset.top, menuButtonOffset.left);
+//
+//        var menuButtonHeight = $this.height();
+//        var menuItemsExpandedWidth = self.$menuItemsExpanded.width();
+//
+//        self.$menuItemsExpanded.css({
+//            'top': menuButtonOffset.top + menuButtonHeight,
+//            'left' : menuButtonOffset.left - menuItemsExpandedWidth
+//        });
+//    }
+//
+//    //show or hide menuitems expanded
+//    // self.$menuItemsExpanded.toggle();   //we don't want block, we want inline block, so we'll have to do our own toggle
+//    var displayTypeForMenuItemsExpanded = isMenuExpanded ? 'none' : 'inline-block';
+//    self.$menuItemsExpanded.css({'display':displayTypeForMenuItemsExpanded});
+//    isMenuExpanded = !isMenuExpanded;
+//
+//});
+//
+//this.$navigationBar.on('touchend', this.options.menuButtonSelector, function(){
+//    var $this = $(this);
+//    log('touchsend fired for : {0}', $this.attr('alt'));
+//
+//    //image back to original
+//    $this.attr('src', originalUrl);
+//
+//
+//});

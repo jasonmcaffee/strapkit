@@ -1,0 +1,181 @@
+@import "src/css-preprocess/_variables";
+
+
+.navigation-bar{
+    //size
+    height:50px;
+
+    //positioning
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+
+    //color
+    //background: rgb(59,60,61);
+  //background: -moz-linear-gradient(top,  rgba(59,60,61,1) 0%, rgba(78,79,81,1) 80%, rgba(71,71,71,1) 98%, rgba(51,51,51,1) 100%);
+  //background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(59,60,61,1)), color-stop(80%,rgba(78,79,81,1)), color-stop(98%,rgba(71,71,71,1)), color-stop(100%,rgba(51,51,51,1)));
+  //background: -webkit-linear-gradient(top,  rgba(59,60,61,1) 0%,rgba(78,79,81,1) 80%,rgba(71,71,71,1) 98%,rgba(51,51,51,1) 100%);
+  //background: -o-linear-gradient(top,  rgba(59,60,61,1) 0%,rgba(78,79,81,1) 80%,rgba(71,71,71,1) 98%,rgba(51,51,51,1) 100%);
+  //background: -ms-linear-gradient(top,  rgba(59,60,61,1) 0%,rgba(78,79,81,1) 80%,rgba(71,71,71,1) 98%,rgba(51,51,51,1) 100%);
+  //background: linear-gradient(to bottom,  rgba(59,60,61,1) 0%,rgba(78,79,81,1) 80%,rgba(71,71,71,1) 98%,rgba(51,51,51,1) 100%);
+  //filter: unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3c3d', endColorstr='#333333',GradientType=0 )");
+  //
+  ////box shadow
+  //-webkit-box-shadow: 0px 1px 11px rgba(49, 50, 50, 0.39);
+  //-moz-box-shadow:    0px 1px 11px rgba(49, 50, 50, 0.39);
+  //box-shadow:         0px 1px 11px rgba(49, 50, 50, 0.39);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  //-moz-background-clip: padding;
+  //-webkit-background-clip: padding-box;
+  //background-clip: padding-box;
+  -moz-box-shadow:
+    0 5px 9.9px 0 rgba(0,0,0,.96),inset 0 1px 0 rgba(255,255,255,.9),0 0 0 1px rgba(49,49,49,.5),inset 0 0 3px rgba(255,255,255,.63);
+  -webkit-box-shadow:
+    0 5px 9.9px 0 rgba(0,0,0,.96),inset 0 1px 0 rgba(255,255,255,.9), 0 0 0 1px rgba(49,49,49,.5),inset 0 0 3px rgba(255,255,255,.63);
+  box-shadow:
+    0 5px 9.9px 0 rgba(0,0,0,.96),inset 0 1px 0 rgba(255,255,255,.9),0 0 0 1px rgba(49,49,49,.5), inset 0 0 3px rgba(255,255,255,.63);
+  background-image: -moz-linear-gradient(270deg, #86888a 0%, #f5f7f9 7.76%, #d9dcdf 81.96%, #caced2 94.24%, #86888a 100%);
+  background-image: -o-linear-gradient(270deg, #86888a 0%, #f5f7f9 7.76%, #d9dcdf 81.96%, #caced2 94.24%, #86888a 100%);
+  background-image: -webkit-linear-gradient(270deg, #86888a 0%, #f5f7f9 7.76%, #d9dcdf 81.96%, #caced2 94.24%, #86888a 100%);
+  background-image: linear-gradient(270deg, #86888a 0%, #f5f7f9 7.76%, #d9dcdf 81.96%, #caced2 94.24%, #86888a 100%);
+
+
+}
+
+#menuItemsCollapsed{
+    display: none;
+}
+
+//menu container - general (there are 2 uls in nav bar currently)
+.navigation-bar ul{
+    height:100%;
+    list-style:none;
+    padding:0;
+    margin-top:1px;
+
+}
+
+//menu items
+.navigation-bar ul li{
+    display: inline-block;
+    height: 90%;
+
+    padding: 0px 3px 0px 3px;
+    //rounded corners
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+
+    //font
+    color: #222;
+    text-shadow: 0px 2px 3px #555;
+    text-align: center;
+    vertical-align: middle;
+    line-height:40px; //allow for vertical-align middle.
+
+    //color
+    //background: rgb(99,99,99);
+    //background: -moz-linear-gradient(-45deg,  rgba(99,99,99,1) 0%, rgba(127,127,127,1) 9%, rgba(150,150,150,1) 21%, rgba(150,150,150,1) 42%, rgba(173,173,173,1) 85%, rgba(188,188,188,1) 100%);
+    //background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(99,99,99,1)), color-stop(9%,rgba(127,127,127,1)), color-stop(21%,rgba(150,150,150,1)), color-stop(42%,rgba(150,150,150,1)), color-stop(85%,rgba(173,173,173,1)), color-stop(100%,rgba(188,188,188,1)));
+    //background: -webkit-linear-gradient(-45deg,  rgba(99,99,99,1) 0%,rgba(127,127,127,1) 9%,rgba(150,150,150,1) 21%,rgba(150,150,150,1) 42%,rgba(173,173,173,1) 85%,rgba(188,188,188,1) 100%);
+    //background: -o-linear-gradient(-45deg,  rgba(99,99,99,1) 0%,rgba(127,127,127,1) 9%,rgba(150,150,150,1) 21%,rgba(150,150,150,1) 42%,rgba(173,173,173,1) 85%,rgba(188,188,188,1) 100%);
+    //background: -ms-linear-gradient(-45deg,  rgba(99,99,99,1) 0%,rgba(127,127,127,1) 9%,rgba(150,150,150,1) 21%,rgba(150,150,150,1) 42%,rgba(173,173,173,1) 85%,rgba(188,188,188,1) 100%);
+    //background: linear-gradient(135deg,  rgba(99,99,99,1) 0%,rgba(127,127,127,1) 9%,rgba(150,150,150,1) 21%,rgba(150,150,150,1) 42%,rgba(173,173,173,1) 85%,rgba(188,188,188,1) 100%);
+    //filter: unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', endColorstr='#bcbcbc',GradientType=1 )");
+}
+
+.navigation-bar ul li img{
+    height:100%;
+}
+
+/* tablet portrait and below */
+@media (max-width:989px){
+    #menuItemsCollapsed{
+        display: inline-block;
+        float:right;
+    }
+    #menuItemsExpanded{
+        display: none; //start off not visible. click of menu button makes it visible.
+        //position: absolute;
+      height:150%; //increase the height so we can fit all the menu items in. essentially escape the height constraint of nav-bar
+      width:50%;
+
+      padding: 2%;
+      margin-left: 35%; //push it over
+      margin-top: 50px;
+
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      background-color: #191919;
+      -moz-box-shadow:inset 0 1px 8.32px 4.68px rgba(0,0,0,.16), 0 0 0 1px rgba(61,78,59,.65);
+      -webkit-box-shadow:
+        0 3px 6.58px 0 #000, inset 0 1px 8.32px 4.68px rgba(0,0,0,.16), 0 0 0 1px rgba(61,78,59,.65);
+      box-shadow:
+        0 3px 6.58px 0 #000, inset 0 1px 8.32px 4.68px rgba(0,0,0,.16), 0 0 0 1px rgba(61,78,59,.65);
+      background-image: -moz-linear-gradient(90deg, #8d8f93 0%, #dee0e5 100%);
+      background-image: -o-linear-gradient(90deg, #8d8f93 0%, #dee0e5 100%);
+      background-image: -webkit-linear-gradient(90deg, #8d8f93 0%, #dee0e5 100%);
+      background-image: linear-gradient(90deg, #8d8f93 0%, #dee0e5 100%);
+
+
+    }
+
+    #menuItemsExpanded li{
+      display:block;
+      text-align: right;
+      height:30%; //decrease the height so we can fit all the menu items in. essentially escape height constraint of nav-bar
+
+      //we don't need vertical align, as its a pain to deal with
+      vertical-align: top;
+      line-height: 100%;
+
+
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      background-color: #ccc;
+      -moz-box-shadow:
+        0 5px 4.7px 0 rgba(0,0,0,.72), inset 0 1px 7.28px 0.72px rgba(0,0,0,.41), 0 0 0 1px #4e4e4e;
+      -webkit-box-shadow: 0 5px 4.7px 0 rgba(0,0,0,.72), inset 0 1px 7.28px 0.72px rgba(0,0,0,.41), 0 0 0 1px #4e4e4e;
+      box-shadow: 0 5px 4.7px 0 rgba(0,0,0,.72), inset 0 1px 7.28px 0.72px rgba(0,0,0,.41), 0 0 0 1px #4e4e4e;
+      //background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSIwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM5NjkxOTEiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjcyJSIgc3RvcC1jb2xvcj0iI2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2hhdDApIiAvPgo8L3N2Zz4=);
+      background-image: -moz-linear-gradient(90deg, #969191 0%, #ccc 72.19%, #fff 100%);
+      background-image: -o-linear-gradient(90deg, #969191 0%, #ccc 72.19%, #fff 100%);
+      background-image: -webkit-linear-gradient(90deg, #969191 0%, #ccc 72.19%, #fff 100%);
+      background-image: linear-gradient(90deg, #969191 0%, #ccc 72.19%, #fff 100%);
+
+
+    }
+    //#menuItemsExpanded li{
+    //  display:block;
+    //  text-align: right;
+    //  height:30%; //decrease the height so we can fit all the menu items in. essentially escape height constraint of nav-bar
+    //
+    //  //we don't need vertical align, as its a pain to deal with
+    //  vertical-align: top;
+    //  line-height: 100%;
+    //
+    //  //we want line divisions and background gradients for each menu item
+    //  background: -moz-linear-gradient(45deg,  rgba(255,255,255,0.78) 0%, rgba(246,246,246,0.78) 47%, rgba(237,237,237,0.78) 100%);
+    //  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(255,255,255,0.78)), color-stop(47%,rgba(246,246,246,0.78)), color-stop(100%,rgba(237,237,237,0.78)));
+    //  background: -webkit-linear-gradient(45deg,  rgba(255,255,255,0.78) 0%,rgba(246,246,246,0.78) 47%,rgba(237,237,237,0.78) 100%);
+    //  background: -o-linear-gradient(45deg,  rgba(255,255,255,0.78) 0%,rgba(246,246,246,0.78) 47%,rgba(237,237,237,0.78) 100%);
+    //  background: -ms-linear-gradient(45deg,  rgba(255,255,255,0.78) 0%,rgba(246,246,246,0.78) 47%,rgba(237,237,237,0.78) 100%);
+    //  background: linear-gradient(45deg,  rgba(255,255,255,0.78) 0%,rgba(246,246,246,0.78) 47%,rgba(237,237,237,0.78) 100%);
+    //  filter: unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7ffffff', endColorstr='#c7ededed',GradientType=1 );");
+    //
+    //
+    //}
+
+
+}
