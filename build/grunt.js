@@ -72,7 +72,8 @@ module.exports = function(grunt) {
                 'backbone' : 'lib-third-party/backbone',
                 'requireLib' : 'lib-third-party/require',  //allow app-built to be bundled with requirejs
                 'use' : 'lib-third-party/use',
-                'handlebars' : 'lib-third-party/handlebars.runtime' //we don't need all of Handlebars, since we are precompiling templates
+                'handlebars' : 'lib-third-party/handlebars.runtime', //we don't need all of Handlebars, since we are precompiling templates
+                'modernizer' : 'lib-third-party/modernizer'
             },
 
             //the modules we will be building

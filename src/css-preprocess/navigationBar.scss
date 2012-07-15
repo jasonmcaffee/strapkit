@@ -48,9 +48,12 @@
 }
 
 #menuExpanded{
-  margin-top:0px;
+  //margin-top:-50px;
+  top:0;
+  left:0;
   z-index: 6;
-  position:relative;
+  position:fixed;
+
 }
 
 //menu container - general (there are 2 uls in nav bar currently)
@@ -90,15 +93,13 @@
     //filter: unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', endColorstr='#bcbcbc',GradientType=1 )");
 }
 
-.navigation-bar ul li img{
-    height:100%;
-}
 
 /* tablet portrait and below */
 @media (max-width:989px){
     #menuCollapsed{
-        display: inline-block;
+        display: block;
         float:right;
+        height:100%;
         //vertical-align: top;
     }
     .menuItemsExpanded-shown{
@@ -111,9 +112,11 @@
 
     #menuExpanded{
       display: none;
-      margin-top:-5px;
-
-      height:20%;
+      //margin-top:-5px;
+      top:90px;
+      left:0;
+      height:30%;
+      width:50%;
       list-style:none;
       padding:0;
       z-index:3;
@@ -138,8 +141,14 @@
       background: linear-gradient(to bottom,  rgba(186,187,189,1) 0%,rgba(206,208,211,1) 2.76%,rgba(223,224,225,1) 18.04%,rgba(192,192,192,1) 97%,rgba(164,164,165,1) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#babbbd', endColorstr='#a4a4a5',GradientType=0 );
 
+    }
 
-
+    #menuExpanded ul{
+       height:100%;
+    }
+    #menuExpanded ul li{
+      display:block;
+      height:20%;
     }
 
     #menuCollapsed #menuButton{

@@ -35,9 +35,10 @@
   display: none; }
 
 #menuExpanded {
-  margin-top: 0px;
+  top: 0;
+  left: 0;
   z-index: 6;
-  position: relative; }
+  position: fixed; }
 
 #menuExpanded ul {
   height: 100%;
@@ -57,22 +58,22 @@
   vertical-align: middle;
   line-height: 40px; }
 
-.navigation-bar ul li img {
-  height: 100%; }
-
 /* tablet portrait and below */
 @media (max-width:989px) {
   #menuCollapsed {
-    display: inline-block;
-    float: right; }
+    display: block;
+    float: right;
+    height: 100%; }
 
   .menuItemsExpanded-shown {
     display: block !important; }
 
   #menuExpanded {
     display: none;
-    margin-top: -5px;
-    height: 20%;
+    top: 90px;
+    left: 0;
+    height: 30%;
+    width: 50%;
     list-style: none;
     padding: 0;
     z-index: 3;
@@ -93,6 +94,13 @@
     background: -ms-linear-gradient(top, #babbbd 0%, #ced0d3 2.76%, #dfe0e1 18.04%, silver 97%, #a4a4a5 100%);
     background: linear-gradient(to bottom, #babbbd 0%, #ced0d3 2.76%, #dfe0e1 18.04%, silver 97%, #a4a4a5 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#babbbd', endColorstr='#a4a4a5',GradientType=0 ); }
+
+  #menuExpanded ul {
+    height: 100%; }
+
+  #menuExpanded ul li {
+    display: block;
+    height: 20%; }
 
   #menuCollapsed #menuButton {
     height: 100%; } }
