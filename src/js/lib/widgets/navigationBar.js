@@ -1,14 +1,15 @@
 define([
     'core/util/log',
-    'jquery'
-], function(log, $){
+    'jquery',
+    'modernizer'
+], function(log, $, modernizer){
 
     function NavigationBar(options){
         log('NavigationBar constructor called.');
         this.options = {
-            navigationBarId : 'navigationBar',
-            menuItemsExpandedId : 'menuItemsExpanded',
-            menuButtonSelector : 'li > a > img' //menu button selector for touch events to expand menu
+            navigationBarId : 'navbar',
+            menuItemsExpandedId : 'menuExpanded',
+            menuButtonSelector : '#menuButton' //menu button selector for touch events to expand menu
         };
 
         $.extend(this.options, options);
@@ -17,7 +18,9 @@ define([
         //init
         $(function(){
             self.$navigationBar = $('#'+self.options.navigationBarId);
-            self.$menuItemsExpanded = self.$navigationBar.find('#'+self.options.menuItemsExpandedId);
+            self.$menuItemsExpanded = $('#'+self.options.menuItemsExpandedId);
+
+            log('modernizer.touch is :' + modernizer.touch);
             self.registerTouchHandlers();
         });
 
@@ -31,7 +34,7 @@ define([
         var self = this;
         var isMenuExpanded = false;
 
-        this.$navigationBar.on('touchstart', this.options.menuButtonSelector, function(){
+        function handleClickOrTouchStart(){
             var $this = $(this);
             log('touchstart fired for : {0}', $this.attr('alt'));
 
@@ -39,25 +42,7 @@ define([
             originalUrl = $this.attr('src');
             $this.attr('src', 'images/menu-button-pressed.png');    //todo: use sprites
 
-            //reposition menuitems expanded to be right under the menu button img
-            //but only do this work if we are showing. not necessary when hiding
-//            if(!isMenuExpanded){
-//                var menuButtonOffset = $this.position();
-//                log('offset top: {0} offset left: {1}', menuButtonOffset.top, menuButtonOffset.left);
-//
-//                var menuButtonHeight = $this.height();
-//                var menuItemsExpandedWidth = self.$menuItemsExpanded.width();
-//
-//                self.$menuItemsExpanded.css({
-//                    'top': menuButtonOffset.top + menuButtonHeight,
-//                    'left' : menuButtonOffset.left - menuItemsExpandedWidth
-//                });
-//            }
-
-            //show or hide menuitems expanded
-            // self.$menuItemsExpanded.toggle();   //we don't want block, we want inline block, so we'll have to do our own toggle
-            //var displayTypeForMenuItemsExpanded = isMenuExpanded ? 'none' : 'inline-block';
-            //self.$menuItemsExpanded.css({'display':displayTypeForMenuItemsExpanded});
+            //have to do this because :active isn't supported very well.
             if(!isMenuExpanded){
                 self.$menuItemsExpanded.addClass('menuItemsExpanded-shown');
             }else{
@@ -65,18 +50,24 @@ define([
             }
 
             isMenuExpanded = !isMenuExpanded;
+        }
 
-        });
+        //only listen for touch events if they are supported.
+        if(modernizer.touch){
+            this.$navigationBar.on('touchstart', this.options.menuButtonSelector, handleClickOrTouchStart);
 
-        this.$navigationBar.on('touchend', this.options.menuButtonSelector, function(){
-            var $this = $(this);
-            log('touchsend fired for : {0}', $this.attr('alt'));
+            this.$navigationBar.on('touchend', this.options.menuButtonSelector, function(){
+                var $this = $(this);
+                log('touchsend fired for : {0}', $this.attr('alt'));
 
-            //image back to original
-            $this.attr('src', originalUrl);
+                //image back to original
+                $this.attr('src', originalUrl);
 
 
-        });
+            });
+        }else{
+            this.$navigationBar.on('click', this.options.menuButtonSelector, handleClickOrTouchStart);
+        }
 
     };
 
