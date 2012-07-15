@@ -3,6 +3,7 @@ html, body{
     width: 100%;
     padding:0;
     margin:0;
+    z-index:-3;
 }
 
 .pages{
@@ -10,7 +11,11 @@ html, body{
     min-height: 500px;
     height:100%;
 
-    /*color*/
+    /*!!needed to allow menu to be placed below navbar*/
+    z-index:-2;
+    position:relative;
+
+    /*color  todo: this background causes menuitemsexpanded not to show*/
     background: rgb(255,255,255);
     background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1)));
