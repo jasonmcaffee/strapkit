@@ -16,8 +16,9 @@
         <![endif]-->
 
         <!-- initial view should be zoomed correctly on mobile -->
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0">
-
+        <!--<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, maximum-scale=1.0, minimum-scale=1.0">-->
+        <!--easiest fix for ipad rotate resize issue-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;">
         <!-- apple ios specific styling. fullscreen and translucent status bar. -->
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
