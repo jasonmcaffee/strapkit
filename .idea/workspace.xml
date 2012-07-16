@@ -5,7 +5,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/site design.psd" afterPath="$PROJECT_DIR$/design/site design.psd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/app.css" afterPath="$PROJECT_DIR$/dist/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/homePage.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/homePage.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/homePage.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/homePage.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/navigationBar.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/navigationBar.css" />
     </list>
     <ignored path="modernmobile.iws" />
@@ -64,10 +66,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="navigationBar.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="navigationBar.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="26" selection-start="8423" selection-end="8423" vertical-scroll-proportion="0.45578232">
+            <state line="115" column="12" selection-start="5498" selection-end="5498" vertical-scroll-proportion="-3.0384614">
               <folding />
             </state>
           </provider>
@@ -82,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homePage.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="homePage.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/homePage.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="1" column="4" selection-start="16" selection-end="16" vertical-scroll-proportion="0.013456686">
               <folding />
             </state>
           </provider>
@@ -141,7 +143,7 @@
       <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="14" selection-start="2010" selection-end="2010" vertical-scroll-proportion="-26.88">
+            <state line="29" column="74" selection-start="1672" selection-end="1672" vertical-scroll-proportion="-18.56">
               <folding />
             </state>
           </provider>
@@ -164,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/css-preprocess/_variables.scss" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/build/tasks/grunt-directory-helpers.js" />
         <option value="$PROJECT_DIR$/src/css/compiled-css/navigationBar.css" />
@@ -180,12 +181,13 @@
         <option value="$PROJECT_DIR$/node-server/views/test.html" />
         <option value="$PROJECT_DIR$/src/js/lib/views/HomeView.js" />
         <option value="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/homePage.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-41" />
-    <option name="y" value="253" />
+    <option name="x" value="222" />
+    <option name="y" value="97" />
     <option name="width" value="2209" />
     <option name="height" value="1337" />
   </component>
@@ -826,11 +828,15 @@
       <created>1342390446935</created>
       <updated>1342390446935</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="more work on menuexpanded">
+      <created>1342393437922</created>
+      <updated>1342393437922</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-41" y="253" width="2209" height="1337" extended-state="0" />
+    <frame x="222" y="97" width="2209" height="1337" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -890,7 +896,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added design files" />
+    <option name="LAST_COMMIT_MESSAGE" value="more work on menuexpanded" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -903,7 +909,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="cleanup" />
     <MESSAGE value="gzip working for js, css, etc, as well as dynamic server side views." />
     <MESSAGE value="adding documentation" />
     <MESSAGE value="seo optimization" />
@@ -928,6 +933,7 @@
     <MESSAGE value="added modernizer for touch detection" />
     <MESSAGE value="nav bar working well on all modern browsers." />
     <MESSAGE value="added design files" />
+    <MESSAGE value="more work on menuexpanded" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -994,13 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/homePage.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/strapkit.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="14" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
@@ -1040,13 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="14" selection-start="2010" selection-end="2010" vertical-scroll-proportion="-26.88">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/lib/views/HomeView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="93" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0">
@@ -1054,9 +1046,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="74" selection-start="1672" selection-end="1672" vertical-scroll-proportion="-18.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="26" selection-start="8423" selection-end="8423" vertical-scroll-proportion="0.45578232">
+        <state line="115" column="12" selection-start="5498" selection-end="5498" vertical-scroll-proportion="-3.0384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/homePage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="16" selection-end="16" vertical-scroll-proportion="0.013456686">
           <folding />
         </state>
       </provider>
