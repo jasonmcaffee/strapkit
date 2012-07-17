@@ -38,7 +38,8 @@ define([
             routes: {
                 "demos/buttonsDemo" : "buttonsDemo",
                 "demos/responsiveDemo" : "responsiveDemo",
-                "home" : "home"
+                "home" : "home",
+                "demos/home" : "demosHome"
             },
             home: function(){
               log('router: home called');
@@ -51,6 +52,10 @@ define([
             responsiveDemo : function(){
                 log('router: responsiveDemo called.');
                 self.demosController.showResponsiveDemoPage();
+            },
+            demosHome : function(){
+                log('router: demosHome called.');
+                self.demosController.showDemosHomePage();
             }
         });
 
