@@ -1,5 +1,5 @@
 @import "src/css-preprocess/_variables";
-
+@import "src/css-preprocess/media-queries";
 
 #navbar{
   position:fixed;
@@ -107,8 +107,10 @@
   width:100%;
 }
 
-/* tablet portrait and below */
-@media (max-width:989px){
+/* tablet portrait and below //@media (max-width:989px){ */
+
+@include mq(medium) {
+//@media (max-width:989px){
     #menuCollapsed{
         display: block;
         float:right;

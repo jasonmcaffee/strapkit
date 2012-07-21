@@ -40,7 +40,7 @@ define([
 
             //image for button should change to pressed
             originalUrl = $this.attr('src');
-            $this.attr('src', 'images/menu-button-pressed.png');    //todo: use sprites
+            //$this.attr('src', 'images/menu-button-pressed.png');    //todo: use sprites
 
             //have to do this because :active isn't supported very well.
             if(!isMenuExpanded){
@@ -61,7 +61,7 @@ define([
                 log('touchsend fired for : {0}', $this.attr('alt'));
 
                 //image back to original
-                $this.attr('src', originalUrl);
+               // $this.attr('src', originalUrl);
 
 
             });

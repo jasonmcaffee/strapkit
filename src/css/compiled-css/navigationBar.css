@@ -74,8 +74,8 @@
   color: #7abcff;
   width: 100%; }
 
-/* tablet portrait and below */
-@media (max-width:989px) {
+/* tablet portrait and below //@media (max-width:989px){ */
+@media only screen and (max-width: 989px) {
   #menuCollapsed {
     display: block;
     float: right;

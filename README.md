@@ -30,7 +30,7 @@ http://strapkit.com is built using strapkit, and is included in the source so th
 * gzippo - static file gzip compression
 * r.js/require.js - amd optimization (build modules into 1 js)
 * grunt.js - for running the build of javascript & css source
-* stylus - css preprocessor with extend and mixins.
+* sass (3.2) - css preprocessor with extend and mixins.
 
 ### Client Side
 * Backbone - Model and View definitions, routing.
@@ -50,7 +50,10 @@ http://strapkit.com is built using strapkit, and is included in the source so th
 Pre-requisites:
 * node.js
 * npm
+* rvm
 
+### install sass
+`gem install sass --pre`
 ### run npm install
 from the root directory (contains package.json), run the following command:
 `npm install`
@@ -66,6 +69,9 @@ this will run the default task defined in build/grunt.js, and will place the bui
 
 ### Build Steps
 
+#### start sass watch
+`grunt sass-watch`
+
 #### optimize js by uglifying it, minimizing it, and combining it into 1 .js file
 Command `grunt build-app`
 
@@ -75,7 +81,7 @@ Command `grunt compile-handlebars-templates`
 #### compile stylus files to css
 Command `grunt compile-stylus-files`
 
-#### concat css files into 1 .css file
+#### concat css files into 1 .css file (not needed if using sass watch)
 Command `grunt build-css`
 
 

@@ -80,6 +80,7 @@
 }
 
 
+
 #navbar {
   position: fixed;
   height: 50px;
@@ -156,8 +157,8 @@
   color: #7abcff;
   width: 100%; }
 
-/* tablet portrait and below */
-@media (max-width:989px) {
+/* tablet portrait and below //@media (max-width:989px){ */
+@media only screen and (max-width: 989px) {
   #menuCollapsed {
     display: block;
     float: right;
@@ -238,7 +239,7 @@ html, body{
     margin-top:50px;
     min-height: 500px;
     height:100%;
-
+    width:100%;
     /*!!needed to allow menu to be placed below navbar*/
     z-index:2;
 
