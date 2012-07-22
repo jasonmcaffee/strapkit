@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css-preprocess/media-queries.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css-preprocess/navigation-bar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css-preprocess/strapkit.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/strapkit.css" afterPath="" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/lib/widgets/navigationBar.js" afterPath="$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/app.css" afterPath="$PROJECT_DIR$/dist/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app-built.js" afterPath="$PROJECT_DIR$/dist/js/app-built.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/media-queries.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/media-queries.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/navigationBar.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/navigationBar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/strapkit.css" afterPath="$PROJECT_DIR$/src/css/strapkit.css" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,37 +69,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="17" selection-start="1136" selection-end="1156" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigationBar.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="navigationBar.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="65" selection-start="3127" selection-end="3127" vertical-scroll-proportion="0.0">
+            <state line="33" column="110" selection-start="1991" selection-end="1991" vertical-scroll-proportion="0.4489796">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="NavigationBar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="96" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navigation-bar.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigation-bar.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strapkit.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/strapkit.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="21" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="18" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.5962994">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/css/app.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="65" selection-start="7289" selection-end="7289" vertical-scroll-proportion="0.0">
+            <state line="82" column="159" selection-start="2729" selection-end="2729" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,16 +126,7 @@
       <file leaf-file-name="media-queries.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/media-queries.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="20" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strapkit.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/strapkit.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="73" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
+            <state line="47" column="128" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,26 +135,20 @@
       <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="58" selection-start="2022" selection-end="2022" vertical-scroll-proportion="-25.6">
+            <state line="26" column="88" selection-start="1658" selection-end="1658" vertical-scroll-proportion="-16.64">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FastButton.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/lib-third-party/FastButton.js">
+      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="215" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ButtonsDemoView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/lib/views/ButtonsDemoView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="61" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="14" column="34" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1342967158000" expanded="true" signature="11590:11647" placeholder="{...}" />
+                <marker date="1342967158000" expanded="true" signature="5972:5981" placeholder="/*...*/" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,8 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/build/grunt.js" />
-        <option value="$PROJECT_DIR$/src/js/lib/views/HomeView.js" />
         <option value="$PROJECT_DIR$/src/css-preprocess/homePage.scss" />
         <option value="$PROJECT_DIR$/src/css-preprocess/_variables.scss" />
         <option value="$PROJECT_DIR$/src/templates/demos/demosTemplate.html" />
@@ -184,13 +177,15 @@
         <option value="$PROJECT_DIR$/src/js/lib/views/DemosHomeView.js" />
         <option value="$PROJECT_DIR$/src/js/lib/controllers/DemosController.js" />
         <option value="$PROJECT_DIR$/src/js/app.js" />
-        <option value="$PROJECT_DIR$/src/css/strapkit.css" />
-        <option value="$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js" />
         <option value="$PROJECT_DIR$/node-server/views/test.html" />
-        <option value="$PROJECT_DIR$/src/css-preprocess/media-queries.scss" />
         <option value="$PROJECT_DIR$/dist/css/app.css" />
-        <option value="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/media-queries.scss" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/strapkit.scss" />
+        <option value="$PROJECT_DIR$/src/css/strapkit.css" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/fail_navigationBar.scss" />
+        <option value="$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" />
       </list>
     </option>
   </component>
@@ -493,6 +488,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="compiled-css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -965,7 +964,11 @@
       <created>1342491387388</created>
       <updated>1342491387388</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="sass media queries">
+      <created>1342900930068</created>
+      <updated>1342900930068</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1029,7 +1032,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added demos home page. fast-button has negative effect on ICS. entire body highlights when touched, as if it were a link." />
+    <option name="LAST_COMMIT_MESSAGE" value="sass media queries" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1042,7 +1045,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="seo optimization" />
     <MESSAGE value="stylus preprocessor integration (in progress). breaking grunt tasks into separate files (in progress)&#10;" />
     <MESSAGE value="watch tasks for stylus and templates directories" />
     <MESSAGE value="watch task is broken. compile-templates not finishing before build-app is called, resulting in broken template functions." />
@@ -1067,6 +1069,7 @@
     <MESSAGE value="more work on menuexpanded" />
     <MESSAGE value="menuexpanded looking good, with blue back and grey overlay" />
     <MESSAGE value="added demos home page. fast-button has negative effect on ICS. entire body highlights when touched, as if it were a link." />
+    <MESSAGE value="sass media queries" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1084,62 +1087,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/lib/views/DemosHomeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/DemosController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="30" selection-start="820" selection-end="837" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/buttonsDemo.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/homePage.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="77" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/strapkit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="73" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="17" selection-start="1136" selection-end="1156" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="58" selection-start="2022" selection-end="2022" vertical-scroll-proportion="-25.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/lib/views/ButtonsDemoView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="61" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0">
@@ -1168,30 +1115,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/media-queries.scss">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="20" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.0">
+        <state line="82" column="159" selection-start="2729" selection-end="2729" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/demos/demosHomePageTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="65" selection-start="7289" selection-end="7289" vertical-scroll-proportion="0.0">
+        <state line="14" column="34" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1342967158000" expanded="true" signature="11590:11647" placeholder="{...}" />
+            <marker date="1342967158000" expanded="true" signature="5972:5981" placeholder="/*...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/reset.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/homePage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/strapkit.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="21" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="96" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigation-bar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="88" selection-start="1658" selection-end="1658" vertical-scroll-proportion="-16.64">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/media-queries.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="128" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="65" selection-start="3127" selection-end="3127" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="18" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.5962994">
+        <state line="33" column="110" selection-start="1991" selection-end="1991" vertical-scroll-proportion="0.4489796">
           <folding />
         </state>
       </provider>

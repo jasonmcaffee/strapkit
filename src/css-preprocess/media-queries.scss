@@ -29,14 +29,14 @@ $medium-max-width: 989px;
       @content;
     }
   }@else if $type == medium-landscape {
-    /* iPads (landscape) ----------- */
+    /* medium (landscape) ----------- */
     @media only screen
     and (max-device-width : $medium-max-width)
     and (orientation : landscape) {
       @content;
     }
   }@else if $type == medium-portrait {
-    /* iPads (portrait) ----------- */
+    /* medium (portrait) ----------- */
     @media only screen
     and (max-device-width : $medium-max-width)
     and (orientation : portrait) {

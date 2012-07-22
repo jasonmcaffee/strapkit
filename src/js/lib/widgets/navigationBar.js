@@ -9,30 +9,58 @@ define([
         this.options = {
             navigationBarId : 'navbar',
             menuItemsExpandedId : 'menuExpanded',
-            menuButtonSelector : '#menuButton' //menu button selector for touch events to expand menu
+            menuButtonSelector : '#menuButton', //menu button selector for touch events to expand menu
+            menuItemSelector : 'ul > li > a'
         };
-
         $.extend(this.options, options);
 
         var self = this;
+
+        //used for when we are dealing with a small screen.
+        self.isMenuExpanded = false;
+
         //init
         $(function(){
             self.$navigationBar = $('#'+self.options.navigationBarId);
             self.$menuItemsExpanded = $('#'+self.options.menuItemsExpandedId);
 
             log('modernizer.touch is :' + modernizer.touch);
-            self.registerTouchHandlers();
+            self.registerMenuTouchHandlers();
+            self.registerMenuItemTouchHandlers();
         });
 
     }
 
     /**
+     * Need to hide menu when a menu item is touched
+     */
+    NavigationBar.prototype.registerMenuItemTouchHandlers = function(){
+        var self = this;
+        function handleClickOrTouchStart(){
+            if(!self.isMenuExpanded){
+                self.$menuItemsExpanded.addClass('menuItemsExpanded-shown');
+            }else{
+                self.$menuItemsExpanded.removeClass('menuItemsExpanded-shown');
+            }
+
+            self.isMenuExpanded = !self.isMenuExpanded;
+        }
+
+//        if(modernizer.touch){
+//            this.$menuItemsExpanded.on('touchstart', this.options.menuItemSelector, handleClickOrTouchStart);
+//        }else{
+//            this.$menuItemsExpanded.on('click', this.options.menuItemSelector, handleClickOrTouchStart);
+//        }
+        this.$menuItemsExpanded.on('click', this.options.menuItemSelector, handleClickOrTouchStart);
+    };
+
+    /**
      * Should only be called after document ready
      */
-    NavigationBar.prototype.registerTouchHandlers = function(){
+    NavigationBar.prototype.registerMenuTouchHandlers = function(){
         var originalUrl;
         var self = this;
-        var isMenuExpanded = false;
+        self.isMenuExpanded = false;
 
         function handleClickOrTouchStart(){
             var $this = $(this);
@@ -43,13 +71,13 @@ define([
             //$this.attr('src', 'images/menu-button-pressed.png');    //todo: use sprites
 
             //have to do this because :active isn't supported very well.
-            if(!isMenuExpanded){
+            if(!self.isMenuExpanded){
                 self.$menuItemsExpanded.addClass('menuItemsExpanded-shown');
             }else{
                 self.$menuItemsExpanded.removeClass('menuItemsExpanded-shown');
             }
 
-            isMenuExpanded = !isMenuExpanded;
+            self.isMenuExpanded = !self.isMenuExpanded;
         }
 
         //only listen for touch events if they are supported.
@@ -62,8 +90,6 @@ define([
 
                 //image back to original
                // $this.attr('src', originalUrl);
-
-
             });
         }else{
             this.$navigationBar.on('click', this.options.menuButtonSelector, handleClickOrTouchStart);
