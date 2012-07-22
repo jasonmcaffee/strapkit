@@ -151,12 +151,34 @@
     display: block;
     height: 100%; }
 
-  .menuItemsExpanded-shown {
-    display: block !important; }
+  .menu-expanded-shown {
+    display: block !important;
+    transform: translate(0px, 100px);
+    -ms-transform: translate(0px, 100px);
+    /* IE 9 */
+    -webkit-transform: translate(0px, 100px);
+    /* Safari and Chrome */
+    -o-transform: translate(0px, 100px);
+    /* Opera */
+    -moz-transform: translate(0px, 100px);
+    /* Firefox */ }
+
+  .menu-expanded-hidden {
+    transform: translate(0px, 100px);
+    -ms-transform: translate(0px, 100px);
+    /* IE 9 */
+    -webkit-transform: translate(0px, 100px);
+    /* Safari and Chrome */
+    -o-transform: translate(0px, 100px);
+    /* Opera */
+    -moz-transform: translate(0px, 100px);
+    /* Firefox */ }
 
   #menuExpanded {
-    display: none;
-    margin-top: 10px;
+    -webkit-transition: All .2s ease;
+    -moz-transition: All .2s ease;
+    -o-transition: All .2s ease;
+    margin-top: -100px;
     z-index: 3;
     width: 50%;
     padding: 5px 5px 0px 5px;
@@ -245,4 +267,3 @@ html, body {
   background: -ms-radial-gradient(center, ellipse cover, white 0%, #f6f6f6 47%, #ededed 100%);
   background: radial-gradient(ellipse at center, white 0%, #f6f6f6 47%, #ededed 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed',GradientType=1 ); }
-

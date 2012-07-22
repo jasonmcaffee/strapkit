@@ -109,8 +109,16 @@
         height:100%;
         //vertical-align: top;
     }
-    .menuItemsExpanded-shown{
+    .menu-expanded-shown{
       display: block !important; //must override #menu... id selector as it has priority
+
+
+
+      transform: translate(0px,100px);
+      -ms-transform: translate(0px,100px); /* IE 9 */
+      -webkit-transform: translate(0px,100px); /* Safari and Chrome */
+      -o-transform: translate(0px,100px); /* Opera */
+      -moz-transform: translate(0px,100px); /* Firefox */
       //visibility: visible !important;
       //float:left;
       //z-index: 1 !important;
@@ -118,15 +126,34 @@
 
     }
 
+    .menu-expanded-hidden{
+      //display: none !important; //must override #menu... id selector as it has priority
+      transform: translate(0px,100px);
+      -ms-transform: translate(0px,100px); /* IE 9 */
+      -webkit-transform: translate(0px,100px); /* Safari and Chrome */
+      -o-transform: translate(0px,100px); /* Opera */
+      -moz-transform: translate(0px,100px); /* Firefox */
+    }
     #menuExpanded{  //container for menu items (blue)
-      display: none; //start out hidden. wait until touch our click and add class .menuItemsExpanded-shown
+      -webkit-transition:All .2s ease;
+      -moz-transition:All .2s ease;
+      -o-transition:All .2s ease;
+      //-webkit-transform: translate(0px,-1px); /* Safari and Chrome */
+      //start out hidden under nav bar
+      //transform: translate(0px,-50px);
+      //-ms-transform: translate(0px,-50px); /* IE 9 */
+      //-webkit-transform: translate(0px,-50px); /* Safari and Chrome */
+      //-o-transform: translate(0px,-50px); /* Opera */
+      //-moz-transform: translate(0px,-50px); /* Firefox */
+
+      //display: none; //start out hidden. wait until touch our click and add class .menuItemsExpanded-shown
       //clear:both;
       //visibility: hidden;
       //position
       //top:36px;
       //left:0;
       //float: left;
-      margin-top: 10px;
+      margin-top: -100px;
       //margin-left: 49%;
       z-index:3;
 

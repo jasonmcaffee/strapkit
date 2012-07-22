@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css-preprocess/navigation-bar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css-preprocess/strapkit.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/strapkit.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/lib/widgets/navigationBar.js" afterPath="$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/app.css" afterPath="$PROJECT_DIR$/dist/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app-built.js" afterPath="$PROJECT_DIR$/dist/js/app-built.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/media-queries.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/media-queries.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/navigationBar.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/navigationBar.css" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,7 +66,7 @@
       <file leaf-file-name="navigationBar.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="110" selection-start="1991" selection-end="1991" vertical-scroll-proportion="0.4489796">
+            <state line="1" column="43" selection-start="84" selection-end="84" vertical-scroll-proportion="0.013605442">
               <folding />
             </state>
           </provider>
@@ -81,7 +75,7 @@
       <file leaf-file-name="NavigationBar.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="96" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0">
+            <state line="74" column="16" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -144,10 +138,9 @@
       <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="34" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+            <state line="49" column="34" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1342967158000" expanded="true" signature="11590:11647" placeholder="{...}" />
-                <marker date="1342967158000" expanded="true" signature="5972:5981" placeholder="/*...*/" />
+                <marker date="1342972173000" expanded="true" signature="6441:6450" placeholder="/*...*/" />
               </folding>
             </state>
           </provider>
@@ -623,20 +616,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modernmobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="strapkit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -968,7 +947,11 @@
       <created>1342900930068</created>
       <updated>1342900930068</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="postion:fixed woes">
+      <created>1342969857304</created>
+      <updated>1342969857304</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1032,7 +1015,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="sass media queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="postion:fixed woes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1045,7 +1028,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="stylus preprocessor integration (in progress). breaking grunt tasks into separate files (in progress)&#10;" />
     <MESSAGE value="watch tasks for stylus and templates directories" />
     <MESSAGE value="watch task is broken. compile-templates not finishing before build-app is called, resulting in broken template functions." />
     <MESSAGE value="buttons demo page work. in progress." />
@@ -1070,6 +1052,7 @@
     <MESSAGE value="menuexpanded looking good, with blue back and grey overlay" />
     <MESSAGE value="added demos home page. fast-button has negative effect on ICS. entire body highlights when touched, as if it were a link." />
     <MESSAGE value="sass media queries" />
+    <MESSAGE value="postion:fixed woes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1131,10 +1114,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="34" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+        <state line="49" column="34" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1342967158000" expanded="true" signature="11590:11647" placeholder="{...}" />
-            <marker date="1342967158000" expanded="true" signature="5972:5981" placeholder="/*...*/" />
+            <marker date="1342972173000" expanded="true" signature="6441:6450" placeholder="/*...*/" />
           </folding>
         </state>
       </provider>
@@ -1160,13 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="96" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigation-bar.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1188,9 +1163,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node-server/logs/node.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-12.489796">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="16" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/navigationBar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="110" selection-start="1991" selection-end="1991" vertical-scroll-proportion="0.4489796">
+        <state line="1" column="43" selection-start="84" selection-end="84" vertical-scroll-proportion="0.013605442">
           <folding />
         </state>
       </provider>
