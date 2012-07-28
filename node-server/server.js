@@ -4,7 +4,10 @@ var path = require('path');
 var connect = require('connect');
 var gzippo = require('gzippo');
 var fs = require('fs');
+//var wurfl = require('wurfl');
 
+//read in the wurfl file
+//wurfl.loadSync();
 
 //where we are serving our static files from
 //var public = path.resolve(__dirname + '/../dist');
@@ -59,7 +62,10 @@ app.register('.html', require('ejs'));//all .html files served up will be consid
 
 //server response functions =====================================================================================================
 app.get('/', function(req,res){
+    //var userAgent = 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; O2 Xda 2s;PPC;240x320; PPC; 240x320)';// req.headers['user-agent'];
+    //var deviceInfo = wurfl.get(userAgent);
     console.log('strapkit home');
+
     var viewModel = {
         viewModel:{
 

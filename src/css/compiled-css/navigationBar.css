@@ -51,7 +51,24 @@
   display: inline-block;
   margin-left: 0px;
   margin-right: -5px;
-  padding: 0px 3px 0px 3px; }
+  padding: 0px 3px 0px 3px;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSIwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlZGVlZjAiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Y5ZjlmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y3ZjdmOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2hhdDApIiAvPgo8L3N2Zz4=);
+  background: #edeef0;
+  background: -moz-linear-gradient(top, #edeef0 0%, #f9f9f9 50.12%, #f7f7f8 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #edeef0), color-stop(50.12%, #f9f9f9), color-stop(100%, #f7f7f8));
+  background: -webkit-linear-gradient(top, #edeef0 0%, #f9f9f9 50.12%, #f7f7f8 100%);
+  background: -o-linear-gradient(top, #edeef0 0%, #f9f9f9 50.12%, #f7f7f8 100%);
+  background: -ms-linear-gradient(top, #edeef0 0%, #f9f9f9 50.12%, #f7f7f8 100%);
+  background: linear-gradient(to bottom, #edeef0 0%, #f9f9f9 50.12%, #f7f7f8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#edeef0', endColorstr='#f7f7f8',GradientType=0 ); }
+
+#menuExpanded ul li:first-child {
+  -moz-border-radius-topleft: 7px;
+  -webkit-border-top-left-radius: 7px;
+  border-top-left-radius: 7px;
+  -moz-border-radius-bottomleft: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  border-bottom-left-radius: 7px; }
 
 #menuExpanded ul li a {
   text-decoration: none;
@@ -59,7 +76,8 @@
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 30px;
-  color: #7abcff; }
+  color: #7abcff;
+  padding-right: 20px; }
 
 /* tablet portrait and below //@media (max-width:989px){ */
 @media only screen and (max-width: 989px) {
@@ -67,12 +85,13 @@
     display: block;
     height: 100%; }
 
-  .menuItemsExpanded-shown {
-    display: block !important; }
+  .menu-expanded-shown {
+    display: block !important;
+    margin-left: -5px; }
 
   #menuExpanded {
     display: none;
-    margin-top: 10px;
+    margin-top: 20px;
     z-index: 3;
     width: 50%;
     padding: 5px 5px 0px 5px;

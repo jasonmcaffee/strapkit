@@ -10,7 +10,8 @@ define([
             navigationBarId : 'navbar',
             menuItemsExpandedId : 'menuExpanded',
             menuButtonSelector : '#menuButton', //menu button selector for touch events to expand menu
-            menuItemSelector : 'ul > li > a'
+            menuItemSelector : 'ul > li > a',
+            menuExpandedHiddenClass : 'menu-expanded-shown'//'menu-expanded-hidden'
         };
         $.extend(this.options, options);
 
@@ -38,9 +39,9 @@ define([
         var self = this;
         function handleClickOrTouchStart(){
             if(!self.isMenuExpanded){
-                self.$menuItemsExpanded.addClass('menuItemsExpanded-shown');
+                self.$menuItemsExpanded.addClass(self.options.menuExpandedHiddenClass);
             }else{
-                self.$menuItemsExpanded.removeClass('menuItemsExpanded-shown');
+                self.$menuItemsExpanded.removeClass(self.options.menuExpandedHiddenClass);
             }
 
             self.isMenuExpanded = !self.isMenuExpanded;
@@ -72,9 +73,9 @@ define([
 
             //have to do this because :active isn't supported very well.
             if(!self.isMenuExpanded){
-                self.$menuItemsExpanded.addClass('menuItemsExpanded-shown');
+                self.$menuItemsExpanded.addClass(self.options.menuExpandedHiddenClass);
             }else{
-                self.$menuItemsExpanded.removeClass('menuItemsExpanded-shown');
+                self.$menuItemsExpanded.removeClass(self.options.menuExpandedHiddenClass);
             }
 
             self.isMenuExpanded = !self.isMenuExpanded;
