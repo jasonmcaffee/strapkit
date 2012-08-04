@@ -6,7 +6,7 @@ templates['responsiveDemoPageTemplate'] = template(function (Handlebars,depth0,h
   var foundHelper, self=this;
 
 
-  return "<div>\n    Responsive\n</div>";}); 
+  return "<div id=\"responsive-page\">\n\n    <h1>Master Detail List</h1>\n\n    <ul id=\"masterList\">\n        <li>Item 1</li>\n        <li>Item 2</li>\n        <li>Item 3</li>\n    </ul>\n\n    <ul id=\"detailList\">\n        <li>Detail 1</li>\n        <li>Detail 2</li>\n        <li>Detail 3</li>\n    </ul>\n</div>";}); 
 Handlebars.registerPartial("responsiveDemoPageTemplate", templates["responsiveDemoPageTemplate"]); 
 return templates["responsiveDemoPageTemplate"]; 
 });

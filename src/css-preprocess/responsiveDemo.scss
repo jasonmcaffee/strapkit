@@ -1,3 +1,50 @@
-.responsive-page{
-   background-color: blue;
-}
+@import "src/css-preprocess/_variables";
+@import "src/css-preprocess/media-queries";
+@import "src/css-preprocess/colors";
+
+#responsive-page{
+   //background-color: blue;
+   width:100%;
+
+  ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+  }
+
+  #masterList{  //ul
+    display:inline-block; //we want the master and detail side by side on larger screens
+
+
+    li{
+      @include white-menu-item;
+    }
+
+    @include mq(small){
+      width:100%;
+    }
+
+    @include mq(medium){
+      width: 28%; //todo: box-sizing and percentage widths don't seem to get along all the time. the calculations are a bit off
+    }
+  }
+
+  #detailList{  //ul
+    display:inline-block;//we want the master and detail side by side on larger screens
+
+    li{
+      @include white-menu-item;
+    }
+
+    @include mq(medium){
+      width: 70%;
+    }
+  }
+
+
+}//end responsive-page
