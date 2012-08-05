@@ -2,9 +2,10 @@ define([
     'core/util/log',
     'backbone',
     'jquery',
-    'compiled-templates/demos/responsiveDemoPageTemplate',
-    'lib/widgets/ResponsiveMasterDetailList'
-], function(log, Backbone, $, responsiveDemoPageTemplate, ResponsiveMasterDetailListWidget){
+    'compiled-templates/demos/responsiveDemoPageTemplate'//,
+   // 'lib/widgets/ResponsiveMasterDetailList'
+], function(log, Backbone, $, responsiveDemoPageTemplate){
+    log('ResponsiveDemoView module loaded.');
 
     var ResponsiveDemoView = Backbone.View.extend({
         el:'#pages',
@@ -14,7 +15,7 @@ define([
         initialize : function(){
             log('ResponsiveDemoView.initialize called.');
 
-            this.responsiveMasterDetailListWidget = new ResponsiveMasterDetailListWidget({el:''});
+            //this.responsiveMasterDetailListWidget = new ResponsiveMasterDetailListWidget({el:''});
 
         },
         render: function(){
@@ -22,7 +23,7 @@ define([
             var self = this;
             $(function(){
                 //render the template function to the dom
-                self.$el.html(responsiveDemoPageTemplate());
+                self.$el.html(responsiveDemoPageTemplate()); //this.model.toJSON()
 
                 //wire up ResponsiveMasterDetailListWidget
             });
