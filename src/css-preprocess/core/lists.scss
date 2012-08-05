@@ -1,16 +1,46 @@
-ul-base{
+@import "src/css-preprocess/_variables";
+@import "src/css-preprocess/media-queries";
+@import "src/css-preprocess/colors";
+@import "src/css-preprocess/rounded-corners";
+@import "src/css-preprocess/util/position-fixes";
 
+.ul-base{
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
 }
+
+
 
 //
-ul-type-1{
-  @extends ul-base;
+.list-type-1{
+  @extend .ul-base;
+
+  //positioning
+
+  //sizing
+  padding:5px;
+
+  //color
+  @extend .grey-subtle-gradient;
+
+
 
   li{
-    background-color: orange;
+    @extend .list-item-white;
   }
-}
 
-li-type-1{
+  li:first-child{
+    @extend .round-top-left-right-by-5;
+  }
 
+  li:last-child{
+    @extend .round-bottom-left-right-by-5;
+  }
+
+  li:nth-child(even){
+    @extend .list-item-grey;
+  }
 }

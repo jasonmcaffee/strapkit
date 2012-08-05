@@ -2,6 +2,8 @@
 @import "src/css-preprocess/media-queries";
 @import "src/css-preprocess/colors";
 @import "src/css-preprocess/rounded-corners";
+@import "src/css-preprocess/core/lists";
+@import "src/css-preprocess/util/position-fixes";
 
 #responsive-page{
    //background-color: blue;
@@ -12,23 +14,7 @@
     //positioning
     display:inline-block; //we want the master and detail side by side on larger screens
 
-    //sizing
-    padding:5px;
-
-    //color
-    @extend grey-subtle-gradient;
-
-    li{
-      @extend list-item-white;
-    }
-
-    li:first-child{
-      @extend round-top-left-right-by-3;
-    }
-
-    li:last-child{
-      @extend round-bottom-left-right-by-3;
-    }
+    @extend .list-type-1;
 
     @include mq(small){
       width:100%;
@@ -41,14 +27,9 @@
 
   #detailList{  //ul
     display:inline-block;//we want the master and detail side by side on larger screens
+    @extend .fix-inline-block-spacing;
+    @extend .list-type-1;
 
-    li{
-      @extend list-item-white;
-    }
-
-    li:first-child{
-      @extend round-top-left-right-by-3;
-    }
     @include mq(medium){
       width: 70%;
     }
