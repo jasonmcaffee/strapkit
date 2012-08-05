@@ -18,11 +18,18 @@
   }
 
   #masterList{  //ul
+
+    //positioning
     display:inline-block; //we want the master and detail side by side on larger screens
 
+    //sizing
+    padding:5px;
+
+    //color
+    @extend grey-subtle-gradient;
 
     li{
-      @include white-menu-item;
+      @extend white-menu-item;
     }
 
     @include mq(small){
@@ -38,7 +45,7 @@
     display:inline-block;//we want the master and detail side by side on larger screens
 
     li{
-      @include white-menu-item;
+      @extend white-menu-item;
     }
 
     @include mq(medium){
