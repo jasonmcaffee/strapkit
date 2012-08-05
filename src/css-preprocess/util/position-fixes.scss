@@ -3,3 +3,8 @@
 .fix-inline-block-spacing{
   margin-left: -4px;
 }
+
+//for when applying within a media query
+@mixin fix-inline-block-spacing{
+  margin-left: -4px;
+}

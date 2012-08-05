@@ -10,28 +10,46 @@
    width:100%;
 
   #masterList{  //ul
+    //base type
+    @extend .list-type-1;
 
     //positioning
     display:inline-block; //we want the master and detail side by side on larger screens
 
+    //small screens
+    @include mq(small){
+      //sizing
+      width:100%;
+
+      //font
+      font-size: 150%;
+
+      //further extend .list-type-1
+      li{
+        padding:7px;
+      }
+    }
+
+    //medium screens and above
+    @include mq(medium-and-above){
+      width: 30%;
+    }
+  }
+
+  #detailList{  //ul
+    //base type
     @extend .list-type-1;
+
+    //positioning
+    display:inline-block;//we want the master and detail side by side on larger screens
 
     @include mq(small){
       width:100%;
     }
 
-    @include mq(medium){
-      width: 28%; //todo: box-sizing and percentage widths don't seem to get along all the time. the calculations are a bit off
-    }
-  }
-
-  #detailList{  //ul
-    display:inline-block;//we want the master and detail side by side on larger screens
-    @extend .fix-inline-block-spacing;
-    @extend .list-type-1;
-
-    @include mq(medium){
+    @include mq(medium-and-above){
       width: 70%;
+      @include fix-inline-block-spacing; //when they are side by side, fix the spacing caused by inline-block.
     }
   }
 

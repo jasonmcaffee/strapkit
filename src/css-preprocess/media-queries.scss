@@ -36,8 +36,12 @@ $giant-min-width:1824px;
     and (max-width: $medium-max-width){
       @content;
     }
-  }
-  @else if $type == medium-landscape {
+  }@else if $type == medium-and-above{
+    @media only screen
+    and (min-width: $small-max-width){
+      @content;
+    }
+  } @else if $type == medium-landscape {
     /* medium (landscape) ----------- */
     @media only screen
     and (max-device-width : $medium-max-width)

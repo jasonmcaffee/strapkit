@@ -252,7 +252,7 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; }
 
-.fix-inline-block-spacing, #responsive-page #detailList {
+.fix-inline-block-spacing {
   margin-left: -4px; }
 
 .ul-base, .list-type-1, #responsive-page #masterList, #responsive-page #detailList {
@@ -265,7 +265,7 @@
 .list-type-1, #responsive-page #masterList, #responsive-page #detailList {
   padding: 5px; }
 
-.fix-inline-block-spacing, #responsive-page #detailList {
+.fix-inline-block-spacing {
   margin-left: -4px; }
 
 #responsive-page {
@@ -274,12 +274,19 @@
     display: inline-block; }
     @media only screen and (max-width: 325px) {
       #responsive-page #masterList {
-        width: 100%; } }
-    @media only screen and (min-width: 325px) and (max-width: 989px) {
+        width: 100%;
+        font-size: 150%; }
+        #responsive-page #masterList li {
+          padding: 7px; } }
+    @media only screen and (min-width: 325px) {
       #responsive-page #masterList {
-        width: 28%; } }
+        width: 30%; } }
   #responsive-page #detailList {
     display: inline-block; }
-    @media only screen and (min-width: 325px) and (max-width: 989px) {
+    @media only screen and (max-width: 325px) {
       #responsive-page #detailList {
-        width: 70%; } }
+        width: 100%; } }
+    @media only screen and (min-width: 325px) {
+      #responsive-page #detailList {
+        width: 70%;
+        margin-left: -4px; } }
