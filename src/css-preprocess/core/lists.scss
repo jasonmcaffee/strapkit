@@ -1,0 +1,16 @@
+ul-base{
+
+}
+
+//
+ul-type-1{
+  @extends ul-base;
+
+  li{
+    background-color: orange;
+  }
+}
+
+li-type-1{
+
+}

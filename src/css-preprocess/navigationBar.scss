@@ -1,6 +1,7 @@
 @import "src/css-preprocess/_variables";
 @import "src/css-preprocess/media-queries";
 @import "src/css-preprocess/colors";
+@import "src/css-preprocess/rounded-corners";
 
 //dont use visibility:hidden on menuExpanded. on android 4 there is an issue: menu won't completely dissapear on click. fragment at bottom still remains visible.
 #navbar{
@@ -200,18 +201,12 @@
 
     #menuExpanded ul li:first-child{
       border:none 0px #000000;
-      -moz-border-radius-topleft: 7px;
-      -moz-border-radius-topright:7px;
-      -moz-border-radius-bottomleft:0px;
-      -moz-border-radius-bottomright:0px;
-      -webkit-border-top-left-radius:7px;
-      -webkit-border-top-right-radius:7px;
-      -webkit-border-bottom-left-radius:0px;
-      -webkit-border-bottom-right-radius:0px;
-      border-top-left-radius:7px;
-      border-top-right-radius:7px;
-      border-bottom-left-radius:0px;
-      border-bottom-right-radius:0px;
+      //@extending an outer selector from within @media is deprecated.
+      //You may only @extend selectors within the same directive.
+      //This will be an error in Sass 3.3.
+      //It can only work once @extend is supported natively in the browser.
+
+      @include round-top-left-right-by-7;
     }
 
     #menuExpanded ul li:last-child{

@@ -1,21 +1,11 @@
 @import "src/css-preprocess/_variables";
 @import "src/css-preprocess/media-queries";
 @import "src/css-preprocess/colors";
+@import "src/css-preprocess/rounded-corners";
 
 #responsive-page{
    //background-color: blue;
    width:100%;
-
-  ul{
-    list-style: none;
-    padding:0;
-    margin:0;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0px;
-  }
 
   #masterList{  //ul
 
@@ -29,7 +19,15 @@
     @extend grey-subtle-gradient;
 
     li{
-      @extend white-menu-item;
+      @extend list-item-white;
+    }
+
+    li:first-child{
+      @extend round-top-left-right-by-3;
+    }
+
+    li:last-child{
+      @extend round-bottom-left-right-by-3;
     }
 
     @include mq(small){
@@ -45,9 +43,12 @@
     display:inline-block;//we want the master and detail side by side on larger screens
 
     li{
-      @extend white-menu-item;
+      @extend list-item-white;
     }
 
+    li:first-child{
+      @extend round-top-left-right-by-3;
+    }
     @include mq(medium){
       width: 70%;
     }

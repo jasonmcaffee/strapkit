@@ -46,6 +46,19 @@ white-transparent-gradient{
 
 }
 
+list-item-white{
+  background: rgb(252,252,252);
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(252,252,252,1) 0%, rgba(249,249,249,1) 54%, rgba(247,247,247,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(252,252,252,1)), color-stop(54%,rgba(249,249,249,1)), color-stop(100%,rgba(247,247,247,1)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(252,252,252,1) 0%,rgba(249,249,249,1) 54%,rgba(247,247,247,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover,  rgba(252,252,252,1) 0%,rgba(249,249,249,1) 54%,rgba(247,247,247,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(252,252,252,1) 0%,rgba(249,249,249,1) 54%,rgba(247,247,247,1) 100%);
+  background: radial-gradient(ellipse at center,  rgba(252,252,252,1) 0%,rgba(249,249,249,1) 54%,rgba(247,247,247,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f7f7f7',GradientType=1 );
+
+
+}
+
 //used when small media dropdown is shown. (menu-expanded)
 @mixin black-transparent-gradient{
   background: -moz-linear-gradient(top,  rgba(40,40,40,0.75) 0%, rgba(51,51,51,0.75) 48%, rgba(0,0,0,0.75) 100%);
@@ -69,3 +82,4 @@ white-menu-item{
   background: linear-gradient(to bottom,  rgba(237,238,240,1) 0%,rgba(249,249,249,1) 50.12%,rgba(247,247,248,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeef0', endColorstr='#f7f7f8',GradientType=0 );
 }
+

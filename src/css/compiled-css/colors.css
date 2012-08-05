@@ -9,7 +9,7 @@ light-grey-gradient {
   background: linear-gradient(to bottom, #abaaa7 0%, #ced0d3 5.76%, #dfe0e1 18.04%, #d0cece 93.99%, #555556 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#abaaa7', endColorstr='#555556',GradientType=0 ); }
 
-grey-subtle-gradient, #responsive-page #masterList {
+grey-subtle-gradient {
   background: #282828;
   background: -moz-linear-gradient(top, #282828 0%, #333333 7%, #333333 12%, #3d3d3d 86%, #333333 93%, #3f3f3f 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #282828), color-stop(7%, #333333), color-stop(12%, #333333), color-stop(86%, #3d3d3d), color-stop(93%, #333333), color-stop(100%, #3f3f3f));
@@ -38,7 +38,7 @@ white-transparent-gradient {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(246, 246, 246, 0.5) 47%, rgba(237, 237, 237, 0.49) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#7dededed',GradientType=0 ); }
 
-list-item-white, #responsive-page #masterList li, #responsive-page #detailList li {
+list-item-white {
   background: #fcfcfc;
   background: -moz-radial-gradient(center, ellipse cover, #fcfcfc 0%, #f9f9f9 54%, #f7f7f7 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fcfcfc), color-stop(54%, #f9f9f9), color-stop(100%, #f7f7f7));
@@ -58,48 +58,3 @@ white-menu-item {
   background: -ms-linear-gradient(top, #edeef0 0%, #f9f9f9 50.12%, #f7f7f8 100%);
   background: linear-gradient(to bottom, #edeef0 0%, #f9f9f9 50.12%, #f7f7f8 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#edeef0', endColorstr='#f7f7f8',GradientType=0 ); }
-
-round-top-left-right-by-3, #responsive-page #masterList li:first-child, #responsive-page #detailList li:first-child {
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright: 5px;
-  -moz-border-radius-bottomleft: 0px;
-  -moz-border-radius-bottomright: 0px;
-  -webkit-border-top-left-radius: 4px;
-  -webkit-border-top-right-radius: 5px;
-  -webkit-border-bottom-left-radius: 0px;
-  -webkit-border-bottom-right-radius: 0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px; }
-
-round-bottom-left-right-by-3, #responsive-page #masterList li:last-child {
-  -moz-border-radius-topleft: 0px;
-  -moz-border-radius-topright: 0px;
-  -moz-border-radius-bottomleft: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -webkit-border-top-left-radius: 0px;
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-bottom-left-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; }
-
-#responsive-page {
-  width: 100%; }
-  #responsive-page #masterList {
-    display: inline-block;
-    padding: 5px; }
-    @media only screen and (max-width: 325px) {
-      #responsive-page #masterList {
-        width: 100%; } }
-    @media only screen and (min-width: 325px) and (max-width: 989px) {
-      #responsive-page #masterList {
-        width: 28%; } }
-  #responsive-page #detailList {
-    display: inline-block; }
-    @media only screen and (min-width: 325px) and (max-width: 989px) {
-      #responsive-page #detailList {
-        width: 70%; } }

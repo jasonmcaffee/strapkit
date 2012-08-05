@@ -39,7 +39,7 @@ module.exports = function(grunt) {
 //                tasks: 'compile-stylus-and-build-css'
 //            },
             cssWatch:{
-                files: [rootDirectory + '/src/css/compiled-css/*.css'],
+                files: [rootDirectory + '/src/css/compiled-css/**/*.css'],
                 tasks: 'build-css'
             }
 //            ,
