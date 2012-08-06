@@ -5,6 +5,7 @@
 @import "src/css-preprocess/core/lists";
 @import "src/css-preprocess/util/position-fixes";
 
+.taco{vertical-align: top;}
 #responsive-page{
    //background-color: blue;
    width:100%;
@@ -15,6 +16,7 @@
 
     //positioning
     display:inline-block; //we want the master and detail side by side on larger screens
+    vertical-align: top;
 
     //small screens
     @include mq(small){

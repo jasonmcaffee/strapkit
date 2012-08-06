@@ -1,14 +1,18 @@
 define([
     'core/util/log',
+    'core/core',
     'jquery',
     'backbone',
     'lib/controllers/DemosController',
     'lib/controllers/StrapkitController',
     'lib/widgets/NavigationBar'
-], function(log, $, Backbone, DemosController, StrapkitController, NavigationBar){
+], function(log, core, $, Backbone, DemosController, StrapkitController, NavigationBar){
 
     function App(){
         log('app constructor called.');
+
+        //load plugins, etc
+        core.initPlugins();
 
         //create controllers
         this.demosController = new DemosController();

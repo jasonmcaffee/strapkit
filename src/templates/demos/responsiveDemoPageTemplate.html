@@ -3,14 +3,14 @@
     <h1>Master Detail List</h1>
 
     <ul id="masterList">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
+        {{#each_with_index masterListItems}}
+            <li data-index="{{index}}">{{this.itemText}}</li>
+        {{/each_with_index}}
     </ul>
 
     <ul id="detailList">
-        <li>Detail 1</li>
-        <li>Detail 2</li>
-        <li>Detail 3</li>
+        {{#each selectedMasterListItem.detailListItems}}
+            <li>{{this.itemText}}</li>
+        {{/each}}
     </ul>
 </div>

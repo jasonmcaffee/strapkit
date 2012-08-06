@@ -843,10 +843,14 @@ ul {
 .fix-inline-block-spacing {
   margin-left: -4px; }
 
+.taco {
+  vertical-align: top; }
+
 #responsive-page {
   width: 100%; }
   #responsive-page #masterList {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: top; }
     @media only screen and (max-width: 325px) {
       #responsive-page #masterList {
         width: 100%;
