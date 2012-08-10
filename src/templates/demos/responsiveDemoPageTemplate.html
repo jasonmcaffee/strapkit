@@ -10,7 +10,14 @@
 
     <ul id="detailList">
         {{#each selectedMasterListItem.detailListItems}}
-            <li>{{this.itemText}}</li>
+            <li>
+                <dl>
+                    <dt>{{this.itemText}}</dt>
+                    <dt>{{this.itemText2}}</dt>
+                    <dt>{{this.itemText3}}</dt>
+                </dl>
+
+            </li>
         {{/each}}
     </ul>
 </div>

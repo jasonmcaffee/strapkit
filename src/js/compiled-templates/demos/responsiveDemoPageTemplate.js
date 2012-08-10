@@ -23,11 +23,19 @@ function program1(depth0,data) {
 function program3(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "\n            <li>";
+  buffer += "\n            <li>\n                <dl>\n                    <dt>";
   stack1 = depth0.itemText;
   if(typeof stack1 === functionType) { stack1 = stack1.call(depth0, { hash: {} }); }
   else if(stack1=== undef) { stack1 = helperMissing.call(depth0, "this.itemText", { hash: {} }); }
-  buffer += escapeExpression(stack1) + "</li>\n        ";
+  buffer += escapeExpression(stack1) + "</dt>\n                    <dt>";
+  stack1 = depth0.itemText2;
+  if(typeof stack1 === functionType) { stack1 = stack1.call(depth0, { hash: {} }); }
+  else if(stack1=== undef) { stack1 = helperMissing.call(depth0, "this.itemText2", { hash: {} }); }
+  buffer += escapeExpression(stack1) + "</dt>\n                    <dt>";
+  stack1 = depth0.itemText3;
+  if(typeof stack1 === functionType) { stack1 = stack1.call(depth0, { hash: {} }); }
+  else if(stack1=== undef) { stack1 = helperMissing.call(depth0, "this.itemText3", { hash: {} }); }
+  buffer += escapeExpression(stack1) + "</dt>\n                </dl>\n\n            </li>\n        ";
   return buffer;}
 
   buffer += "<div id=\"responsive-page\">\n\n    <h1>Master Detail List</h1>\n\n    <ul id=\"masterList\">\n        ";

@@ -10,3 +10,7 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0; }
+
+dl {
+  margin: 0;
+  padding: 0; }

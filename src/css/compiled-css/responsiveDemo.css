@@ -313,10 +313,7 @@
 
 .ul-base, .list-type-1, #responsive-page #masterList, #responsive-page #detailList {
   -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px; }
+  -webkit-margin-after: 0em; }
 
 .list-type-1, #responsive-page #masterList, #responsive-page #detailList {
   padding: 5px; }
@@ -350,3 +347,16 @@
       #responsive-page #detailList {
         width: 70%;
         margin-left: -4px; } }
+    #responsive-page #detailList li dl dt {
+      display: inline-block;
+      margin-right: -3px; }
+      @media only screen and (max-width: 325px) {
+        #responsive-page #detailList li dl dt {
+          width: 100% !important; } }
+    #responsive-page #detailList li dl dt:nth-child(1) {
+      width: 30%;
+      font-style: italic; }
+    #responsive-page #detailList li dl dt:nth-child(2) {
+      width: 40%; }
+    #responsive-page #detailList li dl dt:nth-child(3) {
+      width: 30%; }

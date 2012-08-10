@@ -158,10 +158,7 @@
 
 .ul-base, .list-type-1 {
   -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px; }
+  -webkit-margin-after: 0em; }
 
 .list-type-1 {
   padding: 5px; }

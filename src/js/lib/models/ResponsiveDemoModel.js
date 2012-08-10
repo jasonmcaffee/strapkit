@@ -12,28 +12,28 @@ define([
                 {
                     itemText: 'Master Item 1',
                     detailListItems:[
-                        {itemText:'Master Item 1 Detail 1'},
-                        {itemText:'Master Item 1 Detail 2'},
-                        {itemText:'Master Item 1 Detail 3'},
-                        {itemText:'Master Item 1 Detail 4'}
+                        {itemText:'Detail 1', itemText2:'a', itemText3:'b'},
+                        {itemText:'Detail 2', itemText2:'c', itemText3:'d' },
+                        {itemText:'Detail 3', itemText2:'e', itemText3:'f'},
+                        {itemText:'Detail 4', itemText2:'g', itemText3:'h'}
                     ]
                 },
                 {
                     itemText: 'Master Item 2',
                     detailListItems:[
-                        {itemText:'Master Item 2 Detail 1'},
-                        {itemText:'Master Item 2 Detail 2'},
-                        {itemText:'Master Item 2 Detail 3'},
-                        {itemText:'Master Item 2 Detail 4'}
+                        {itemText:'Detail 1', itemText2:'a', itemText3:'b'},
+                        {itemText:'Detail 2', itemText2:'c', itemText3:'d' },
+                        {itemText:'Detail 3', itemText2:'e', itemText3:'f'},
+                        {itemText:'Detail 4', itemText2:'g', itemText3:'h'}
                     ]
                 },
                 {
                     itemText: 'Master Item 3',
                     detailListItems:[
-                        {itemText:'Master Item 3 Detail 1'},
-                        {itemText:'Master Item 3 Detail 2'},
-                        {itemText:'Master Item 3 Detail 3'},
-                        {itemText:'Master Item 3 Detail 4'}
+                        {itemText:'Detail 1', itemText2:'a', itemText3:'b'},
+                        {itemText:'Detail 2', itemText2:'c', itemText3:'d' },
+                        {itemText:'Detail 3', itemText2:'e', itemText3:'f'},
+                        {itemText:'Detail 4', itemText2:'g', itemText3:'h'}
                     ]
                 }
             ],

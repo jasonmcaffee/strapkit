@@ -53,6 +53,32 @@
       width: 70%;
       @include fix-inline-block-spacing; //when they are side by side, fix the spacing caused by inline-block.
     }
+
+    //li has several items in it, represented as dl dt, as to avoid confusion
+    li{
+      dl{
+        dt{
+          //break as needed.
+          display: inline-block;
+          margin-right:-3px; //when side by side, there is extra padding we need to get rid of.
+          @include mq(small){
+            width:100% !important; //need to override the nth-child widths
+          }
+        }
+        dt:nth-child(1){
+          //sizing
+          width:30%;
+          font-style: italic;
+        }
+        dt:nth-child(2){
+          //sizing
+          width:40%;
+        }
+        dt:nth-child(3){
+          width:30%;
+        }
+      }
+    }
   }
 
 
