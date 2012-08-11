@@ -321,14 +321,39 @@
 .fix-inline-block-spacing {
   margin-left: -4px; }
 
+/*  The inline block grid provides the ability to use display:inline-block, without the negative side effects that occur
+*   when applying to a ul, dl, etc. (Typically there is spacing that occurs between lis when displayed side by side)
+*   after trying each possibility proposed in the below article, YUI Grid System is the best.
+*
+*   Each direct child element of the grid should have the .inline-block-grid-item class applied.
+*
+*   Sources:
+*   http://css-tricks.com/fighting-the-space-between-inline-block-elements/
+*   http://yui.yahooapis.com/3.5.0/build/cssgrids/grids.css
+*/
+.inline-block-grid, #responsive-page, #responsive-page #detailList li dl {
+  letter-spacing: -0.31em;
+  /* webkit: collapse white-space between units */
+  *letter-spacing: normal;
+  /* reset IE < 8 */
+  word-spacing: -0.43em;
+  /* IE < 8 && gecko: collapse white-space between units */ }
+
+.inline-block-grid-item, #responsive-page #masterList, #responsive-page #detailList, #responsive-page #detailList li dl dt {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /* IE < 8: fake inline-block */
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top; }
+
 .money:before, #responsive-page #detailList li dl dt:nth-child(2):before {
   content: "$"; }
 
 #responsive-page {
   width: 100%; }
   #responsive-page #masterList {
-    display: inline-block;
-    vertical-align: top;
     cursor: pointer; }
     @media only screen and (max-width: 325px) {
       #responsive-page #masterList {
@@ -340,21 +365,16 @@
       #responsive-page #masterList {
         width: 30%; } }
   #responsive-page #detailList {
-    display: inline-block;
     cursor: pointer; }
     @media only screen and (max-width: 325px) {
       #responsive-page #detailList {
         width: 100%; } }
     @media only screen and (min-width: 325px) {
       #responsive-page #detailList {
-        width: 70%;
-        margin-left: -4px; } }
-    #responsive-page #detailList li dl dt {
-      display: inline-block;
-      margin-right: -3px; }
-      @media only screen and (max-width: 325px) {
-        #responsive-page #detailList li dl dt {
-          width: 100% !important; } }
+        width: 70%; } }
+    @media only screen and (max-width: 325px) {
+      #responsive-page #detailList li dl dt {
+        width: 100% !important; } }
     #responsive-page #detailList li dl dt:nth-child(1) {
       width: 50%;
       font-style: italic; }

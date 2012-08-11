@@ -4,23 +4,30 @@
 @import "src/css-preprocess/rounded-corners";
 @import "src/css-preprocess/core/lists";
 @import "src/css-preprocess/util/position-fixes";
+@import "src/css-preprocess/core/grids";
 
 .money{
   &:before{
     content:'$'
   }
 }
+
+
+
 #responsive-page{
    //background-color: blue;
    width:100%;
 
+  @extend .inline-block-grid;// the whole page is considered a grid. todo:better isolate to container element?
+
   #masterList{  //ul
     //base type
     @extend .list-type-1;
+    @extend .inline-block-grid-item; //
 
     //positioning
-    display:inline-block; //we want the master and detail side by side on larger screens
-    vertical-align: top; //when side by side with the detail list, push this up to the top
+    //display:inline-block; //we want the master and detail side by side on larger screens
+    //vertical-align: top; //when side by side with the detail list, push this up to the top
 
     //mouse devices
     cursor: pointer;
@@ -48,9 +55,10 @@
   #detailList{  //ul
     //base type
     @extend .list-type-1;
+    @extend .inline-block-grid-item; //
 
     //positioning
-    display:inline-block;//we want the master and detail side by side on larger screens
+    //display:inline-block;//we want the master and detail side by side on larger screens
 
     //mouse devices
     cursor: pointer;
@@ -61,16 +69,19 @@
 
     @include mq(medium-and-above){
       width: 70%;
-      @include fix-inline-block-spacing; //when they are side by side, fix the spacing caused by inline-block.  todo:doesn't work in firefox
     }
 
     //li has several items in it, represented as dl dt, as to avoid confusion
     li{
+
+      //each dl is considered a flexible grid, with each dt being a grid item
       dl{
+        @extend .inline-block-grid;
+
         dt{
           //break as needed.
-          display: inline-block;
-          margin-right:-3px; //when side by side, there is extra padding we need to get rid of. todo:doesn't work in firefox
+          @extend .inline-block-grid-item;
+
           @include mq(small){
             width:100% !important; //need to override the nth-child widths
           }
