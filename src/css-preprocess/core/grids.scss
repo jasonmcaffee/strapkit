@@ -1,7 +1,7 @@
 /*
 *   The inline block grid provides the ability to use display:inline-block, without the negative side effects that occur
 *   when applying to a ul, dl, etc. (Typically there is spacing that occurs between lis when displayed side by side)
-*   after trying each possibility proposed in the below article, YUI Grid System is the best.
+*   after trying each possibility proposed in the below article, we have found that the YUI Grid System is the best.
 *
 *   Each direct child element of the grid should have the .inline-block-grid-item class applied.
 *   All you have to do to control positioning is adjust the widths of the inline-block-grid-cells.
@@ -28,4 +28,42 @@
   letter-spacing: normal;
   word-spacing: normal;
   vertical-align: top;
+}
+
+
+/*
+* Flex box is a powerful grid type which allows you to dynamically rearrange cells in the grid, in any order you choose, using css alone.
+* e.g. if you have 3 cells in your grid, you could use a media-query for small devices, and have the order rearranged so
+* that cell 3 was stacked on top of cell 1, and cell 1 stacked on cell 2.
+*
+* Limits:
+* - ie9 and Opera not supported. may need polyfill if possible. todo: research polyfill.
+*
+* Sources:
+* - http://caniuse.com/#search=flexbox
+* - http://www.html5rocks.com/en/tutorials/flexbox/quick/
+* - http://www.w3.org/TR/css3-flexbox/
+* -
+*/
+.flex-box-grid{
+  //todo: add ms-box prefix for ie10 support.
+
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+
+  display: box;
+  box-orient: horizontal;
+  box-pack: center;
+  box-align: center;
+}
+
+.flex-box-grid-cell{
+
 }

@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/app.css" afterPath="$PROJECT_DIR$/dist/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/core/grids.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/core/grids.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/responsiveDemo.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/responsiveDemo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" afterPath="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,7 +84,7 @@
       <file leaf-file-name="responsiveDemoPageTemplate.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="64" selection-start="516" selection-end="516" vertical-scroll-proportion="-9.6">
+            <state line="4" column="91" selection-start="152" selection-end="152" vertical-scroll-proportion="-2.56">
               <folding />
             </state>
           </provider>
@@ -103,7 +102,7 @@
       <file leaf-file-name="grids.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/grids.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="176" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.22876367">
+            <state line="49" column="2" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.65937763">
               <folding />
             </state>
           </provider>
@@ -187,9 +186,9 @@
         <option value="$PROJECT_DIR$/src/css-preprocess/media-queries.scss" />
         <option value="$PROJECT_DIR$/src/css-preprocess/core/lists.scss" />
         <option value="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" />
         <option value="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" />
         <option value="$PROJECT_DIR$/src/css-preprocess/core/grids.scss" />
-        <option value="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" />
       </list>
     </option>
   </component>
@@ -1211,7 +1210,11 @@
       <created>1344709615160</created>
       <updated>1344709615160</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="responsive master detail list -documentation for inline-block-grid">
+      <created>1344713084498</created>
+      <updated>1344713084498</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1275,7 +1278,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="responsive master detail list - improved grid system layout(wrap in parent element)" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive master detail list -documentation for inline-block-grid" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1288,7 +1291,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="menuitemsexpanded is now under navbar! that was tricky." />
     <MESSAGE value="fixed menuexpanded background color to include all browsers." />
     <MESSAGE value="refactored nav bar. part 1. overlays look good." />
     <MESSAGE value="added modernizer for touch detection" />
@@ -1313,6 +1315,7 @@
     <MESSAGE value="responsive master detail list -mock data &amp; styling" />
     <MESSAGE value="responsive master detail list - created grid layout system (inline-block-grid)" />
     <MESSAGE value="responsive master detail list - improved grid system layout(wrap in parent element)" />
+    <MESSAGE value="responsive master detail list -documentation for inline-block-grid" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1424,13 +1427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="64" selection-start="516" selection-end="516" vertical-scroll-proportion="-9.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="127" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
@@ -1438,9 +1434,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="91" selection-start="152" selection-end="152" vertical-scroll-proportion="-2.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/grids.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="176" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.22876367">
+        <state line="49" column="2" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.65937763">
           <folding />
         </state>
       </provider>
