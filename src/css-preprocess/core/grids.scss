@@ -4,6 +4,14 @@
 *   after trying each possibility proposed in the below article, YUI Grid System is the best.
 *
 *   Each direct child element of the grid should have the .inline-block-grid-item class applied.
+*   All you have to do to control positioning is adjust the widths of the inline-block-grid-cells.
+*   The display:block will trigger when items are pushed over more than 100%.
+*   e.g. if you have 3 cells in your grid, and you set cell 1 width to 50%, and cell 2's width to 50%, cell 3 will get
+*   pushed down to a new row.
+*
+*   Limits:
+*   - rearranging of cells is restricted to stacking on top of each other. (e.g. you can't move cell 5 to be on top of cell 1)
+*   - media queries are intentionally left out so you can compose your own using the mq mixin
 *
 *   Sources:
 *   http://css-tricks.com/fighting-the-space-between-inline-block-elements/
