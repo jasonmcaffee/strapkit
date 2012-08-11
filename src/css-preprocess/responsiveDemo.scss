@@ -18,99 +18,101 @@
    //background-color: blue;
    width:100%;
 
-  @extend .inline-block-grid;// the whole page is considered a grid. todo:better isolate to container element?
+  #masterDetailListsGrid{
+    @extend .inline-block-grid;//
 
-  #masterList{  //ul
-    //base type
-    @extend .list-type-1;
-    @extend .inline-block-grid-item; //
+    #masterList{  //ul
+      //base type
+      @extend .list-type-1;
+      @extend .inline-block-grid-cell; //
 
-    //positioning
-    //display:inline-block; //we want the master and detail side by side on larger screens
-    //vertical-align: top; //when side by side with the detail list, push this up to the top
+      //positioning
+      //display:inline-block; //we want the master and detail side by side on larger screens
+      //vertical-align: top; //when side by side with the detail list, push this up to the top
 
-    //mouse devices
-    cursor: pointer;
+      //mouse devices
+      cursor: pointer;
 
-    //small screens
-    @include mq(small){
-      //sizing
-      width:100%;
+      //small screens
+      @include mq(small){
+        //sizing
+        width:100%;
 
-      //font
-      font-size: 150%;
+        //font
+        font-size: 150%;
 
-      //further extend .list-type-1
+        //further extend .list-type-1
+        li{
+          padding:7px;
+        }
+      }
+
+      //medium screens and above
+      @include mq(medium-and-above){
+        width: 30%;
+      }
+    }//#masterList
+
+    #detailList{  //ul
+      //base type
+      @extend .list-type-1;
+      @extend .inline-block-grid-cell;
+
+      //mouse devices
+      cursor: pointer;
+
+      @include mq(small){
+        width:100%;
+      }
+
+      @include mq(medium-and-above){
+        width: 70%;
+      }
+
+        //li has several items in it, represented as dl dt, as to avoid confusion
       li{
-        padding:7px;
-      }
-    }
 
-    //medium screens and above
-    @include mq(medium-and-above){
-      width: 30%;
-    }
-  }
+        //each dl is considered a flexible grid, with each dt being a grid item
+        dl{
+          @extend .inline-block-grid;
 
-  #detailList{  //ul
-    //base type
-    @extend .list-type-1;
-    @extend .inline-block-grid-item; //
+          dt{
+            //break as needed.
+            @extend .inline-block-grid-cell;
 
-    //positioning
-    //display:inline-block;//we want the master and detail side by side on larger screens
+            @include mq(small){
+              width:100% !important; //need to override the nth-child widths
+            }
 
-    //mouse devices
-    cursor: pointer;
+          }
+          dt:nth-child(1){
+            //sizing
+            width:50%;
+            font-style: italic;
+          }
+          dt:nth-child(2){
+            @extend .money; //this cell
 
-    @include mq(small){
-      width:100%;
-    }
+            //sizing
+            width:20%;
 
-    @include mq(medium-and-above){
-      width: 70%;
-    }
+            @include mq(medium-and-above){
+              text-align: right;
+            }
+          }
 
-    //li has several items in it, represented as dl dt, as to avoid confusion
-    li{
+          dt:nth-child(3){
+            width:30%;
 
-      //each dl is considered a flexible grid, with each dt being a grid item
-      dl{
-        @extend .inline-block-grid;
-
-        dt{
-          //break as needed.
-          @extend .inline-block-grid-item;
-
-          @include mq(small){
-            width:100% !important; //need to override the nth-child widths
+            @include mq(medium-and-above){
+              text-align: right;
+            }
           }
         }
-        dt:nth-child(1){
-          //sizing
-          width:50%;
-          font-style: italic;
-        }
-        dt:nth-child(2){
-          @extend .money;
+      }//li
+    }//#detailList
+  }//masterDetailListGrid
 
-          //sizing
-          width:20%;
-
-          @include mq(medium-and-above){
-            text-align: right;
-          }
-        }
-        dt:nth-child(3){
-          width:30%;
-
-          @include mq(medium-and-above){
-            text-align: right;
-          }
-        }
-      }
-    }
-  }
 
 
 }//end responsive-page

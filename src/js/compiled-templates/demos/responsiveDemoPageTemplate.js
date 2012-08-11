@@ -35,10 +35,10 @@ function program3(depth0,data) {
   stack1 = depth0.itemText3;
   if(typeof stack1 === functionType) { stack1 = stack1.call(depth0, { hash: {} }); }
   else if(stack1=== undef) { stack1 = helperMissing.call(depth0, "this.itemText3", { hash: {} }); }
-  buffer += escapeExpression(stack1) + "</dt>\n                </dl>\n\n            </li>\n        ";
+  buffer += escapeExpression(stack1) + "</dt>\n                </dl>\n\n            </li>\n            ";
   return buffer;}
 
-  buffer += "<div id=\"responsive-page\">\n\n    <h1>Master Detail List</h1>\n\n    <ul id=\"masterList\">\n        ";
+  buffer += "<div id=\"responsive-page\">\n\n    <h1>Master Detail List</h1>\n\n    <div id=\"masterDetailListsGrid\">\n        <ul id=\"masterList\">\n        ";
   foundHelper = helpers.masterListItems;
   stack1 = foundHelper || depth0.masterListItems;
   foundHelper = helpers.each_with_index;
@@ -50,7 +50,7 @@ function program3(depth0,data) {
   if(foundHelper && typeof stack2 === functionType) { stack1 = stack2.call(depth0, stack1, tmp1); }
   else { stack1 = blockHelperMissing.call(depth0, stack2, stack1, tmp1); }
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n    </ul>\n\n    <ul id=\"detailList\">\n        ";
+  buffer += "\n        </ul>\n\n        <ul id=\"detailList\">\n            ";
   foundHelper = helpers.selectedMasterListItem;
   stack1 = foundHelper || depth0.selectedMasterListItem;
   stack1 = (stack1 === null || stack1 === undefined || stack1 === false ? stack1 : stack1.detailListItems);
@@ -61,7 +61,7 @@ function program3(depth0,data) {
   tmp1.inverse = self.noop;
   stack1 = stack2.call(depth0, stack1, tmp1);
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n    </ul>\n</div>";
+  buffer += "\n        </ul>\n    </div>\n</div>";
   return buffer;}); 
 Handlebars.registerPartial("responsiveDemoPageTemplate", templates["responsiveDemoPageTemplate"]); 
 return templates["responsiveDemoPageTemplate"]; 
