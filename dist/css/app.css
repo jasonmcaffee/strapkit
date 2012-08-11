@@ -953,14 +953,15 @@ dl {
 .fix-inline-block-spacing {
   margin-left: -4px; }
 
-.taco {
-  vertical-align: top; }
+.money:before, #responsive-page #detailList li dl dt:nth-child(2):before {
+  content: "$"; }
 
 #responsive-page {
   width: 100%; }
   #responsive-page #masterList {
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    cursor: pointer; }
     @media only screen and (max-width: 325px) {
       #responsive-page #masterList {
         width: 100%;
@@ -971,7 +972,8 @@ dl {
       #responsive-page #masterList {
         width: 30%; } }
   #responsive-page #detailList {
-    display: inline-block; }
+    display: inline-block;
+    cursor: pointer; }
     @media only screen and (max-width: 325px) {
       #responsive-page #detailList {
         width: 100%; } }
@@ -986,12 +988,18 @@ dl {
         #responsive-page #detailList li dl dt {
           width: 100% !important; } }
     #responsive-page #detailList li dl dt:nth-child(1) {
-      width: 30%;
+      width: 50%;
       font-style: italic; }
     #responsive-page #detailList li dl dt:nth-child(2) {
-      width: 40%; }
+      width: 20%; }
+      @media only screen and (min-width: 325px) {
+        #responsive-page #detailList li dl dt:nth-child(2) {
+          text-align: right; } }
     #responsive-page #detailList li dl dt:nth-child(3) {
       width: 30%; }
+      @media only screen and (min-width: 325px) {
+        #responsive-page #detailList li dl dt:nth-child(3) {
+          text-align: right; } }
 
 .round-top-left-right-by-7 {
   -moz-border-radius-topleft: 7px;

@@ -5,15 +5,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/app.css" afterPath="$PROJECT_DIR$/dist/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app-built.js" afterPath="$PROJECT_DIR$/dist/js/app-built.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/core/lists.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/core/lists.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/reset.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/reset.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/core/lists.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/core/lists.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/reset.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/reset.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/responsiveDemo.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/responsiveDemo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/compiled-templates/demos/responsiveDemoPageTemplate.js" afterPath="$PROJECT_DIR$/src/js/compiled-templates/demos/responsiveDemoPageTemplate.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" afterPath="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" afterPath="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,10 +74,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ResponsiveDemoModel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="114" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="responsiveDemoPageTemplate.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="15" column="47" selection-start="447" selection-end="447" vertical-scroll-proportion="-9.6">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="responsiveDemo.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="79" column="86" selection-start="1911" selection-end="1911" vertical-scroll-proportion="0.6997477">
               <folding />
             </state>
           </provider>
@@ -125,20 +137,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsiveDemo.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="74" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.66358286">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="975" column="36" selection-start="58951" selection-end="58953" vertical-scroll-proportion="-23.961538">
-              <folding />
+            <state line="985" column="36" selection-start="59053" selection-end="59055" vertical-scroll-proportion="-23.961538">
+              <folding>
+                <marker date="1344647082000" expanded="true" signature="60044:60046" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,15 +152,6 @@
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/media-queries.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state line="42" column="57" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResponsiveDemoModel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="129" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -188,11 +184,11 @@
         <option value="$PROJECT_DIR$/src/js/lib/controllers/DemosController.js" />
         <option value="$PROJECT_DIR$/src/js/lib/views/ResponsiveDemoView.js" />
         <option value="$PROJECT_DIR$/src/css-preprocess/rounded-corners.scss" />
-        <option value="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" />
         <option value="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" />
         <option value="$PROJECT_DIR$/src/css-preprocess/reset.scss" />
         <option value="$PROJECT_DIR$/src/css-preprocess/media-queries.scss" />
         <option value="$PROJECT_DIR$/src/css-preprocess/core/lists.scss" />
+        <option value="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" />
         <option value="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" />
       </list>
     </option>
@@ -1199,7 +1195,11 @@
       <created>1344214193792</created>
       <updated>1344214193792</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="responsive master detail list -updated styling of ul border radius">
+      <created>1344564524284</created>
+      <updated>1344564524284</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1367,23 +1367,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="129" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/grunt.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="50" selection-start="2185" selection-end="2185" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="47" selection-start="447" selection-end="447" vertical-scroll-proportion="-9.6">
           <folding />
         </state>
       </provider>
@@ -1418,14 +1404,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="975" column="36" selection-start="58951" selection-end="58953" vertical-scroll-proportion="-23.961538">
+        <state line="985" column="36" selection-start="59053" selection-end="59055" vertical-scroll-proportion="-23.961538">
+          <folding>
+            <marker date="1344647082000" expanded="true" signature="60044:60046" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="47" selection-start="447" selection-end="447" vertical-scroll-proportion="-9.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="114" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="74" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.66358286">
+        <state line="79" column="86" selection-start="1911" selection-end="1911" vertical-scroll-proportion="0.6997477">
           <folding />
         </state>
       </provider>

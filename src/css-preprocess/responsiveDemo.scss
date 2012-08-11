@@ -5,7 +5,11 @@
 @import "src/css-preprocess/core/lists";
 @import "src/css-preprocess/util/position-fixes";
 
-.taco{vertical-align: top;}
+.money{
+  &:before{
+    content:'$'
+  }
+}
 #responsive-page{
    //background-color: blue;
    width:100%;
@@ -16,7 +20,10 @@
 
     //positioning
     display:inline-block; //we want the master and detail side by side on larger screens
-    vertical-align: top;
+    vertical-align: top; //when side by side with the detail list, push this up to the top
+
+    //mouse devices
+    cursor: pointer;
 
     //small screens
     @include mq(small){
@@ -45,13 +52,16 @@
     //positioning
     display:inline-block;//we want the master and detail side by side on larger screens
 
+    //mouse devices
+    cursor: pointer;
+
     @include mq(small){
       width:100%;
     }
 
     @include mq(medium-and-above){
       width: 70%;
-      @include fix-inline-block-spacing; //when they are side by side, fix the spacing caused by inline-block.
+      @include fix-inline-block-spacing; //when they are side by side, fix the spacing caused by inline-block.  todo:doesn't work in firefox
     }
 
     //li has several items in it, represented as dl dt, as to avoid confusion
@@ -60,22 +70,32 @@
         dt{
           //break as needed.
           display: inline-block;
-          margin-right:-3px; //when side by side, there is extra padding we need to get rid of.
+          margin-right:-3px; //when side by side, there is extra padding we need to get rid of. todo:doesn't work in firefox
           @include mq(small){
             width:100% !important; //need to override the nth-child widths
           }
         }
         dt:nth-child(1){
           //sizing
-          width:30%;
+          width:50%;
           font-style: italic;
         }
         dt:nth-child(2){
+          @extend .money;
+
           //sizing
-          width:40%;
+          width:20%;
+
+          @include mq(medium-and-above){
+            text-align: right;
+          }
         }
         dt:nth-child(3){
           width:30%;
+
+          @include mq(medium-and-above){
+            text-align: right;
+          }
         }
       }
     }

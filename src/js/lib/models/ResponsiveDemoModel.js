@@ -10,30 +10,30 @@ define([
 
             masterListItems:[
                 {
-                    itemText: 'Master Item 1',
+                    itemText: 'Personal Checking',
                     detailListItems:[
-                        {itemText:'Detail 1', itemText2:'a', itemText3:'b'},
-                        {itemText:'Detail 2', itemText2:'c', itemText3:'d' },
-                        {itemText:'Detail 3', itemText2:'e', itemText3:'f'},
-                        {itemText:'Detail 4', itemText2:'g', itemText3:'h'}
+                        {itemText:'Get Go', itemText2:'123.45', itemText3:'06/17/12'},
+                        {itemText:'Chipotle', itemText2:'9.63', itemText3:'06/17/12' },
+                        {itemText:'Time Warner Cable', itemText2:'65.00', itemText3:'06/16/12'},
+                        {itemText:"Tom's Diner", itemText2:'94.72', itemText3:'06/16/12'}
                     ]
                 },
                 {
-                    itemText: 'Master Item 2',
+                    itemText: 'Chase Saphire',
                     detailListItems:[
-                        {itemText:'Detail 1', itemText2:'a', itemText3:'b'},
-                        {itemText:'Detail 2', itemText2:'c', itemText3:'d' },
-                        {itemText:'Detail 3', itemText2:'e', itemText3:'f'},
-                        {itemText:'Detail 4', itemText2:'g', itemText3:'h'}
+                        {itemText:'Walgreens', itemText2:'24.75', itemText3:'12/07/13'},
+                        {itemText:'YMCA', itemText2:'54.79', itemText3:'12/07/13' },
+                        {itemText:'Acura Columbus', itemText2:'243.72', itemText3:'12/07/13'},
+                        {itemText:'Restoration Hardware', itemText2:'2,446.04', itemText3:'12/06/13'}
                     ]
                 },
                 {
-                    itemText: 'Master Item 3',
+                    itemText: 'Chase Freedom',
                     detailListItems:[
-                        {itemText:'Detail 1', itemText2:'a', itemText3:'b'},
-                        {itemText:'Detail 2', itemText2:'c', itemText3:'d' },
-                        {itemText:'Detail 3', itemText2:'e', itemText3:'f'},
-                        {itemText:'Detail 4', itemText2:'g', itemText3:'h'}
+                        {itemText:"Cindy's Bakery", itemText2:'12.34', itemText3:'11/12/16'},
+                        {itemText:'American Airlines', itemText2:'633.94', itemText3:'11/12/16' },
+                        {itemText:"Paco's Tacos", itemText2:'6.56', itemText3:'11/12/16'},
+                        {itemText:'Hampton Inn', itemText2:'378.98', itemText3:'11/12/15'}
                     ]
                 }
             ],
