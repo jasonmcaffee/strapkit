@@ -2,6 +2,7 @@
 
     <h1>Master Detail List</h1>
 
+    <h2>Inline Block Grid</h2>
     {{! each child element in the grid will have side effects unless inline-block-grid-cell is applied to it}}
     <div id="masterDetailListsGrid">
         <ul id="masterList">
@@ -23,4 +24,28 @@
             {{/each}}
         </ul>
     </div>
+
+    <h2>Flex Box Grid</h2>
+    {{! each child element in the grid will have side effects unless inline-block-grid-cell is applied to it}}
+    <div id="masterDetailListsGrid2">
+        <ul id="masterList2">
+            {{#each_with_index masterListItems}}
+            <li data-index="{{index}}">{{this.itemText}}</li>
+            {{/each_with_index}}
+        </ul>
+
+        <ul id="detailList2">
+            {{#each selectedMasterListItem.detailListItems}}
+            <li>
+                <dl>
+                    <dt>{{this.itemText}}</dt>
+                    <dt>{{this.itemText2}}</dt>
+                    <dt>{{this.itemText3}}</dt>
+                </dl>
+
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+
 </div>

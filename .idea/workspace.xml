@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/app.css" afterPath="$PROJECT_DIR$/dist/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app-built.js" afterPath="$PROJECT_DIR$/dist/js/app-built.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/core/grids.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/core/grids.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/responsiveDemo.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/responsiveDemo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/compiled-templates/demos/responsiveDemoPageTemplate.js" afterPath="$PROJECT_DIR$/src/js/compiled-templates/demos/responsiveDemoPageTemplate.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" afterPath="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" />
     </list>
     <ignored path="modernmobile.iws" />
@@ -84,25 +88,25 @@
       <file leaf-file-name="responsiveDemoPageTemplate.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="91" selection-start="152" selection-end="152" vertical-scroll-proportion="-2.56">
+            <state line="20" column="52" selection-start="712" selection-end="712" vertical-scroll-proportion="-12.8">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsiveDemo.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="responsiveDemo.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="127" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
+            <state line="154" column="34" selection-start="3225" selection-end="3225" vertical-scroll-proportion="0.5962994">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grids.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="grids.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/grids.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="2" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.65937763">
+            <state line="102" column="1" selection-start="4015" selection-end="4015" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,10 +142,10 @@
       <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1050" column="36" selection-start="63406" selection-end="63406" vertical-scroll-proportion="0.5417391">
+            <state line="1178" column="36" selection-start="70897" selection-end="70897" vertical-scroll-proportion="0.5417391">
               <folding>
-                <marker date="1344712914000" expanded="true" signature="61507:62684" placeholder="/*...*/" />
-                <marker date="1344712914000" expanded="true" signature="64217:64219" placeholder="{...}" />
+                <marker date="1344734148000" expanded="true" signature="69001:70373" placeholder="/*...*/" />
+                <marker date="1344734148000" expanded="true" signature="71720:71722" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -150,7 +154,7 @@
       <file leaf-file-name="media-queries.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/media-queries.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="57" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0">
+            <state line="8" column="71" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -186,15 +190,15 @@
         <option value="$PROJECT_DIR$/src/css-preprocess/media-queries.scss" />
         <option value="$PROJECT_DIR$/src/css-preprocess/core/lists.scss" />
         <option value="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" />
-        <option value="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" />
         <option value="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" />
         <option value="$PROJECT_DIR$/src/css-preprocess/core/grids.scss" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="122" />
-    <option name="y" value="87" />
+    <option name="x" value="119" />
+    <option name="y" value="162" />
     <option name="width" value="2209" />
     <option name="height" value="1337" />
   </component>
@@ -1214,11 +1218,15 @@
       <created>1344713084498</created>
       <updated>1344713084498</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="responsive master detail list - started flex box scss">
+      <created>1344715097145</created>
+      <updated>1344715097145</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="122" y="87" width="2209" height="1337" extended-state="0" />
+    <frame x="119" y="162" width="2209" height="1337" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1278,7 +1286,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="responsive master detail list -documentation for inline-block-grid" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive master detail list - started flex box scss" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1291,7 +1299,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="fixed menuexpanded background color to include all browsers." />
     <MESSAGE value="refactored nav bar. part 1. overlays look good." />
     <MESSAGE value="added modernizer for touch detection" />
     <MESSAGE value="nav bar working well on all modern browsers." />
@@ -1316,6 +1323,7 @@
     <MESSAGE value="responsive master detail list - created grid layout system (inline-block-grid)" />
     <MESSAGE value="responsive master detail list - improved grid system layout(wrap in parent element)" />
     <MESSAGE value="responsive master detail list -documentation for inline-block-grid" />
+    <MESSAGE value="responsive master detail list - started flex box scss" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1389,13 +1397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/media-queries.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="57" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/reset.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
@@ -1405,10 +1406,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1050" column="36" selection-start="63406" selection-end="63406" vertical-scroll-proportion="0.5417391">
+        <state line="1178" column="36" selection-start="70897" selection-end="70897" vertical-scroll-proportion="0.5417391">
           <folding>
-            <marker date="1344712914000" expanded="true" signature="61507:62684" placeholder="/*...*/" />
-            <marker date="1344712914000" expanded="true" signature="64217:64219" placeholder="{...}" />
+            <marker date="1344734148000" expanded="true" signature="69001:70373" placeholder="/*...*/" />
+            <marker date="1344734148000" expanded="true" signature="71720:71722" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1427,23 +1428,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss">
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/media-queries.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="127" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="91" selection-start="152" selection-end="152" vertical-scroll-proportion="-2.56">
+        <state line="8" column="71" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/grids.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="2" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.65937763">
+        <state line="102" column="1" selection-start="4015" selection-end="4015" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="52" selection-start="712" selection-end="712" vertical-scroll-proportion="-12.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="34" selection-start="3225" selection-end="3225" vertical-scroll-proportion="0.5962994">
           <folding />
         </state>
       </provider>

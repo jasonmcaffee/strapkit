@@ -9,7 +9,7 @@
   background: linear-gradient(to bottom, #abaaa7 0%, #ced0d3 5.76%, #dfe0e1 18.04%, #d0cece 93.99%, #555556 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#abaaa7', endColorstr='#555556',GradientType=0 ); }
 
-.grey-subtle-gradient, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList {
+.grey-subtle-gradient, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList, #responsive-page #masterDetailListsGrid2 #masterList2, #responsive-page #masterDetailListsGrid2 #detailList2 {
   background: #282828;
   background: -moz-linear-gradient(top, #282828 0%, #333333 7%, #333333 12%, #3d3d3d 86%, #333333 93%, #3f3f3f 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #282828), color-stop(7%, #333333), color-stop(12%, #333333), color-stop(86%, #3d3d3d), color-stop(93%, #333333), color-stop(100%, #3f3f3f));
@@ -38,7 +38,7 @@
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(246, 246, 246, 0.5) 47%, rgba(237, 237, 237, 0.49) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#7dededed',GradientType=0 ); }
 
-.list-item-white, .list-type-1 li, #responsive-page #masterDetailListsGrid #masterList li, #responsive-page #masterDetailListsGrid #detailList li {
+.list-item-white, .list-type-1 li, #responsive-page #masterDetailListsGrid #masterList li, #responsive-page #masterDetailListsGrid #detailList li, #responsive-page #masterDetailListsGrid2 #masterList2 li, #responsive-page #masterDetailListsGrid2 #detailList2 li {
   background: #fcfcfc;
   background: -moz-radial-gradient(center, ellipse cover, #fcfcfc 0%, #f9f9f9 54%, #f7f7f7 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fcfcfc), color-stop(54%, #f9f9f9), color-stop(100%, #f7f7f7));
@@ -48,7 +48,7 @@
   background: radial-gradient(ellipse at center, #fcfcfc 0%, #f9f9f9 54%, #f7f7f7 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f7f7f7',GradientType=1 ); }
 
-.list-item-grey, .list-type-1 li:nth-child(even), #responsive-page #masterDetailListsGrid #masterList li:nth-child(even), #responsive-page #masterDetailListsGrid #detailList li:nth-child(even) {
+.list-item-grey, .list-type-1 li:nth-child(even), #responsive-page #masterDetailListsGrid #masterList li:nth-child(even), #responsive-page #masterDetailListsGrid #detailList li:nth-child(even), #responsive-page #masterDetailListsGrid2 #masterList2 li:nth-child(even), #responsive-page #masterDetailListsGrid2 #detailList2 li:nth-child(even) {
   background: #f4f4f4;
   background: -moz-radial-gradient(center, ellipse cover, #f4f4f4 0%, #f2f2f2 54%, #eaeaea 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f4f4f4), color-stop(54%, #f2f2f2), color-stop(100%, #eaeaea));
@@ -97,7 +97,7 @@
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px; }
 
-.round-top-left-right-by-5, .list-type-1 li:first-child, #responsive-page #masterDetailListsGrid #masterList li:first-child, #responsive-page #masterDetailListsGrid #detailList li:first-child {
+.round-top-left-right-by-5, .list-type-1 li:first-child, #responsive-page #masterDetailListsGrid #masterList li:first-child, #responsive-page #masterDetailListsGrid #detailList li:first-child, #responsive-page #masterDetailListsGrid2 #masterList2 li:first-child, #responsive-page #masterDetailListsGrid2 #detailList2 li:first-child {
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-topright: 5px;
   -moz-border-radius-bottomleft: 0px;
@@ -111,7 +111,7 @@
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px; }
 
-.round-bottom-left-right-by-5, .list-type-1 li:last-child, #responsive-page #masterDetailListsGrid #masterList li:last-child, #responsive-page #masterDetailListsGrid #detailList li:last-child {
+.round-bottom-left-right-by-5, .list-type-1 li:last-child, #responsive-page #masterDetailListsGrid #masterList li:last-child, #responsive-page #masterDetailListsGrid #detailList li:last-child, #responsive-page #masterDetailListsGrid2 #masterList2 li:last-child, #responsive-page #masterDetailListsGrid2 #detailList2 li:last-child {
   -moz-border-radius-topleft: 0px;
   -moz-border-radius-topright: 0px;
   -moz-border-radius-bottomleft: 5px;
@@ -139,7 +139,7 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; }
 
-.round-all-by-3, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList {
+.round-all-by-3, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList, #responsive-page #masterDetailListsGrid2 #masterList2, #responsive-page #masterDetailListsGrid2 #detailList2 {
   -moz-border-radius-topleft: 3px;
   -moz-border-radius-topright: 3px;
   -moz-border-radius-bottomleft: 3px;
@@ -164,7 +164,7 @@
   background: linear-gradient(to bottom, #abaaa7 0%, #ced0d3 5.76%, #dfe0e1 18.04%, #d0cece 93.99%, #555556 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#abaaa7', endColorstr='#555556',GradientType=0 ); }
 
-.grey-subtle-gradient, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList {
+.grey-subtle-gradient, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList, #responsive-page #masterDetailListsGrid2 #masterList2, #responsive-page #masterDetailListsGrid2 #detailList2 {
   background: #282828;
   background: -moz-linear-gradient(top, #282828 0%, #333333 7%, #333333 12%, #3d3d3d 86%, #333333 93%, #3f3f3f 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #282828), color-stop(7%, #333333), color-stop(12%, #333333), color-stop(86%, #3d3d3d), color-stop(93%, #333333), color-stop(100%, #3f3f3f));
@@ -193,7 +193,7 @@
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(246, 246, 246, 0.5) 47%, rgba(237, 237, 237, 0.49) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#7dededed',GradientType=0 ); }
 
-.list-item-white, .list-type-1 li, #responsive-page #masterDetailListsGrid #masterList li, #responsive-page #masterDetailListsGrid #detailList li {
+.list-item-white, .list-type-1 li, #responsive-page #masterDetailListsGrid #masterList li, #responsive-page #masterDetailListsGrid #detailList li, #responsive-page #masterDetailListsGrid2 #masterList2 li, #responsive-page #masterDetailListsGrid2 #detailList2 li {
   background: #fcfcfc;
   background: -moz-radial-gradient(center, ellipse cover, #fcfcfc 0%, #f9f9f9 54%, #f7f7f7 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fcfcfc), color-stop(54%, #f9f9f9), color-stop(100%, #f7f7f7));
@@ -203,7 +203,7 @@
   background: radial-gradient(ellipse at center, #fcfcfc 0%, #f9f9f9 54%, #f7f7f7 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f7f7f7',GradientType=1 ); }
 
-.list-item-grey, .list-type-1 li:nth-child(even), #responsive-page #masterDetailListsGrid #masterList li:nth-child(even), #responsive-page #masterDetailListsGrid #detailList li:nth-child(even) {
+.list-item-grey, .list-type-1 li:nth-child(even), #responsive-page #masterDetailListsGrid #masterList li:nth-child(even), #responsive-page #masterDetailListsGrid #detailList li:nth-child(even), #responsive-page #masterDetailListsGrid2 #masterList2 li:nth-child(even), #responsive-page #masterDetailListsGrid2 #detailList2 li:nth-child(even) {
   background: #f4f4f4;
   background: -moz-radial-gradient(center, ellipse cover, #f4f4f4 0%, #f2f2f2 54%, #eaeaea 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f4f4f4), color-stop(54%, #f2f2f2), color-stop(100%, #eaeaea));
@@ -252,7 +252,7 @@
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px; }
 
-.round-top-left-right-by-5, .list-type-1 li:first-child, #responsive-page #masterDetailListsGrid #masterList li:first-child, #responsive-page #masterDetailListsGrid #detailList li:first-child {
+.round-top-left-right-by-5, .list-type-1 li:first-child, #responsive-page #masterDetailListsGrid #masterList li:first-child, #responsive-page #masterDetailListsGrid #detailList li:first-child, #responsive-page #masterDetailListsGrid2 #masterList2 li:first-child, #responsive-page #masterDetailListsGrid2 #detailList2 li:first-child {
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-topright: 5px;
   -moz-border-radius-bottomleft: 0px;
@@ -266,7 +266,7 @@
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px; }
 
-.round-bottom-left-right-by-5, .list-type-1 li:last-child, #responsive-page #masterDetailListsGrid #masterList li:last-child, #responsive-page #masterDetailListsGrid #detailList li:last-child {
+.round-bottom-left-right-by-5, .list-type-1 li:last-child, #responsive-page #masterDetailListsGrid #masterList li:last-child, #responsive-page #masterDetailListsGrid #detailList li:last-child, #responsive-page #masterDetailListsGrid2 #masterList2 li:last-child, #responsive-page #masterDetailListsGrid2 #detailList2 li:last-child {
   -moz-border-radius-topleft: 0px;
   -moz-border-radius-topright: 0px;
   -moz-border-radius-bottomleft: 5px;
@@ -294,7 +294,7 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; }
 
-.round-all-by-3, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList {
+.round-all-by-3, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList, #responsive-page #masterDetailListsGrid2 #masterList2, #responsive-page #masterDetailListsGrid2 #detailList2 {
   -moz-border-radius-topleft: 3px;
   -moz-border-radius-topright: 3px;
   -moz-border-radius-bottomleft: 3px;
@@ -311,11 +311,11 @@
 .fix-inline-block-spacing {
   margin-left: -4px; }
 
-.ul-base, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList {
+.ul-base, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList, #responsive-page #masterDetailListsGrid2 #masterList2, #responsive-page #masterDetailListsGrid2 #detailList2 {
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em; }
 
-.list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList {
+.list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList, #responsive-page #masterDetailListsGrid2 #masterList2, #responsive-page #masterDetailListsGrid2 #detailList2 {
   padding: 5px; }
 
 .fix-inline-block-spacing {
@@ -327,6 +327,7 @@
 *   after trying each possibility proposed in the below article, we have found that the YUI Grid System is the best.
 *
 *   Each direct child element of the grid should have the .inline-block-grid-item class applied.
+*
 *   All you have to do to control positioning is adjust the widths of the inline-block-grid-cells.
 *   The display:block will trigger when items are pushed over more than 100%.
 *   e.g. if you have 3 cells in your grid, and you set cell 1 width to 50%, and cell 2's width to 50%, cell 3 will get
@@ -339,8 +340,9 @@
 *   Sources:
 *   http://css-tricks.com/fighting-the-space-between-inline-block-elements/
 *   http://yui.yahooapis.com/3.5.0/build/cssgrids/grids.css
+*   http://yuilibrary.com/yui/docs/cssgrids/
 */
-.inline-block-grid, #responsive-page #masterDetailListsGrid, #responsive-page #masterDetailListsGrid #detailList li dl {
+.inline-block-grid, #responsive-page #masterDetailListsGrid, #responsive-page #masterDetailListsGrid #detailList li dl, #responsive-page #masterDetailListsGrid2 #detailList2 li dl {
   letter-spacing: -0.31em;
   /* webkit: collapse white-space between units */
   *letter-spacing: normal;
@@ -348,7 +350,7 @@
   word-spacing: -0.43em;
   /* IE < 8 && gecko: collapse white-space between units */ }
 
-.inline-block-grid-cell, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList, #responsive-page #masterDetailListsGrid #detailList li dl dt {
+.inline-block-grid-cell, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList, #responsive-page #masterDetailListsGrid #detailList li dl dt, #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt {
   display: inline-block;
   zoom: 1;
   *display: inline;
@@ -362,30 +364,43 @@
 * e.g. if you have 3 cells in your grid, you could use a media-query for small devices, and have the order rearranged so
 * that cell 3 was stacked on top of cell 1, and cell 1 stacked on cell 2.
 *
+* Equal column heights - all flexbox elements inherit a default value of box-align: stretch. This means they will all stretch to fill their container.
+*
 * Limits:
-* - ie9 and Opera not supported. may need polyfill if possible. todo: research polyfill.
+* - ie9 and Opera not supported. may need polyfill if possible. todo: research polyfill...
 *
 * Sources:
 * - http://caniuse.com/#search=flexbox
 * - http://www.html5rocks.com/en/tutorials/flexbox/quick/
 * - http://www.w3.org/TR/css3-flexbox/
-* -
+* - http://blog.isotoma.com/2010/08/css3-flexbox/
+* - http://coding.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/
 */
-.flex-box-grid {
+.flex-box-grid, #responsive-page #masterDetailListsGrid2 {
   display: -webkit-box;
-  -webkit-box-orient: horizontal;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
   display: -moz-box;
-  -moz-box-orient: horizontal;
-  -moz-box-pack: center;
-  -moz-box-align: center;
-  display: box;
-  box-orient: horizontal;
-  box-pack: center;
-  box-align: center; }
+  display: box; }
 
-.money:before, #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(2):before {
+/**
+* Simply put, it tells the browser how to resize an element when the element is too big or small for its parent.
+* box-flex mixin for vendor prefixes.
+* @param - $flex - what you want to set for box-flex: $flex;
+*/
+/**
+* The box-orient property defines how boxes align within their parent. The default state is horizontal or, more specifically,
+* inline-axis, which is horizontal and left-to-right in most Western cultures. Likewise, vertical is the same as block-axis.
+* This will make sense if you think about how the browser lays out inline and block elements.
+* You can change the box-orient value to vertical to make boxes stack on top of each other.
+* @param - $orientation - horizontal, vertical
+*/
+/**
+* box-pack mixin for vendor prefixes.
+* @param - $pack - center
+*/
+/**
+*  box-align: center;
+*/
+.money:before, #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(2):before, #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(2):before {
   content: "$"; }
 
 #responsive-page {
@@ -424,4 +439,45 @@
       width: 30%; }
       @media only screen and (min-width: 325px) {
         #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(3) {
+          text-align: right; } }
+  #responsive-page #masterDetailListsGrid2 #masterList2 {
+    -moz-box-ordinal-group: 2;
+    -webkit-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+    cursor: pointer; }
+    @media only screen and (max-width: 325px) {
+      #responsive-page #masterDetailListsGrid2 #masterList2 {
+        width: 100%;
+        font-size: 150%; }
+        #responsive-page #masterDetailListsGrid2 #masterList2 li {
+          padding: 7px; } }
+    @media only screen and (min-width: 325px) {
+      #responsive-page #masterDetailListsGrid2 #masterList2 {
+        width: 30%; } }
+  #responsive-page #masterDetailListsGrid2 #detailList2 {
+    -moz-box-ordinal-group: 1;
+    -webkit-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+    cursor: pointer; }
+    @media only screen and (max-width: 325px) {
+      #responsive-page #masterDetailListsGrid2 #detailList2 {
+        width: 100%; } }
+    @media only screen and (min-width: 325px) {
+      #responsive-page #masterDetailListsGrid2 #detailList2 {
+        width: 70%; } }
+    @media only screen and (max-width: 325px) {
+      #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt {
+        width: 100% !important; } }
+    #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(1) {
+      width: 50%;
+      font-style: italic; }
+    #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(2) {
+      width: 20%; }
+      @media only screen and (min-width: 325px) {
+        #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(2) {
+          text-align: right; } }
+    #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(3) {
+      width: 30%; }
+      @media only screen and (min-width: 325px) {
+        #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(3) {
           text-align: right; } }

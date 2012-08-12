@@ -38,7 +38,41 @@ function program3(depth0,data) {
   buffer += escapeExpression(stack1) + "</dt>\n                </dl>\n\n            </li>\n            ";
   return buffer;}
 
-  buffer += "<div id=\"responsive-page\">\n\n    <h1>Master Detail List</h1>\n\n    <div id=\"masterDetailListsGrid\">\n        <ul id=\"masterList\">\n        ";
+function program5(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\n            <li data-index=\"";
+  foundHelper = helpers.index;
+  stack1 = foundHelper || depth0.index;
+  if(typeof stack1 === functionType) { stack1 = stack1.call(depth0, { hash: {} }); }
+  else if(stack1=== undef) { stack1 = helperMissing.call(depth0, "index", { hash: {} }); }
+  buffer += escapeExpression(stack1) + "\">";
+  stack1 = depth0.itemText;
+  if(typeof stack1 === functionType) { stack1 = stack1.call(depth0, { hash: {} }); }
+  else if(stack1=== undef) { stack1 = helperMissing.call(depth0, "this.itemText", { hash: {} }); }
+  buffer += escapeExpression(stack1) + "</li>\n            ";
+  return buffer;}
+
+function program7(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\n            <li>\n                <dl>\n                    <dt>";
+  stack1 = depth0.itemText;
+  if(typeof stack1 === functionType) { stack1 = stack1.call(depth0, { hash: {} }); }
+  else if(stack1=== undef) { stack1 = helperMissing.call(depth0, "this.itemText", { hash: {} }); }
+  buffer += escapeExpression(stack1) + "</dt>\n                    <dt>";
+  stack1 = depth0.itemText2;
+  if(typeof stack1 === functionType) { stack1 = stack1.call(depth0, { hash: {} }); }
+  else if(stack1=== undef) { stack1 = helperMissing.call(depth0, "this.itemText2", { hash: {} }); }
+  buffer += escapeExpression(stack1) + "</dt>\n                    <dt>";
+  stack1 = depth0.itemText3;
+  if(typeof stack1 === functionType) { stack1 = stack1.call(depth0, { hash: {} }); }
+  else if(stack1=== undef) { stack1 = helperMissing.call(depth0, "this.itemText3", { hash: {} }); }
+  buffer += escapeExpression(stack1) + "</dt>\n                </dl>\n\n            </li>\n            ";
+  return buffer;}
+
+  buffer += "<div id=\"responsive-page\">\n\n    <h1>Master Detail List</h1>\n\n    <h2>Inline Block Grid</h2>\n    ";
+  buffer += "\n    <div id=\"masterDetailListsGrid\">\n        <ul id=\"masterList\">\n        ";
   foundHelper = helpers.masterListItems;
   stack1 = foundHelper || depth0.masterListItems;
   foundHelper = helpers.each_with_index;
@@ -61,7 +95,31 @@ function program3(depth0,data) {
   tmp1.inverse = self.noop;
   stack1 = stack2.call(depth0, stack1, tmp1);
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n        </ul>\n    </div>\n</div>";
+  buffer += "\n        </ul>\n    </div>\n\n    <h2>Flex Box Grid</h2>\n    ";
+  buffer += "\n    <div id=\"masterDetailListsGrid2\">\n        <ul id=\"masterList2\">\n            ";
+  foundHelper = helpers.masterListItems;
+  stack1 = foundHelper || depth0.masterListItems;
+  foundHelper = helpers.each_with_index;
+  stack2 = foundHelper || depth0.each_with_index;
+  tmp1 = self.program(5, program5, data);
+  tmp1.hash = {};
+  tmp1.fn = tmp1;
+  tmp1.inverse = self.noop;
+  if(foundHelper && typeof stack2 === functionType) { stack1 = stack2.call(depth0, stack1, tmp1); }
+  else { stack1 = blockHelperMissing.call(depth0, stack2, stack1, tmp1); }
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n        </ul>\n\n        <ul id=\"detailList2\">\n            ";
+  foundHelper = helpers.selectedMasterListItem;
+  stack1 = foundHelper || depth0.selectedMasterListItem;
+  stack1 = (stack1 === null || stack1 === undefined || stack1 === false ? stack1 : stack1.detailListItems);
+  stack2 = helpers.each;
+  tmp1 = self.program(7, program7, data);
+  tmp1.hash = {};
+  tmp1.fn = tmp1;
+  tmp1.inverse = self.noop;
+  stack1 = stack2.call(depth0, stack1, tmp1);
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n        </ul>\n    </div>\n\n</div>";
   return buffer;}); 
 Handlebars.registerPartial("responsiveDemoPageTemplate", templates["responsiveDemoPageTemplate"]); 
 return templates["responsiveDemoPageTemplate"]; 
