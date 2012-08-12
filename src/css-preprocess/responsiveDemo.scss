@@ -117,13 +117,20 @@
 
 
   #masterDetailListsGrid2{
-    @extend .flex-box-grid;//
+    @extend .flex-box-grid;//the masterList and detailList are considered cells in this grid
+
+    //when there is limited real-estate, stack the cells vertically (block-axis)
+    @include mq(small){
+      @include box-orient(vertical);
+    }
 
     //cell 1
     #masterList2{  //ul
       //base type
       @extend .list-type-1;
-      @include box-ordinal-group(2);
+
+      //flex box
+      @include box-ordinal-group(2);//demo changing order of elements. puts details in front of master, even though master html comes first.
 
       //mouse devices
       cursor: pointer;
@@ -152,7 +159,9 @@
     #detailList2{  //ul
       //base type
       @extend .list-type-1;
-      @include box-ordinal-group(1);
+
+      //flex box
+      @include box-ordinal-group(1);//demo changing order of elements. puts details in front of master, even though master html comes first.
 
       //mouse devices
       cursor: pointer;
@@ -163,6 +172,7 @@
 
       @include mq(medium-and-above){
         width: 70%;
+        //@include box-flex(1);//
       }
 
       //li has several items in it, represented as dl dt, as to avoid confusion
@@ -170,41 +180,54 @@
 
         //each dl is considered a flexible grid, with each dt being a grid cell
         dl{ //grid
-          @extend .inline-block-grid;
+          @extend .flex-box-grid;
+          //@extend .inline-block-grid; //extending both causes flex box ordinal to stop working.
 
           dt{ //grid cell
-            @extend .inline-block-grid-cell;
-
-            @include mq(small){
-              width:100% !important; //need to override the nth-child widths
-            }
-
+            //@extend .inline-block-grid-cell;
           }
 
           //cell 1
-          dt:nth-child(1){
+          dt:nth-child(1){ //item description
             //sizing
-            width:50%;
+            //width:50%;
             font-style: italic;
+
+            @include mq(medium-and-above){
+              //positioning
+              @include box-ordinal-group(3);
+
+              //size
+              width:50%;
+            }
           }
 
           //cell 2
-          dt:nth-child(2){
+          dt:nth-child(2){ //amount
             @extend .money; //this cell
 
             //sizing
-            width:20%;
+            //width:20%;
 
             @include mq(medium-and-above){
+              //positioning
+              @include box-ordinal-group(1);
+
+              //size
+              width:50%;
+
               text-align: right;
+
             }
           }
 
           //cell 3
-          dt:nth-child(3){
-            width:30%;
+          dt:nth-child(3){  //date
+            //width:30%;
 
             @include mq(medium-and-above){
+              //positioning
+              @include box-ordinal-group(2);
               text-align: right;
             }
           }
