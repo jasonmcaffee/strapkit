@@ -1115,94 +1115,105 @@ dl {
 .money:before, #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(2):before, #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(2):before {
   content: "$"; }
 
+@media only screen and (max-width: 325px) {
+  #responsive-page #masterDetailListsGrid #masterList {
+    width: 100%;
+    font-size: 150%; }
+    #responsive-page #masterDetailListsGrid #masterList li {
+      padding: 7px; }
+  #responsive-page #masterDetailListsGrid #detailList {
+    width: 100%; }
+    #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(1) {
+      width: 100%; }
+    #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(2) {
+      width: 50%; }
+    #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(3) {
+      width: 50%;
+      text-align: right; }
+  #responsive-page #masterDetailListsGrid2 {
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-orient: vertical; }
+    #responsive-page #masterDetailListsGrid2 #masterList2 {
+      width: 100%;
+      font-size: 150%; }
+      #responsive-page #masterDetailListsGrid2 #masterList2 li {
+        padding: 7px; }
+    #responsive-page #masterDetailListsGrid2 #detailList2 {
+      width: 100%; }
+      #responsive-page #masterDetailListsGrid2 #detailList2 li dl {
+        -moz-box-orient: vertical;
+        -webkit-box-orient: vertical;
+        box-orient: vertical; }
+        #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(1) {
+          -moz-box-ordinal-group: 1;
+          -webkit-box-ordinal-group: 1;
+          box-ordinal-group: 1; }
+        #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(2) {
+          -moz-box-ordinal-group: 3;
+          -webkit-box-ordinal-group: 3;
+          box-ordinal-group: 3;
+          text-align: right; }
+        #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(3) {
+          text-align: right;
+          -moz-box-ordinal-group: 2;
+          -webkit-box-ordinal-group: 2;
+          box-ordinal-group: 2; } }
+@media only screen and (min-width: 325px) {
+  #responsive-page #masterDetailListsGrid #masterList {
+    width: 30%; }
+  #responsive-page #masterDetailListsGrid #detailList {
+    width: 70%; }
+    #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(1) {
+      width: 50%; }
+    #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(2) {
+      text-align: right;
+      width: 20%; }
+    #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(3) {
+      text-align: right;
+      width: 30%; }
+  #responsive-page #masterDetailListsGrid2 #masterList2 {
+    width: 30%; }
+  #responsive-page #masterDetailListsGrid2 #detailList2 {
+    width: 70%; }
+    #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(1) {
+      width: 50%;
+      text-align: right;
+      -moz-box-ordinal-group: 3;
+      -webkit-box-ordinal-group: 3;
+      box-ordinal-group: 3; }
+    #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(2) {
+      width: 30%;
+      -moz-box-ordinal-group: 1;
+      -webkit-box-ordinal-group: 1;
+      box-ordinal-group: 1; }
+    #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(3) {
+      text-align: right;
+      width: 20%;
+      -moz-box-ordinal-group: 2;
+      -webkit-box-ordinal-group: 2;
+      box-ordinal-group: 2; } }
 #responsive-page {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
   #responsive-page #masterDetailListsGrid #masterList {
     cursor: pointer; }
-    @media only screen and (max-width: 325px) {
-      #responsive-page #masterDetailListsGrid #masterList {
-        width: 100%;
-        font-size: 150%; }
-        #responsive-page #masterDetailListsGrid #masterList li {
-          padding: 7px; } }
-    @media only screen and (min-width: 325px) {
-      #responsive-page #masterDetailListsGrid #masterList {
-        width: 30%; } }
   #responsive-page #masterDetailListsGrid #detailList {
     cursor: pointer; }
-    @media only screen and (max-width: 325px) {
-      #responsive-page #masterDetailListsGrid #detailList {
-        width: 100%; } }
-    @media only screen and (min-width: 325px) {
-      #responsive-page #masterDetailListsGrid #detailList {
-        width: 70%; } }
-    @media only screen and (max-width: 325px) {
-      #responsive-page #masterDetailListsGrid #detailList li dl dt {
-        width: 100% !important; } }
     #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(1) {
-      width: 50%;
       font-style: italic; }
-    #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(2) {
-      width: 20%; }
-      @media only screen and (min-width: 325px) {
-        #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(2) {
-          text-align: right; } }
-    #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(3) {
-      width: 30%; }
-      @media only screen and (min-width: 325px) {
-        #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(3) {
-          text-align: right; } }
-  @media only screen and (max-width: 325px) {
-    #responsive-page #masterDetailListsGrid2 {
-      -moz-box-orient: vertical;
-      -webkit-box-orient: vertical;
-      box-orient: vertical; } }
   #responsive-page #masterDetailListsGrid2 #masterList2 {
     -moz-box-ordinal-group: 2;
     -webkit-box-ordinal-group: 2;
     box-ordinal-group: 2;
     cursor: pointer; }
-    @media only screen and (max-width: 325px) {
-      #responsive-page #masterDetailListsGrid2 #masterList2 {
-        width: 100%;
-        font-size: 150%; }
-        #responsive-page #masterDetailListsGrid2 #masterList2 li {
-          padding: 7px; } }
-    @media only screen and (min-width: 325px) {
-      #responsive-page #masterDetailListsGrid2 #masterList2 {
-        width: 30%; } }
   #responsive-page #masterDetailListsGrid2 #detailList2 {
     -moz-box-ordinal-group: 1;
     -webkit-box-ordinal-group: 1;
     box-ordinal-group: 1;
     cursor: pointer; }
-    @media only screen and (max-width: 325px) {
-      #responsive-page #masterDetailListsGrid2 #detailList2 {
-        width: 100%; } }
-    @media only screen and (min-width: 325px) {
-      #responsive-page #masterDetailListsGrid2 #detailList2 {
-        width: 70%; } }
     #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(1) {
       font-style: italic; }
-      @media only screen and (min-width: 325px) {
-        #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(1) {
-          -moz-box-ordinal-group: 3;
-          -webkit-box-ordinal-group: 3;
-          box-ordinal-group: 3;
-          width: 50%; } }
-    @media only screen and (min-width: 325px) {
-      #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(2) {
-        -moz-box-ordinal-group: 1;
-        -webkit-box-ordinal-group: 1;
-        box-ordinal-group: 1;
-        width: 50%;
-        text-align: right; } }
-    @media only screen and (min-width: 325px) {
-      #responsive-page #masterDetailListsGrid2 #detailList2 li dl dt:nth-child(3) {
-        -moz-box-ordinal-group: 2;
-        -webkit-box-ordinal-group: 2;
-        box-ordinal-group: 2;
-        text-align: right; } }
 
 .round-top-left-right-by-7 {
   -moz-border-radius-topleft: 7px;

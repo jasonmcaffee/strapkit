@@ -11,6 +11,8 @@ define([
             masterListItems:[
                 {
                     itemText: 'Personal Checking',
+                    availableBalance: '13,034.21',
+                    presentBalance: '13,211.99',
                     detailListItems:[
                         {itemText:'Get Go', itemText2:'123.45', itemText3:'06/17/12'},
                         {itemText:'Chipotle', itemText2:'9.63', itemText3:'06/17/12' },

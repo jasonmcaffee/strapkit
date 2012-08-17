@@ -12,12 +12,190 @@
   }
 }
 
+//small
+@include mq(small){
+  #responsive-page{
+
+    #masterDetailListsGrid{
+
+      #masterList{
+        //sizing
+        width:100%;
+
+        //font
+        font-size: 150%;
+
+        //further extend .list-type-1
+        li{
+          padding:7px;
+        }
+      }
+
+      #detailList{  //ul
+        width:100%;
+        li{
+
+          dl{
+            dt{
+
+            }
+
+            dt:nth-child(1){
+              width:100%;
+            }
+
+            dt:nth-child(2){
+              width:50%;
+            }
+
+            dt:nth-child(3){
+              width:50%;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+
+    #masterDetailListsGrid2{
+      @include box-orient(vertical);//stack cells top to bottom
+
+      #masterList2{
+
+        //sizing
+        width:100%;
+        //font
+        font-size: 150%;
+
+        li{
+          padding: 7px;
+        }
+      }
+
+      #detailList2{
+        width: 100%;
+        li{
+          dl{
+            @include box-orient(vertical);//limitation of flex box.
+            dt{
+
+            }
+
+            dt:nth-child(1){
+              @include box-ordinal-group(1);
+            }
+
+            dt:nth-child(2){
+              @include box-ordinal-group(3);
+              text-align: right;
+            }
+
+            dt:nth-child(3){
+              text-align: right;
+              @include box-ordinal-group(2);
+            }
+
+          }
+        }
+
+      }
+
+    }
+
+  }
+}
 
 
+//media queries
+@include mq(medium-and-above){
+  #responsive-page{
+
+    #masterDetailListsGrid{
+
+      #masterList{
+        width: 30%;
+
+      }
+
+      #detailList{  //ul
+        width: 70%;
+        li{
+
+          dl{
+            dt{
+
+            }
+
+            dt:nth-child(1){
+              width:50%;
+            }
+
+            dt:nth-child(2){
+              text-align: right;
+              width:20%;
+            }
+
+            dt:nth-child(3){
+              text-align: right;
+              width:30%;
+            }
+          }
+        }
+      }
+    }
+
+    #masterDetailListsGrid2{
+
+      #masterList2{
+        width:30%;
+
+        li{
+
+        }
+      }
+
+      #detailList2{
+        width:70%;
+        li{
+          dl{
+            dt{
+
+            }
+
+            dt:nth-child(1){
+              width:50%;
+              text-align: right;
+              @include box-ordinal-group(3);
+            }
+
+            dt:nth-child(2){
+              width:30%;
+              @include box-ordinal-group(1);
+            }
+
+            dt:nth-child(3){
+              text-align: right;
+              width:20%;
+              @include box-ordinal-group(2);
+            }
+
+          }
+        }
+
+      }
+
+    }
+
+
+  }
+}
+
+
+//layout & base styling for all form factors
 #responsive-page{
    //background-color: blue;
    width:100%;
-
+  height:100%;
   #masterDetailListsGrid{
     @extend .inline-block-grid;//
 
@@ -30,24 +208,6 @@
       //mouse devices
       cursor: pointer;
 
-      //small screens - make it easier to see and interact with the data.
-      @include mq(small){
-        //sizing
-        width:100%;
-
-        //font
-        font-size: 150%;
-
-        //further extend .list-type-1
-        li{
-          padding:7px;
-        }
-      }
-
-      //medium screens and above - collapse masterList and detailList so they are side by side.
-      @include mq(medium-and-above){
-        width: 30%;
-      }
     }//#masterList
 
     //cell 2
@@ -59,14 +219,6 @@
       //mouse devices
       cursor: pointer;
 
-      @include mq(small){
-        width:100%;
-      }
-
-      @include mq(medium-and-above){
-        width: 70%;
-      }
-
       //li has several items in it, represented as dl dt, as to avoid confusion
       li{
 
@@ -77,16 +229,10 @@
           dt{ //grid cell
             @extend .inline-block-grid-cell;
 
-            @include mq(small){
-              width:100% !important; //need to override the nth-child widths
-            }
-
           }
 
           //cell 1
           dt:nth-child(1){
-            //sizing
-            width:50%;
             font-style: italic;
           }
 
@@ -94,21 +240,10 @@
           dt:nth-child(2){
             @extend .money; //this cell
 
-            //sizing
-            width:20%;
-
-            @include mq(medium-and-above){
-              text-align: right;
-            }
           }
 
           //cell 3
           dt:nth-child(3){
-            width:30%;
-
-            @include mq(medium-and-above){
-              text-align: right;
-            }
           }
         }
       }//li
@@ -118,41 +253,28 @@
 
   #masterDetailListsGrid2{
     @extend .flex-box-grid;//the masterList and detailList are considered cells in this grid
-
-    //when there is limited real-estate, stack the cells vertically (block-axis)
-    @include mq(small){
-      @include box-orient(vertical);
-    }
+    //height:30%;
 
     //cell 1
     #masterList2{  //ul
       //base type
       @extend .list-type-1;
 
+      //height:100%; //removes padding. cells aren't equal
       //flex box
       @include box-ordinal-group(2);//demo changing order of elements. puts details in front of master, even though master html comes first.
 
       //mouse devices
       cursor: pointer;
 
-      //small screens - make it easier to see and interact with the data.
-      @include mq(small){
-        //sizing
-        width:100%;
+      ul{
+        //height:100%;
 
-        //font
-        font-size: 150%;
-
-        //further extend .list-type-1
         li{
-          padding:7px;
+          //height:100%;
         }
       }
 
-      //medium screens and above - collapse masterList and detailList so they are side by side.
-      @include mq(medium-and-above){
-        width: 30%;
-      }
     }//#masterList
 
     //cell 2
@@ -165,15 +287,6 @@
 
       //mouse devices
       cursor: pointer;
-
-      @include mq(small){
-        width:100%;
-      }
-
-      @include mq(medium-and-above){
-        width: 70%;
-        //@include box-flex(1);//
-      }
 
       //li has several items in it, represented as dl dt, as to avoid confusion
       li{
@@ -189,47 +302,18 @@
 
           //cell 1
           dt:nth-child(1){ //item description
-            //sizing
-            //width:50%;
             font-style: italic;
 
-            @include mq(medium-and-above){
-              //positioning
-              @include box-ordinal-group(3);
-
-              //size
-              width:50%;
-            }
           }
 
           //cell 2
           dt:nth-child(2){ //amount
             @extend .money; //this cell
-
-            //sizing
-            //width:20%;
-
-            @include mq(medium-and-above){
-              //positioning
-              @include box-ordinal-group(1);
-
-              //size
-              width:50%;
-
-              text-align: right;
-
-            }
           }
 
           //cell 3
           dt:nth-child(3){  //date
-            //width:30%;
 
-            @include mq(medium-and-above){
-              //positioning
-              @include box-ordinal-group(2);
-              text-align: right;
-            }
           }
         }
       }//li

@@ -6,6 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/app.css" afterPath="$PROJECT_DIR$/dist/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/responsiveDemo.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/responsiveDemo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" afterPath="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,7 +76,7 @@
       <file leaf-file-name="ResponsiveDemoModel.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="114" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
+            <state line="12" column="100" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,7 +85,7 @@
       <file leaf-file-name="responsiveDemoPageTemplate.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="52" selection-start="712" selection-end="712" vertical-scroll-proportion="-12.8">
+            <state line="2" column="119" selection-start="59" selection-end="59" vertical-scroll-proportion="-1.28">
               <folding />
             </state>
           </provider>
@@ -93,7 +94,7 @@
       <file leaf-file-name="responsiveDemo.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="97" selection-start="4207" selection-end="4207" vertical-scroll-proportion="0.36753574">
+            <state line="255" column="105" selection-start="4313" selection-end="4313" vertical-scroll-proportion="3.431455">
               <folding />
             </state>
           </provider>
@@ -131,18 +132,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="30" column="64" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/css/app.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1186" column="36" selection-start="71174" selection-end="71174" vertical-scroll-proportion="0.5417391">
-              <folding>
-                <marker date="1344804898000" expanded="true" signature="68756:70153" placeholder="/*...*/" />
-                <marker date="1344804898000" expanded="true" signature="71958:71960" placeholder="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -185,9 +174,9 @@
         <option value="$PROJECT_DIR$/src/css-preprocess/reset.scss" />
         <option value="$PROJECT_DIR$/src/css-preprocess/media-queries.scss" />
         <option value="$PROJECT_DIR$/src/css-preprocess/core/lists.scss" />
-        <option value="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" />
         <option value="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" />
         <option value="$PROJECT_DIR$/src/css-preprocess/core/grids.scss" />
+        <option value="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" />
         <option value="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" />
       </list>
     </option>
@@ -1222,7 +1211,11 @@
       <created>1344734233798</created>
       <updated>1344734233798</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="responsive master detail list - continued flex box implementation.">
+      <created>1344805012276</created>
+      <updated>1344805012276</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1404,40 +1397,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1186" column="36" selection-start="71174" selection-end="71174" vertical-scroll-proportion="0.5417391">
-          <folding>
-            <marker date="1344804898000" expanded="true" signature="68756:70153" placeholder="/*...*/" />
-            <marker date="1344804898000" expanded="true" signature="71958:71960" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="114" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/lists.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="64" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/media-queries.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="71" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="52" selection-start="712" selection-end="712" vertical-scroll-proportion="-12.8">
           <folding />
         </state>
       </provider>
@@ -1449,9 +1411,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dist/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1192" column="36" selection-start="71420" selection-end="71420" vertical-scroll-proportion="9.028696">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/lists.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="64" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="119" selection-start="59" selection-end="59" vertical-scroll-proportion="-1.28">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="100" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="97" selection-start="4207" selection-end="4207" vertical-scroll-proportion="0.36753574">
+        <state line="255" column="105" selection-start="4313" selection-end="4313" vertical-scroll-proportion="3.431455">
           <folding />
         </state>
       </provider>
