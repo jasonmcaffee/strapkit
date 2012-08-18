@@ -14,22 +14,29 @@ define([
         //load plugins, etc
         core.initPlugins();
 
-        //create controllers
-        this.demosController = new DemosController();
-        this.strapkitController = new StrapkitController();
+        var self = this;
+        //make everything easier to manage by waiting until dom ready to create controllers
+        $(function(){
+            log('app : document ready. creating controllers and establishing routes.');
+            //create controllers
+            self.demosController = new DemosController();
+            self.strapkitController = new StrapkitController();
 
-        //setup routes
-        this.setupRoutes();
+            //setup routes
+            self.setupRoutes();
 
-        //create global widgets
-        this.navigationBar = new NavigationBar();
+            //create global widgets
+            self.navigationBar = new NavigationBar();
 
-        //if there is no relative route, send them to the home page.
-        log('current route is : ' + Backbone.history.fragment);
-        if(Backbone.history.fragment == ""){
-            //load the home page
-            this.router.navigate('home', {trigger:true});
-        }
+            //if there is no relative route, send them to the home page.
+            log('current route is : ' + Backbone.history.fragment);
+            if(Backbone.history.fragment == ""){
+                //load the home page
+                self.router.navigate('home', {trigger:true});
+            }
+        });
+
+
 
     }
 
@@ -42,6 +49,7 @@ define([
             routes: {
                 "demos/buttonsDemo" : "buttonsDemo",
                 "demos/responsiveDemo" : "responsiveDemo",
+                "demos/responsiveFlexBoxDemo" : "responsiveFlexBoxDemo",
                 "home" : "home",
                 "demos/home" : "demosHome"
             },
@@ -56,6 +64,10 @@ define([
             responsiveDemo : function(){
                 log('router: responsiveDemo called.');
                 self.demosController.showResponsiveDemoPage();
+            },
+            responsiveFlexBoxDemo : function(){
+                log('router: responsiveFlexBoxDemo called.');
+                self.demosController.showResponsiveFlexBoxDemoPage();
             },
             demosHome : function(){
                 log('router: demosHome called.');

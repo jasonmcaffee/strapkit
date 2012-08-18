@@ -6,187 +6,18 @@
 @import "src/css-preprocess/util/position-fixes";
 @import "src/css-preprocess/core/grids";
 
+/*
+as a general rule, using unobtrusive css is a bad practice, as the selectors end up not being efficient.
+https://developers.google.com/speed/docs/best-practices/rendering?hl=de-DE#UseEfficientCSSSelectors
+http://snook.ca/archives/html_and_css/css-parent-selectors
+
+However, these rules don't seem to apply to modern browsers, and the rendering of this page takes less than 1 ms in chrome.
+If performance becomes a problem, simply change the selector.
+
+*/
 .money{
   &:before{
     content:'$'
-  }
-}
-
-//small
-@include mq(small){
-  #responsive-page{
-
-    #masterDetailListsGrid{
-
-      #masterList{
-        //sizing
-        width:100%;
-
-        //font
-        font-size: 150%;
-
-        //further extend .list-type-1
-        li{
-          padding:7px;
-        }
-      }
-
-      #detailList{  //ul
-        width:100%;
-        li{
-
-          dl{
-            dt{
-
-            }
-
-            dt:nth-child(1){
-              width:100%;
-            }
-
-            dt:nth-child(2){
-              width:50%;
-            }
-
-            dt:nth-child(3){
-              width:50%;
-              text-align: right;
-            }
-          }
-        }
-      }
-    }
-
-    #masterDetailListsGrid2{
-      @include box-orient(vertical);//stack cells top to bottom
-
-      #masterList2{
-
-        //sizing
-        width:100%;
-        //font
-        font-size: 150%;
-
-        li{
-          padding: 7px;
-        }
-      }
-
-      #detailList2{
-        width: 100%;
-        li{
-          dl{
-            @include box-orient(vertical);//limitation of flex box.
-            dt{
-
-            }
-
-            dt:nth-child(1){
-              @include box-ordinal-group(1);
-            }
-
-            dt:nth-child(2){
-              @include box-ordinal-group(3);
-              text-align: right;
-            }
-
-            dt:nth-child(3){
-              text-align: right;
-              @include box-ordinal-group(2);
-            }
-
-          }
-        }
-
-      }
-
-    }
-
-  }
-}
-
-
-//media queries
-@include mq(medium-and-above){
-  #responsive-page{
-
-    #masterDetailListsGrid{
-
-      #masterList{
-        width: 30%;
-
-      }
-
-      #detailList{  //ul
-        width: 70%;
-        li{
-
-          dl{
-            dt{
-
-            }
-
-            dt:nth-child(1){
-              width:50%;
-            }
-
-            dt:nth-child(2){
-              text-align: right;
-              width:20%;
-            }
-
-            dt:nth-child(3){
-              text-align: right;
-              width:30%;
-            }
-          }
-        }
-      }
-    }
-
-    #masterDetailListsGrid2{
-
-      #masterList2{
-        width:30%;
-
-        li{
-
-        }
-      }
-
-      #detailList2{
-        width:70%;
-        li{
-          dl{
-            dt{
-
-            }
-
-            dt:nth-child(1){
-              width:50%;
-              text-align: right;
-              @include box-ordinal-group(3);
-            }
-
-            dt:nth-child(2){
-              width:30%;
-              @include box-ordinal-group(1);
-            }
-
-            dt:nth-child(3){
-              text-align: right;
-              width:20%;
-              @include box-ordinal-group(2);
-            }
-
-          }
-        }
-
-      }
-
-    }
-
-
   }
 }
 
@@ -249,76 +80,96 @@
       }//li
     }//#detailList
   }//masterDetailListGrid
+}//end responsive-page
 
 
-  #masterDetailListsGrid2{
-    @extend .flex-box-grid;//the masterList and detailList are considered cells in this grid
-    //height:30%;
+//===================================================================== media queries ==================================
+//small
+@include mq(small){
+  #responsive-page{
 
-    //cell 1
-    #masterList2{  //ul
-      //base type
-      @extend .list-type-1;
+    #masterDetailListsGrid{
 
-      //height:100%; //removes padding. cells aren't equal
-      //flex box
-      @include box-ordinal-group(2);//demo changing order of elements. puts details in front of master, even though master html comes first.
+      #masterList{
+        //sizing
+        width:100%;
 
-      //mouse devices
-      cursor: pointer;
+        //font
+        font-size: 150%;
 
-      ul{
-        //height:100%;
-
+        //further extend .list-type-1
         li{
-          //height:100%;
+          padding:7px;
         }
       }
 
-    }//#masterList
+      #detailList{  //ul
+        width:100%;
+        li{
 
-    //cell 2
-    #detailList2{  //ul
-      //base type
-      @extend .list-type-1;
+          dl{
+            dt{
 
-      //flex box
-      @include box-ordinal-group(1);//demo changing order of elements. puts details in front of master, even though master html comes first.
+            }
 
-      //mouse devices
-      cursor: pointer;
+            dt:nth-child(1){
+              width:100%;
+            }
 
-      //li has several items in it, represented as dl dt, as to avoid confusion
-      li{
+            dt:nth-child(2){
+              width:50%;
+            }
 
-        //each dl is considered a flexible grid, with each dt being a grid cell
-        dl{ //grid
-          @extend .flex-box-grid;
-          //@extend .inline-block-grid; //extending both causes flex box ordinal to stop working.
-
-          dt{ //grid cell
-            //@extend .inline-block-grid-cell;
-          }
-
-          //cell 1
-          dt:nth-child(1){ //item description
-            font-style: italic;
-
-          }
-
-          //cell 2
-          dt:nth-child(2){ //amount
-            @extend .money; //this cell
-          }
-
-          //cell 3
-          dt:nth-child(3){  //date
-
+            dt:nth-child(3){
+              width:50%;
+              text-align: right;
+            }
           }
         }
-      }//li
-    }//#detailList
-  }//masterDetailListGrid2
+      }
+    }
+
+  }
+}
 
 
-}//end responsive-page
+//medium
+@include mq(medium-and-above){
+  #responsive-page{
+
+    #masterDetailListsGrid{
+
+      #masterList{
+        width: 30%;
+
+      }
+
+      #detailList{  //ul
+        width: 70%;
+        li{
+
+          dl{
+            dt{
+
+            }
+
+            dt:nth-child(1){
+              width:50%;
+            }
+
+            dt:nth-child(2){
+              text-align: right;
+              width:20%;
+            }
+
+            dt:nth-child(3){
+              text-align: right;
+              width:30%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

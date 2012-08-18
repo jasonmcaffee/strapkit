@@ -1,7 +1,8 @@
 define([
     'core/util/log',
-    'lib/views/HomeView'
-], function(log, HomeView){
+    'lib/views/HomeView',
+    'jquery'
+], function(log, HomeView, $){
 
     function StrapkitController(){
         log('StrapkitController constructor called.');

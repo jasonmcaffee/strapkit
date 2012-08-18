@@ -6,7 +6,7 @@ templates['demosHomePageTemplate'] = template(function (Handlebars,depth0,helper
   var foundHelper, self=this;
 
 
-  return "<div>\n    <h2>Demos</h2>\n    <a href=\"#demos/buttonsDemo\">Buttons Demo</a>\n    <a href=\"#demos/responsiveDemo\">Responsive Demo</a>\n</div>";}); 
+  return "<div id=\"demos-page\">\n    <h2>Demos</h2>\n\n    <ul id=\"demoLinksList\">\n        <li>\n            <a href=\"#demos/buttonsDemo\">Buttons Demo</a>\n        </li>\n        <li>\n            <a href=\"#demos/responsiveDemo\">Responsive Demo</a>\n        </li>\n        <li>\n            <a href=\"#demos/responsiveFlexBoxDemo\">Responsive Flex Box Demo</a>\n        </li>\n    </ul>\n\n</div>";}); 
 Handlebars.registerPartial("demosHomePageTemplate", templates["demosHomePageTemplate"]); 
 return templates["demosHomePageTemplate"]; 
 });

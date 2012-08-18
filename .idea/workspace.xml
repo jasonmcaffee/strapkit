@@ -2,11 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css-preprocess/app/demosPage.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css-preprocess/responsiveFlexBoxDemo.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/lib/views/ResponsiveFlexBoxDemoView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/demos/responsiveFlexBoxDemoPageTemplate.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/lib/controllers/demosController.js" afterPath="$PROJECT_DIR$/src/js/lib/controllers/DemosController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/app.css" afterPath="$PROJECT_DIR$/dist/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app-built.js" afterPath="$PROJECT_DIR$/dist/js/app-built.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node-server/views/test.html" afterPath="$PROJECT_DIR$/node-server/views/test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/responsiveDemo.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/responsiveDemo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" afterPath="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app.js" afterPath="$PROJECT_DIR$/src/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/compiled-templates/demos/demosHomePageTemplate.js" afterPath="$PROJECT_DIR$/src/js/compiled-templates/demos/demosHomePageTemplate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/compiled-templates/demos/responsiveDemoPageTemplate.js" afterPath="$PROJECT_DIR$/src/js/compiled-templates/demos/responsiveDemoPageTemplate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js" afterPath="$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/lib/views/HomeView.js" afterPath="$PROJECT_DIR$/src/js/lib/views/HomeView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/demos/demosHomePageTemplate.html" afterPath="$PROJECT_DIR$/src/templates/demos/demosHomePageTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" afterPath="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,82 +77,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="responsiveFlexBoxDemo.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveFlexBoxDemo.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="72" selection-start="430" selection-end="430" vertical-scroll-proportion="0.17823479">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponsiveFlexBoxDemoView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/lib/views/ResponsiveFlexBoxDemoView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="47" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DemosController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/DemosController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="50" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="69" selection-start="2376" selection-end="2376" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demosHomePageTemplate.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/demos/demosHomePageTemplate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="12" selection-start="54" selection-end="67" vertical-scroll-proportion="-1.92">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demosPage.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/demosPage.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="19" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="responsiveFlexBoxDemoPageTemplate.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveFlexBoxDemoPageTemplate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="30" selection-start="9" selection-end="33" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ResponsiveDemoView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/lib/views/ResponsiveDemoView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="96" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResponsiveDemoModel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="100" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="responsiveDemoPageTemplate.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="119" selection-start="59" selection-end="59" vertical-scroll-proportion="-1.28">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="responsiveDemo.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="255" column="105" selection-start="4313" selection-end="4313" vertical-scroll-proportion="3.431455">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="grids.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/grids.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="1" selection-start="4015" selection-end="4015" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="grunt.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/grunt.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="50" selection-start="2185" selection-end="2185" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reset.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css-preprocess/reset.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lists.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/lists.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="64" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="media-queries.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css-preprocess/media-queries.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="71" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
+            <state line="12" column="30" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -162,22 +166,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/dist/css/app.css" />
-        <option value="$PROJECT_DIR$/src/templates/widgets/responsiveMasterDetailListTemplate.html" />
-        <option value="$PROJECT_DIR$/src/js/lib/widgets/ResponsiveMasterDetailList.js" />
-        <option value="$PROJECT_DIR$/src/js/core/core.js" />
-        <option value="$PROJECT_DIR$/src/js/app.js" />
-        <option value="$PROJECT_DIR$/src/js/core/plugins/handlebars/eachWithIndex.js" />
-        <option value="$PROJECT_DIR$/src/js/lib/controllers/DemosController.js" />
-        <option value="$PROJECT_DIR$/src/js/lib/views/ResponsiveDemoView.js" />
-        <option value="$PROJECT_DIR$/src/css-preprocess/rounded-corners.scss" />
-        <option value="$PROJECT_DIR$/src/css-preprocess/reset.scss" />
-        <option value="$PROJECT_DIR$/src/css-preprocess/media-queries.scss" />
-        <option value="$PROJECT_DIR$/src/css-preprocess/core/lists.scss" />
-        <option value="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" />
         <option value="$PROJECT_DIR$/src/css-preprocess/core/grids.scss" />
         <option value="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" />
+        <option value="$PROJECT_DIR$/src/js/lib/views/HomeView.js" />
+        <option value="$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js" />
+        <option value="$PROJECT_DIR$/src/js/lib-third-party/flexie.min.js" />
+        <option value="$PROJECT_DIR$/node-server/views/test.html" />
+        <option value="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" />
+        <option value="$PROJECT_DIR$/src/templates/demos/responsiveFlexBoxDemoPageTemplate.html" />
         <option value="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" />
+        <option value="$PROJECT_DIR$/src/js/lib/views/ResponsiveDemoView.js" />
+        <option value="$PROJECT_DIR$/src/js/lib/views/ResponsiveFlexBoxDemoView.js" />
+        <option value="$PROJECT_DIR$/src/js/lib/controllers/DemosController.js" />
+        <option value="$PROJECT_DIR$/src/js/app.js" />
+        <option value="$PROJECT_DIR$/src/templates/demos/demosHomePageTemplate.html" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/app/demosPage.scss" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/responsiveFlexBoxDemo.scss" />
       </list>
     </option>
   </component>
@@ -213,6 +217,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -664,6 +678,28 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css-preprocess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modernmobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strapkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -817,16 +853,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane />
       </pane>
@@ -836,13 +862,13 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="329" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="338" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="334" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="341" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1135" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1134" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1135" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="339" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="336" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -862,6 +888,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist/js" />
       <recent name="$PROJECT_DIR$/dist" />
       <recent name="$PROJECT_DIR$/../modern-device-strapup/src/css" />
     </key>
@@ -1215,14 +1242,17 @@
       <created>1344805012276</created>
       <updated>1344805012276</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="responsive master detail list - continued flex box implementation.">
+      <created>1345246669515</created>
+      <updated>1345246669515</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="119" y="162" width="2209" height="1337" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1237,6 +1267,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929105" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1334,114 +1365,92 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/lib-third-party/handlebars.runtime.js">
+    <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/rounded-corners.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="33" selection-start="3891" selection-end="3891" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/DemosController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="79" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/core/plugins/handlebars/eachWithIndex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="87" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/core/core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="60" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/grunt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="50" selection-start="2185" selection-end="2185" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/views/ResponsiveDemoView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="96" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/reset.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/media-queries.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="71" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/grids.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="1" selection-start="4015" selection-end="4015" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1192" column="36" selection-start="71420" selection-end="71420" vertical-scroll-proportion="9.028696">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/lists.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="64" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="17" column="63" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="119" selection-start="59" selection-end="59" vertical-scroll-proportion="-1.28">
-          <folding />
-        </state>
+        <state line="27" column="4" selection-start="780" selection-end="780" vertical-scroll-proportion="-17.28" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js">
+    <entry file="file://$PROJECT_DIR$/src/js/compiled-templates/widgets/responsiveMasterDetailListTemplate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="100" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/widgets/responsiveMasterDetailListTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="149" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="105" selection-start="4313" selection-end="4313" vertical-scroll-proportion="3.431455">
+        <state line="124" column="53" selection-start="2718" selection-end="2718" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/lib/views/ResponsiveFlexBoxDemoView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="47" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/DemosController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="50" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="69" selection-start="2376" selection-end="2376" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/reset.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveFlexBoxDemoPageTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="30" selection-start="9" selection-end="33" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/demos/demosHomePageTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="12" selection-start="54" selection-end="67" vertical-scroll-proportion="-1.92">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/strapkit.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/lib/views/ResponsiveDemoView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="30" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/demosPage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveFlexBoxDemo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="72" selection-start="430" selection-end="430" vertical-scroll-proportion="0.17823479">
           <folding />
         </state>
       </provider>
