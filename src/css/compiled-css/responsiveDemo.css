@@ -9,7 +9,7 @@
   background: linear-gradient(to bottom, #abaaa7 0%, #ced0d3 5.76%, #dfe0e1 18.04%, #d0cece 93.99%, #555556 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#abaaa7', endColorstr='#555556',GradientType=0 ); }
 
-.grey-subtle-gradient, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList {
+.grey-subtle-gradient, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList, .list-type-2 {
   background: #282828;
   background: -moz-linear-gradient(top, #282828 0%, #333333 7%, #333333 12%, #3d3d3d 86%, #333333 93%, #3f3f3f 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #282828), color-stop(7%, #333333), color-stop(12%, #333333), color-stop(86%, #3d3d3d), color-stop(93%, #333333), color-stop(100%, #3f3f3f));
@@ -38,7 +38,7 @@
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(246, 246, 246, 0.5) 47%, rgba(237, 237, 237, 0.49) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#7dededed',GradientType=0 ); }
 
-.list-item-white, .list-type-1 li, #responsive-page #masterDetailListsGrid #masterList li, #responsive-page #masterDetailListsGrid #detailList li {
+.list-item-white, .list-type-1 li, #responsive-page #masterDetailListsGrid #masterList li, #responsive-page #masterDetailListsGrid #detailList li, .list-type-2 dt {
   background: #fcfcfc;
   background: -moz-radial-gradient(center, ellipse cover, #fcfcfc 0%, #f9f9f9 54%, #f7f7f7 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fcfcfc), color-stop(54%, #f9f9f9), color-stop(100%, #f7f7f7));
@@ -48,7 +48,7 @@
   background: radial-gradient(ellipse at center, #fcfcfc 0%, #f9f9f9 54%, #f7f7f7 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f7f7f7',GradientType=1 ); }
 
-.list-item-grey, .list-type-1 li:nth-child(even), #responsive-page #masterDetailListsGrid #masterList li:nth-child(even), #responsive-page #masterDetailListsGrid #detailList li:nth-child(even) {
+.list-item-grey, .list-type-1 li:nth-child(even), #responsive-page #masterDetailListsGrid #masterList li:nth-child(even), #responsive-page #masterDetailListsGrid #detailList li:nth-child(even), .list-type-2 dt:nth-child(even) {
   background: #f4f4f4;
   background: -moz-radial-gradient(center, ellipse cover, #f4f4f4 0%, #f2f2f2 54%, #eaeaea 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f4f4f4), color-stop(54%, #f2f2f2), color-stop(100%, #eaeaea));
@@ -97,7 +97,7 @@
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px; }
 
-.round-top-left-right-by-5, .list-type-1 li:first-child, #responsive-page #masterDetailListsGrid #masterList li:first-child, #responsive-page #masterDetailListsGrid #detailList li:first-child {
+.round-top-left-right-by-5, .list-type-2 dt:first-child {
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-topright: 5px;
   -moz-border-radius-bottomleft: 0px;
@@ -111,7 +111,7 @@
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px; }
 
-.round-bottom-left-right-by-5, .list-type-1 li:last-child, #responsive-page #masterDetailListsGrid #masterList li:last-child, #responsive-page #masterDetailListsGrid #detailList li:last-child {
+.round-bottom-left-right-by-5, .list-type-2 dt:last-child {
   -moz-border-radius-topleft: 0px;
   -moz-border-radius-topright: 0px;
   -moz-border-radius-bottomleft: 5px;
@@ -139,7 +139,7 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; }
 
-.round-all-by-3, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList {
+.round-all-by-3, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList, .list-type-2 {
   -moz-border-radius-topleft: 3px;
   -moz-border-radius-topright: 3px;
   -moz-border-radius-bottomleft: 3px;
@@ -164,7 +164,7 @@
   background: linear-gradient(to bottom, #abaaa7 0%, #ced0d3 5.76%, #dfe0e1 18.04%, #d0cece 93.99%, #555556 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#abaaa7', endColorstr='#555556',GradientType=0 ); }
 
-.grey-subtle-gradient, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList {
+.grey-subtle-gradient, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList, .list-type-2 {
   background: #282828;
   background: -moz-linear-gradient(top, #282828 0%, #333333 7%, #333333 12%, #3d3d3d 86%, #333333 93%, #3f3f3f 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #282828), color-stop(7%, #333333), color-stop(12%, #333333), color-stop(86%, #3d3d3d), color-stop(93%, #333333), color-stop(100%, #3f3f3f));
@@ -193,7 +193,7 @@
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(246, 246, 246, 0.5) 47%, rgba(237, 237, 237, 0.49) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#7dededed',GradientType=0 ); }
 
-.list-item-white, .list-type-1 li, #responsive-page #masterDetailListsGrid #masterList li, #responsive-page #masterDetailListsGrid #detailList li {
+.list-item-white, .list-type-1 li, #responsive-page #masterDetailListsGrid #masterList li, #responsive-page #masterDetailListsGrid #detailList li, .list-type-2 dt {
   background: #fcfcfc;
   background: -moz-radial-gradient(center, ellipse cover, #fcfcfc 0%, #f9f9f9 54%, #f7f7f7 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fcfcfc), color-stop(54%, #f9f9f9), color-stop(100%, #f7f7f7));
@@ -203,7 +203,7 @@
   background: radial-gradient(ellipse at center, #fcfcfc 0%, #f9f9f9 54%, #f7f7f7 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f7f7f7',GradientType=1 ); }
 
-.list-item-grey, .list-type-1 li:nth-child(even), #responsive-page #masterDetailListsGrid #masterList li:nth-child(even), #responsive-page #masterDetailListsGrid #detailList li:nth-child(even) {
+.list-item-grey, .list-type-1 li:nth-child(even), #responsive-page #masterDetailListsGrid #masterList li:nth-child(even), #responsive-page #masterDetailListsGrid #detailList li:nth-child(even), .list-type-2 dt:nth-child(even) {
   background: #f4f4f4;
   background: -moz-radial-gradient(center, ellipse cover, #f4f4f4 0%, #f2f2f2 54%, #eaeaea 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f4f4f4), color-stop(54%, #f2f2f2), color-stop(100%, #eaeaea));
@@ -252,7 +252,7 @@
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px; }
 
-.round-top-left-right-by-5, .list-type-1 li:first-child, #responsive-page #masterDetailListsGrid #masterList li:first-child, #responsive-page #masterDetailListsGrid #detailList li:first-child {
+.round-top-left-right-by-5, .list-type-2 dt:first-child {
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-topright: 5px;
   -moz-border-radius-bottomleft: 0px;
@@ -266,7 +266,7 @@
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px; }
 
-.round-bottom-left-right-by-5, .list-type-1 li:last-child, #responsive-page #masterDetailListsGrid #masterList li:last-child, #responsive-page #masterDetailListsGrid #detailList li:last-child {
+.round-bottom-left-right-by-5, .list-type-2 dt:last-child {
   -moz-border-radius-topleft: 0px;
   -moz-border-radius-topright: 0px;
   -moz-border-radius-bottomleft: 5px;
@@ -294,7 +294,7 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; }
 
-.round-all-by-3, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList {
+.round-all-by-3, .list-type-1, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList, .list-type-2 {
   -moz-border-radius-topleft: 3px;
   -moz-border-radius-topright: 3px;
   -moz-border-radius-bottomleft: 3px;
@@ -342,7 +342,7 @@
 *   http://yui.yahooapis.com/3.5.0/build/cssgrids/grids.css
 *   http://yuilibrary.com/yui/docs/cssgrids/
 */
-.inline-block-grid, #responsive-page #masterDetailListsGrid, #responsive-page #masterDetailListsGrid #detailList li dl {
+.inline-block-grid, #accountDetailLinks, #responsive-page #masterDetailListsGrid, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList li dl {
   letter-spacing: -0.31em;
   /* webkit: collapse white-space between units */
   *letter-spacing: normal;
@@ -350,7 +350,7 @@
   word-spacing: -0.43em;
   /* IE < 8 && gecko: collapse white-space between units */ }
 
-.inline-block-grid-cell, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList, #responsive-page #masterDetailListsGrid #detailList li dl dt {
+.inline-block-grid-cell, .master-item-text, #accountDetailLinks, #accountDetailLinks li, #responsive-page #masterDetailListsGrid #masterList, #responsive-page #masterDetailListsGrid #detailList, #responsive-page #masterDetailListsGrid #detailList li dl dt {
   display: inline-block;
   zoom: 1;
   *display: inline;
@@ -406,11 +406,24 @@ https://developers.google.com/speed/docs/best-practices/rendering?hl=de-DE#UseEf
 http://snook.ca/archives/html_and_css/css-parent-selectors
 
 However, these rules don't seem to apply to modern browsers, and the rendering of this page takes less than 1 ms in chrome.
-If performance becomes a problem, simply change the selector.
+If performance or maintenance becomes a problem, simply change the selector.
 
 */
 .money:before, #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(2):before {
   content: "$"; }
+
+.master-item-text {
+  width: 49%; }
+
+#accountDetailLinks {
+  padding: 0px;
+  text-align: right;
+  width: 49%; }
+  #accountDetailLinks li {
+    width: 100%; }
+    #accountDetailLinks li a {
+      text-decoration: none;
+      color: blue; }
 
 #responsive-page {
   width: 100%;
@@ -423,6 +436,16 @@ If performance becomes a problem, simply change the selector.
       font-style: italic; }
 
 @media only screen and (max-width: 325px) {
+  .master-item-text {
+    width: 100%; }
+
+  #accountDetailLinks {
+    text-align: left;
+    width: 100%; }
+    #accountDetailLinks li {
+      padding: 5px;
+      width: 100%; }
+
   #responsive-page #masterDetailListsGrid #masterList {
     width: 100%;
     font-size: 150%; }
@@ -438,15 +461,17 @@ If performance becomes a problem, simply change the selector.
       width: 50%;
       text-align: right; } }
 @media only screen and (min-width: 325px) {
-  #responsive-page #masterDetailListsGrid #masterList {
-    width: 30%; }
-  #responsive-page #masterDetailListsGrid #detailList {
-    width: 70%; }
-    #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(1) {
-      width: 50%; }
-    #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(2) {
-      text-align: right;
-      width: 20%; }
-    #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(3) {
-      text-align: right;
-      width: 30%; } }
+  #responsive-page #masterDetailListsGrid {
+    width: 100%; }
+    #responsive-page #masterDetailListsGrid #masterList {
+      width: 30%; }
+    #responsive-page #masterDetailListsGrid #detailList {
+      width: 70%; }
+      #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(1) {
+        width: 50%; }
+      #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(2) {
+        text-align: right;
+        width: 20%; }
+      #responsive-page #masterDetailListsGrid #detailList li dl dt:nth-child(3) {
+        text-align: right;
+        width: 30%; } }

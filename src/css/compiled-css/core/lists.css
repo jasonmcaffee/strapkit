@@ -9,7 +9,7 @@
   background: linear-gradient(to bottom, #abaaa7 0%, #ced0d3 5.76%, #dfe0e1 18.04%, #d0cece 93.99%, #555556 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#abaaa7', endColorstr='#555556',GradientType=0 ); }
 
-.grey-subtle-gradient, .list-type-1 {
+.grey-subtle-gradient, .list-type-1, .list-type-2 {
   background: #282828;
   background: -moz-linear-gradient(top, #282828 0%, #333333 7%, #333333 12%, #3d3d3d 86%, #333333 93%, #3f3f3f 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #282828), color-stop(7%, #333333), color-stop(12%, #333333), color-stop(86%, #3d3d3d), color-stop(93%, #333333), color-stop(100%, #3f3f3f));
@@ -38,7 +38,7 @@
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(246, 246, 246, 0.5) 47%, rgba(237, 237, 237, 0.49) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#7dededed',GradientType=0 ); }
 
-.list-item-white, .list-type-1 li {
+.list-item-white, .list-type-1 li, .list-type-2 dt {
   background: #fcfcfc;
   background: -moz-radial-gradient(center, ellipse cover, #fcfcfc 0%, #f9f9f9 54%, #f7f7f7 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fcfcfc), color-stop(54%, #f9f9f9), color-stop(100%, #f7f7f7));
@@ -48,7 +48,7 @@
   background: radial-gradient(ellipse at center, #fcfcfc 0%, #f9f9f9 54%, #f7f7f7 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f7f7f7',GradientType=1 ); }
 
-.list-item-grey, .list-type-1 li:nth-child(even) {
+.list-item-grey, .list-type-1 li:nth-child(even), .list-type-2 dt:nth-child(even) {
   background: #f4f4f4;
   background: -moz-radial-gradient(center, ellipse cover, #f4f4f4 0%, #f2f2f2 54%, #eaeaea 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f4f4f4), color-stop(54%, #f2f2f2), color-stop(100%, #eaeaea));
@@ -97,7 +97,7 @@
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px; }
 
-.round-top-left-right-by-5, .list-type-1 li:first-child {
+.round-top-left-right-by-5, .list-type-2 dt:first-child {
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-topright: 5px;
   -moz-border-radius-bottomleft: 0px;
@@ -111,7 +111,7 @@
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px; }
 
-.round-bottom-left-right-by-5, .list-type-1 li:last-child {
+.round-bottom-left-right-by-5, .list-type-2 dt:last-child {
   -moz-border-radius-topleft: 0px;
   -moz-border-radius-topright: 0px;
   -moz-border-radius-bottomleft: 5px;
@@ -139,7 +139,7 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; }
 
-.round-all-by-3, .list-type-1 {
+.round-all-by-3, .list-type-1, .list-type-2 {
   -moz-border-radius-topleft: 3px;
   -moz-border-radius-topright: 3px;
   -moz-border-radius-bottomleft: 3px;

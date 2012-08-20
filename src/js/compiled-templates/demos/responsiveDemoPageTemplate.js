@@ -7,8 +7,8 @@ templates['responsiveDemoPageTemplate'] = template(function (Handlebars,depth0,h
 
 function program1(depth0,data) {
   
-  var buffer = "", stack1;
-  buffer += "\n            <li data-index=\"";
+  var buffer = "", stack1, stack2;
+  buffer += "\n            <li>\n                <label class=\"master-item-text\" data-index=\"";
   foundHelper = helpers.index;
   stack1 = foundHelper || depth0.index;
   if(typeof stack1 === functionType) { stack1 = stack1.call(depth0, { hash: {} }); }
@@ -17,10 +17,33 @@ function program1(depth0,data) {
   stack1 = depth0.itemText;
   if(typeof stack1 === functionType) { stack1 = stack1.call(depth0, { hash: {} }); }
   else if(stack1=== undef) { stack1 = helperMissing.call(depth0, "this.itemText", { hash: {} }); }
-  buffer += escapeExpression(stack1) + "</li>\n        ";
+  buffer += escapeExpression(stack1) + "</label>\n\n                <dl id=\"accountDetailLinks\">\n                    ";
+  foundHelper = helpers.links;
+  stack1 = foundHelper || depth0.links;
+  stack2 = helpers.each;
+  tmp1 = self.program(2, program2, data);
+  tmp1.hash = {};
+  tmp1.fn = tmp1;
+  tmp1.inverse = self.noop;
+  stack1 = stack2.call(depth0, stack1, tmp1);
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n                </dl>\n            </li>\n        ";
+  return buffer;}
+function program2(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\n                        <dt>\n                            <a href=\"";
+  stack1 = depth0.linkHref;
+  if(typeof stack1 === functionType) { stack1 = stack1.call(depth0, { hash: {} }); }
+  else if(stack1=== undef) { stack1 = helperMissing.call(depth0, "this.linkHref", { hash: {} }); }
+  buffer += escapeExpression(stack1) + "\">";
+  stack1 = depth0.linkText;
+  if(typeof stack1 === functionType) { stack1 = stack1.call(depth0, { hash: {} }); }
+  else if(stack1=== undef) { stack1 = helperMissing.call(depth0, "this.linkText", { hash: {} }); }
+  buffer += escapeExpression(stack1) + "</a>\n                        </dt>\n                    ";
   return buffer;}
 
-function program3(depth0,data) {
+function program4(depth0,data) {
   
   var buffer = "", stack1;
   buffer += "\n            <li>\n                <dl>\n                    <dt>";
@@ -56,7 +79,7 @@ function program3(depth0,data) {
   stack1 = foundHelper || depth0.selectedMasterListItem;
   stack1 = (stack1 === null || stack1 === undefined || stack1 === false ? stack1 : stack1.detailListItems);
   stack2 = helpers.each;
-  tmp1 = self.program(3, program3, data);
+  tmp1 = self.program(4, program4, data);
   tmp1.hash = {};
   tmp1.fn = tmp1;
   tmp1.inverse = self.noop;

@@ -7,7 +7,17 @@
     <div id="masterDetailListsGrid">
         <ul id="masterList">
         {{#each_with_index masterListItems}}
-            <li data-index="{{index}}">{{this.itemText}}</li>
+            <li>
+                <label class="master-item-text" data-index="{{index}}">{{this.itemText}}</label>
+
+                <dl id="accountDetailLinks">
+                    {{#each links}}
+                        <dt>
+                            <a href="{{this.linkHref}}">{{this.linkText}}</a>
+                        </dt>
+                    {{/each}}
+                </dl>
+            </li>
         {{/each_with_index}}
         </ul>
 

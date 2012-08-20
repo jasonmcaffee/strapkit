@@ -12,7 +12,7 @@ https://developers.google.com/speed/docs/best-practices/rendering?hl=de-DE#UseEf
 http://snook.ca/archives/html_and_css/css-parent-selectors
 
 However, these rules don't seem to apply to modern browsers, and the rendering of this page takes less than 1 ms in chrome.
-If performance becomes a problem, simply change the selector.
+If performance or maintenance becomes a problem, simply change the selector.
 
 */
 .money{
@@ -21,6 +21,32 @@ If performance becomes a problem, simply change the selector.
   }
 }
 
+.master-item-text{
+  @extend .inline-block-grid-cell;
+  width:49%;
+}
+
+#accountDetailLinks{ //dl
+  //@extend .list-type-2;
+  padding: 0px;//causes weird push down of content but not styles.
+  @extend .inline-block-grid-cell;
+  @extend .inline-block-grid;
+  text-align: right;
+  width:49%;
+  li{
+    @extend .inline-block-grid-cell;
+    //padding: 5px;
+    width:100%;
+    //text-overflow: ellipsis;
+    a{
+      text-decoration: none;
+      color: blue;
+
+    }
+  }
+
+
+}
 
 //layout & base styling for all form factors
 #responsive-page{
@@ -34,7 +60,9 @@ If performance becomes a problem, simply change the selector.
     #masterList{  //ul
       //base type
       @extend .list-type-1;
-      @extend .inline-block-grid-cell; //
+      @extend .inline-block-grid-cell; //this and detailList are sibling cells
+
+      @extend .inline-block-grid;//this is a grid for masterText and accountDetailLinks
 
       //mouse devices
       cursor: pointer;
@@ -86,6 +114,21 @@ If performance becomes a problem, simply change the selector.
 //===================================================================== media queries ==================================
 //small
 @include mq(small){
+  .master-item-text{
+    width:100%;
+  }
+  #accountDetailLinks{ //dl
+    text-align: left;
+    width:100%;
+    li{
+      @extend .inline-block-grid-cell;
+      padding: 5px;
+      width:100%;
+      a{
+      }
+    }
+  }
+
   #responsive-page{
 
     #masterDetailListsGrid{
@@ -138,7 +181,7 @@ If performance becomes a problem, simply change the selector.
   #responsive-page{
 
     #masterDetailListsGrid{
-
+      width:100%;
       #masterList{
         width: 30%;
 

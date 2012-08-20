@@ -10,7 +10,7 @@ define([
     var ResponsiveDemoView = Backbone.View.extend({
         el:'#pages',
         events:{
-            "click #masterList li" : "masterListItemClick"
+            "click #masterList li label" : "masterListItemClick"
         },
         initialize : function(){
             log('ResponsiveDemoView.initialize called.' + this.model);
@@ -37,6 +37,7 @@ define([
         masterListItemClick : function(e){
             var $listItem = $(e.target);
             var index = $listItem.attr('data-index');
+            log('data-index clicked was : ' + index);
 
             //update the current selected master list item
             //this will trigger the details list to be re-rendered.
