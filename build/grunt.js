@@ -26,7 +26,7 @@ module.exports = function(grunt) {
         //css preprocessor
         css : {
             preprocessSourceDir : rootDirectory + '/src/css-preprocess',
-            preprocessOutputDir : rootDirectory + '/src/css/compiled-css',
+            preprocessOutputDir : rootDirectory + '/dist/css',
             cssDistDir: config.cssDistDir,
             cssDistFile: config.cssDistFile,
             cssSource: config.cssSource
@@ -38,10 +38,10 @@ module.exports = function(grunt) {
 //                files: [rootDirectory + '/src/css-preprocess/*.styl'],
 //                tasks: 'compile-stylus-and-build-css'
 //            },
-            cssWatch:{
-                files: [rootDirectory + '/src/css/compiled-css/**/*.css'],
-                tasks: 'build-css'
-            }
+//            cssWatch:{
+//                files: [rootDirectory + '/src/css/compiled-css/**/*.css'],
+//                tasks: 'build-css'
+//            }
 //            ,
 //            templateWatch:{       //this currently doesn't work well. the compile-template task is not finishing before build-app is called.
 //                files: [config.templatesSourceDir + '/**/*.html'],

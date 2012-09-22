@@ -15,8 +15,8 @@ module.exports = function(grunt){
 
         sassWatch.stdout.on('data', function(data){
             log('sass-watch stdout : ' + data);
-            log('now calling build-css...');
-            grunt.helper('build-css');
+//            log('now calling build-css...');
+//            grunt.helper('build-css');
 
         });
 
@@ -32,26 +32,26 @@ module.exports = function(grunt){
 
     });
 
-    grunt.registerHelper("build-css", function(){
-        log('build-css called and is concating css files from source: ' + config.cssSource);
-        var compiledCssFiles = grunt.helper('recursivelyScanDirectoryAndBuildArrayOfFilePaths', config.cssSource);
-        log('found ' + compiledCssFiles.length + ' css files to concat');
-
-        var concatenatedCss = grunt.helper('concat', compiledCssFiles);
-        var fs = require('fs');
-        fs.writeFileSync(config.cssDistFile, concatenatedCss);
-
-        log('build-css is complete.');
-    });
-
-    /**
-     * Builds a single dist/public/css/core-built.css for core css files in src/public/css/core
-     */
-    grunt.registerTask("build-css", function(){
-        grunt.helper('build-css');
-
-
-    });
+//    grunt.registerHelper("build-css", function(){
+//        log('build-css called and is concating css files from source: ' + config.cssSource);
+//        var compiledCssFiles = grunt.helper('recursivelyScanDirectoryAndBuildArrayOfFilePaths', config.cssSource);
+//        log('found ' + compiledCssFiles.length + ' css files to concat');
+//
+//        var concatenatedCss = grunt.helper('concat', compiledCssFiles);
+//        var fs = require('fs');
+//        fs.writeFileSync(config.cssDistFile, concatenatedCss);
+//
+//        log('build-css is complete.');
+//    });
+//
+//    /**
+//     * Builds a single dist/public/css/core-built.css for core css files in src/public/css/core
+//     */
+//    grunt.registerTask("build-css", function(){
+//        grunt.helper('build-css');
+//
+//
+//    });
 };
 
 

@@ -2,94 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/mime/types/mime.types" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/mime/types/mime.types" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/mime/types/node.types" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/mime/types/node.types" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/node_modules/lru-cache/AUTHORS" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/node_modules/lru-cache/AUTHORS" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/minimatch/node_modules/lru-cache/AUTHORS" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/minimatch/node_modules/lru-cache/AUTHORS" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/Makefile" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css-preprocess/app/navigation-bar.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css-preprocess/_variables.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/core/_variables.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css-preprocess/buttonsDemo.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/app/buttonsDemo.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css-preprocess/colors.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/core/colors.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css-preprocess/homePage.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/app/homePage.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css-preprocess/media-queries.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/core/media-queries.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css-preprocess/navigation-bar.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/app.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css-preprocess/navigationBar.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/app/navigationBar.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css-preprocess/reset.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/core/reset.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/app/responsiveDemo.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css-preprocess/responsiveFlexBoxDemo.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/app/responsiveFlexBoxDemo.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css-preprocess/rounded-corners.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/core/rounded-corners.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css-preprocess/strapkit.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/app/strapkit.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/grunt.js" afterPath="$PROJECT_DIR$/build/grunt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tasks/grunt-css.js" afterPath="$PROJECT_DIR$/build/tasks/grunt-css.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/app.css" afterPath="$PROJECT_DIR$/dist/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app-built.js" afterPath="$PROJECT_DIR$/dist/js/app-built.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/async/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/async/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/formidable/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/formidable/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/mime/README.md" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/mime/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/mime/mime.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/mime/mime.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/mime/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/mime/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/mime/test.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/mime/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/node_modules/qs/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/connect/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/dateformat/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/dateformat/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/README.md" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/lib/glob.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/lib/glob.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/minimatch.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/minimatch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/node_modules/lru-cache/README.md" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/node_modules/lru-cache/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/node_modules/lru-cache/lib/lru-cache.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/node_modules/lru-cache/lib/lru-cache.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/node_modules/lru-cache/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/node_modules/lru-cache/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/node_modules/lru-cache/test/basic.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/node_modules/lru-cache/test/basic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/test/glob_test.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob-whatev/test/glob_test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/gzip-js/node_modules/crc32/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/gzip-js/node_modules/crc32/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/gzip-js/node_modules/deflate-js/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/gzip-js/node_modules/deflate-js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/gzip-js/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/gzip-js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/hooker/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/hooker/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/argsparser/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/argsparser/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/minimatch/minimatch.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/minimatch/minimatch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/minimatch/node_modules/lru-cache/README.md" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/minimatch/node_modules/lru-cache/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/minimatch/node_modules/lru-cache/lib/lru-cache.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/minimatch/node_modules/lru-cache/lib/lru-cache.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/minimatch/node_modules/lru-cache/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/minimatch/node_modules/lru-cache/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/minimatch/node_modules/lru-cache/test/basic.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/minimatch/node_modules/lru-cache/test/basic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/minimatch/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/node_modules/minimatch/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/jshint/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nodeunit/node_modules/tap-assert/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/nodeunit/node_modules/tap-assert/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nodeunit/node_modules/tap-producer/node_modules/inherits/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/nodeunit/node_modules/tap-producer/node_modules/inherits/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nodeunit/node_modules/tap-producer/node_modules/tap-results/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/nodeunit/node_modules/tap-producer/node_modules/tap-results/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nodeunit/node_modules/tap-producer/node_modules/yamlish/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/nodeunit/node_modules/tap-producer/node_modules/yamlish/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nodeunit/node_modules/tap-producer/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/nodeunit/node_modules/tap-producer/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nodeunit/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/nodeunit/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/node_modules/abbrev/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/node_modules/abbrev/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/pkginfo/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/pkginfo/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/eyes/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/eyes/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/README.md" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/main.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/oauth.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/oauth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/tests/run.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/tests/run.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/tests/test-body.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/tests/test-body.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/tests/test-toJSON.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/tests/test-toJSON.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/timespan/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/timespan/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/stack-trace/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/stack-trace/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/node_modules/winston/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/prompt/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/semver/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/semver/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/Readme.md" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/Readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/lib/base.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/lib/base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/lib/dir.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/lib/dir.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/lib/file.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/lib/file.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/lib/generator.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/lib/generator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/node_modules/package/lib/package.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/node_modules/package/lib/package.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/node_modules/package/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/node_modules/package/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/test/base.test.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/test/base.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/test/detector.test.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/test/detector.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/test/dir.test.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/test/dir.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/test/file.test.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/test/file.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/test/generator.test.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/temporary/test/generator.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/uglify-js/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/uglify-js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/core/lists.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/core/lists.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" afterPath="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/core/lists.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/core/lists.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/compiled-css/responsiveDemo.css" afterPath="$PROJECT_DIR$/src/css/compiled-css/responsiveDemo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/compiled-templates/demos/responsiveDemoPageTemplate.js" afterPath="$PROJECT_DIR$/src/js/compiled-templates/demos/responsiveDemoPageTemplate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" afterPath="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/lib/views/ResponsiveDemoView.js" afterPath="$PROJECT_DIR$/src/js/lib/views/ResponsiveDemoView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" afterPath="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -147,73 +78,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ResponsiveFlexBoxDemoView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/lib/views/ResponsiveFlexBoxDemoView.js">
+      <file leaf-file-name="grids.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/grids.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="17" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0">
+            <state line="25" column="25" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DemosController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/DemosController.js">
+      <file leaf-file-name="buttonsDemo.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/buttonsDemo.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="50" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResponsiveDemoView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/lib/views/ResponsiveDemoView.js">
+      <file leaf-file-name="demosPage.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/demosPage.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="44" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResponsiveDemoModel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js">
+      <file leaf-file-name="homePage.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/homePage.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="35" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsiveDemoPageTemplate.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
+      <file leaf-file-name="navigation-bar.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/navigation-bar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="32" selection-start="676" selection-end="676" vertical-scroll-proportion="-10.88">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsiveDemo.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss">
+      <file leaf-file-name="navigationBar.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/navigationBar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="20" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.313709">
+            <state line="3" column="33" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reset.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css-preprocess/reset.scss">
+      <file leaf-file-name="responsiveDemo.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/responsiveDemo.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="2" selection-start="5" selection-end="184" vertical-scroll-proportion="0.0">
+            <state line="6" column="31" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lists.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/lists.scss">
+      <file leaf-file-name="responsiveFlexBoxDemo.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/responsiveFlexBoxDemo.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="2" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
+            <state line="23" column="77" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dist/css/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="38" selection-start="3544" selection-end="3544" vertical-scroll-proportion="-24.986395">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="colors.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/colors.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="57" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -236,28 +185,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/js/lib/views/HomeView.js" />
-        <option value="$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js" />
-        <option value="$PROJECT_DIR$/src/js/lib-third-party/flexie.min.js" />
-        <option value="$PROJECT_DIR$/node-server/views/test.html" />
-        <option value="$PROJECT_DIR$/src/templates/demos/responsiveFlexBoxDemoPageTemplate.html" />
-        <option value="$PROJECT_DIR$/src/js/lib/views/ResponsiveFlexBoxDemoView.js" />
-        <option value="$PROJECT_DIR$/src/js/lib/controllers/DemosController.js" />
-        <option value="$PROJECT_DIR$/src/js/app.js" />
         <option value="$PROJECT_DIR$/src/templates/demos/demosHomePageTemplate.html" />
         <option value="$PROJECT_DIR$/src/css-preprocess/app/demosPage.scss" />
         <option value="$PROJECT_DIR$/src/css-preprocess/responsiveFlexBoxDemo.scss" />
         <option value="$PROJECT_DIR$/src/js/lib/views/ResponsiveDemoView.js" />
-        <option value="$PROJECT_DIR$/src/css-preprocess/core/lists.scss" />
         <option value="$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html" />
         <option value="$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js" />
         <option value="$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/core/grids.scss" />
+        <option value="$PROJECT_DIR$/build/tasks/grunt-css.js" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/app.scss" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/core/rounded-corners.scss" />
+        <option value="$PROJECT_DIR$/build/grunt.js" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/core/lists.scss" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/app/navigationBar.scss" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/app/responsiveDemo.scss" />
+        <option value="$PROJECT_DIR$/src/css-preprocess/app/responsiveFlexBoxDemo.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="128" />
-    <option name="y" value="204" />
+    <option name="x" value="81" />
+    <option name="y" value="69" />
     <option name="width" value="2209" />
     <option name="height" value="1337" />
   </component>
@@ -287,9 +236,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -747,6 +693,14 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="compiled-css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -900,19 +854,22 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="329" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="338" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="334" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="341" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1135" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1134" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1135" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="339" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="336" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -932,12 +889,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist/css" />
       <recent name="$PROJECT_DIR$/dist/js" />
       <recent name="$PROJECT_DIR$/dist" />
       <recent name="$PROJECT_DIR$/../modern-device-strapup/src/css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/css-preprocess/core" />
+      <recent name="$PROJECT_DIR$/src/css-preprocess/app" />
       <recent name="$PROJECT_DIR$/../modern-mobile/build" />
       <recent name="$PROJECT_DIR$/../modern-mobile" />
     </key>
@@ -1298,7 +1257,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="128" y="204" width="2209" height="1337" extended-state="0" />
+    <frame x="81" y="69" width="2209" height="1337" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1413,104 +1372,114 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/compiled-templates/demos/responsiveFlexBoxDemoPageTemplate.js">
+    <entry file="file://$PROJECT_DIR$/src/css/compiled-css/lists.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="181" selection-start="1983" selection-end="1983" vertical-scroll-proportion="0.43537414" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib-third-party/require.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/views/ResponsiveFlexBoxDemoView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/DemosController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="50" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveFlexBoxDemoPageTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="30" selection-start="9" selection-end="33" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/demosPage.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="125" selection-end="125" vertical-scroll-proportion="0.10765349">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/tasks/grunt-css.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="106" selection-start="903" selection-end="903" vertical-scroll-proportion="0.2960471">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/grunt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="289" selection-end="289" vertical-scroll-proportion="0.013456686">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveFlexBoxDemo.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="63" selection-start="668" selection-end="668" vertical-scroll-proportion="0.2960471">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="80" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/views/ResponsiveDemoView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="44" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/reset.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2" selection-start="5" selection-end="184" vertical-scroll-proportion="0.0">
+        <state line="23" column="59" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/lists.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="2" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
+        <state line="5" column="76" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/demos/responsiveDemoPageTemplate.html">
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/media-queries.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32" selection-start="676" selection-end="676" vertical-scroll-proportion="-10.88">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/models/ResponsiveDemoModel.js">
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/reset.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="35" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/responsiveDemo.scss">
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/rounded-corners.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="20" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.313709">
+        <state line="10" column="44" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/colors.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="57" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/grids.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="25" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/buttonsDemo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/demosPage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/homePage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/navigation-bar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/navigationBar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="33" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/responsiveDemo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="31" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/responsiveFlexBoxDemo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="77" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="38" selection-start="3544" selection-end="3544" vertical-scroll-proportion="-24.986395">
           <folding />
         </state>
       </provider>
