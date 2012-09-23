@@ -1,5 +1,6 @@
 //todo: (lower priority) - make all requirejs optimizer calls which minify js (optimize:true) run in a separate worker process if possible
 module.exports = function(grunt) {
+
     console.log(process.cwd());
     //pretend like we are working in the parent directory.
     process.chdir('..');
@@ -38,24 +39,10 @@ module.exports = function(grunt) {
         },
         //stylus file watcher - compile to css then concat css to dist
         watch:{
-//            stylusWatch:{
-//                files: [rootDirectory + '/src/css-preprocess/*.styl'],
-//                tasks: 'compile-stylus-and-build-css'
-//            },
-//            cssWatch:{
-//                files: [rootDirectory + '/src/css/compiled-css/**/*.css'],
-//                tasks: 'build-css'
-//            }
-//            ,
-            templateWatch:{       //this currently doesn't work well. the compile-template task is not finishing before build-app is called.
+            templateWatch:{
                 files: [config.templatesSourceDir + '/**/*.html'],
-                //tasks: 'compile-templates-and-build-app'
                 tasks:[ 'compile-templates', 'build-app-cmd']
-            }//,
-//            compiledTemplateWatch:{
-//                files: [config.templatesDistDir + '/**/*.js'],
-//                tasks: 'build-app'
-//            }
+            }
         }
     });
 
@@ -117,19 +104,10 @@ module.exports = function(grunt) {
                 'modernizer' : 'lib-third-party/modernizer'
             },
 
-//            //the modules we will be building
-//            modules: [
-//                {
-//                    name:'app',
-//                    include:['requireLib']  //bundle requirejs with app-built
-//                }
-//            ],
             include:[
               'requireLib'
             ],
-            //priority: ['requireLib', 'app'],
-
-            //use plugin config for wrapping non-amd compliant code
+            //config for wrapping non-amd compliant code
             shim:{
                 handlebars:{
                     exports : 'Handlebars'
@@ -146,16 +124,11 @@ module.exports = function(grunt) {
 
         var taskDone = this.async();//grunt async task management
 
-        //function rjs(){
-        console.log('rjs running');
         var requirejs = require('requirejs');
         requirejs.optimize(config, function (buildResponse) {
-            console.log('rjs done');
+            console.log('build-app done');
             taskDone(true);
         });
-        //}
-
-        //process.nextTick(rjs);
 
     });
 
