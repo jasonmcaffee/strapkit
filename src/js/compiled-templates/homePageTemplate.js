@@ -1,4 +1,4 @@
-define(["use!handlebars", "core/util/log"], function(Handlebars, log){ 
+define(["handlebars", "core/util/log"], function(Handlebars, log){ 
 log("homePageTemplate precompiled template function module loaded."); 
 var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {}; 
 templates['homePageTemplate'] = template(function (Handlebars,depth0,helpers,partials,data) {

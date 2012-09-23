@@ -1,6 +1,6 @@
 define([
     'core/util/log',
-    'use!handlebars'
+    'handlebars'
 ], function(log, Handlebars){
     log('eachWithIndex core plugin module loaded.');
 
