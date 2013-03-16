@@ -1,9 +1,0 @@
-.ul-base, .list-type-1, #demos-page #demoLinksList {
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em; }
-
-.list-type-1, #demos-page #demoLinksList {
-  padding: 5px; }
-
-#demos-page #demoLinksList li {
-  padding: 7px; }

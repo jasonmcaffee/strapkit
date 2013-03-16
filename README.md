@@ -1,8 +1,13 @@
 #Strapkit
 http://strapkit.com
+
 https://twitter.com/#!/strapkit
+
 strapkit@gmail.com
 
+##TODOs
+### media query js - add css class ala modernizr to indicate screen size "small, medium, large, etc". js config for breakpoints.
+###
 
 ##Overview
 This project is meant to provide a starting point for rapidly developing a web application targeting modern browsers.
@@ -37,6 +42,7 @@ http://strapkit.com is built using strapkit, and is included in the source so th
 * Handlebars - Just the runtime, as we precompile templates at build
 * Require.js - For asynchronous module definitions.
 * Jquery - dom event and manipulation. feel free to replace with zepto, etc.
+* Modernizr - feature detection
 
 ##Patterns
 ### Single Page Application (Optional)
@@ -54,6 +60,7 @@ Pre-requisites:
 
 ### install sass
 `gem install sass --pre`
+
 ### run npm install
 from the root directory (contains package.json), run the following command:
 `npm install`
@@ -76,13 +83,20 @@ this will run the default task defined in build/grunt.js, and will place the bui
 Command `grunt build-app`
 
 #### compile html templates to handlebars template functions
-Command `grunt compile-handlebars-templates`
-
-#### compile stylus files to css
-Command `grunt compile-stylus-files`
+Command `grunt compile-templates`
+`
 
 #### concat css files into 1 .css file (not needed if using sass watch)
 Command `grunt build-css`
+
+## Running the Server
+Strapkit comes with a node.js server with Express. (node-server directory)
+`cd node-server`
+`node server.js`
+
+Note: if running on Mac OS, you will need to increase the process limitation for open files by running
+`ulimit -n 10000`
+https://github.com/joyent/node/issues/2479
 
 
 ##Automated Building

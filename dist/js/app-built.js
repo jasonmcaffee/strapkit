@@ -13674,7 +13674,7 @@ templates['homePageTemplate'] = template(function (Handlebars,depth0,helpers,par
   var foundHelper, self=this;
 
 
-  return "<div class=\"home-page\">\n\n   <div>Strapkit</div>\n    <p>\n        Strapkit is:\n        <ul>\n            <li>Build</li>\n            <li>Structure</li>\n            <li>Javascript API Framework</li>\n            <li>CSS API Framework</li>\n        </ul>\n\n    </p>\n\n</div>";}); 
+  return "<div class=\"home-page\">\n\n   <h1>Strapkit</h1>\n    <p>\n        Strapkit is:\n        <ul>\n            <li>Build</li>\n            <li>Structure</li>\n            <li>Javascript API Framework - Backbone, Require, Handlebars, Modernizr</li>\n            <li>CSS API Framework</li>\n        </ul>\n\n    </p>\n\n</div>";}); 
 Handlebars.registerPartial("homePageTemplate", templates["homePageTemplate"]); 
 return templates["homePageTemplate"]; 
 });
