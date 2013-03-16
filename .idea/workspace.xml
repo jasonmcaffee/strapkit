@@ -78,21 +78,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wurfl/node_modules/node-expat/build/c4che/Release.cache.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wurfl/node_modules/node-expat/build/c4che/build.config.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wurfl/node_modules/node-expat/wscript" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/app/buttonsDemo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/app/demosPage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/app/homePage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/app/navigation-bar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/app/navigationBar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/app/responsiveDemo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/app/responsiveFlexBoxDemo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/app/strapkit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/core/colors.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/core/grids.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/core/lists.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/core/media-queries.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/core/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/core/rounded-corners.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/util/position-fixes.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/docs/api_config.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/docs/api_fail.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/docs/api_file.md" />
@@ -589,39 +574,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wurfl/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wurfl/test/test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wurfl/wurfl.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/app/buttonsDemo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/app/demosPage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/app/homePage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/app/navigation-bar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/app/navigationBar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/app/responsiveDemo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/app/responsiveFlexBoxDemo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/app/strapkit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/core/colors.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/core/grids.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/core/media-queries.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/core/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/core/rounded-corners.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/responsiveFlexBoxDemo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/compiled-css/util/position-fixes.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/compiled-templates/demos/responsiveFlexBoxDemoPageTemplate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/core/device/DeviceInfo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/core/mvc/View.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/core/plugins/handlebars/eachProperty.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/core/touch/customEvents.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/core/ui/hideAddressBar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/lib-third-party/FastButton2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/lib-third-party/zepto.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/grunt.js" afterPath="$PROJECT_DIR$/build/grunt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app-built.js" afterPath="$PROJECT_DIR$/dist/js/app-built.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/compiled-templates/homePageTemplate.js" afterPath="$PROJECT_DIR$/src/js/compiled-templates/homePageTemplate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/core/core.js" afterPath="$PROJECT_DIR$/src/js/core/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/lib-third-party/FastButton.js" afterPath="$PROJECT_DIR$/src/js/lib-third-party/FastButton.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/lib-third-party/jquery.js" afterPath="$PROJECT_DIR$/src/js/lib-third-party/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/lib-third-party/modernizer.js" afterPath="$PROJECT_DIR$/src/js/lib-third-party/modernizer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/homePageTemplate.html" afterPath="$PROJECT_DIR$/src/templates/homePageTemplate.html" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1839,7 +1792,11 @@
       <created>1363437012969</created>
       <updated>1363437012969</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="several updates made in nodeMusic3 to framework.">
+      <created>1363443871482</created>
+      <updated>1363443871482</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1903,7 +1860,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="before big update" />
+    <option name="LAST_COMMIT_MESSAGE" value="several updates made in nodeMusic3 to framework." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1916,7 +1873,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="menuexpanded looking good, with blue back and grey overlay" />
     <MESSAGE value="added demos home page. fast-button has negative effect on ICS. entire body highlights when touched, as if it were a link." />
     <MESSAGE value="sass media queries" />
     <MESSAGE value="postion:fixed woes" />
@@ -1941,6 +1897,7 @@
     <MESSAGE value="fixed sass structure and compilation to 1 css file" />
     <MESSAGE value="refactored requirejs build and compile-templates build so that it will work with grunt watch." />
     <MESSAGE value="before big update" />
+    <MESSAGE value="several updates made in nodeMusic3 to framework." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
