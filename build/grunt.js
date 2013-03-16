@@ -42,6 +42,10 @@ module.exports = function(grunt) {
             templateWatch:{
                 files: [config.templatesSourceDir + '/**/*.html'],
                 tasks:[ 'compile-templates', 'build-app-cmd']
+            },
+            jsWatch:{
+                files: [config.jsSource + "/**/*.js"],
+                tasks:['build-app-cmd']
             }
         }
     });
@@ -96,7 +100,8 @@ module.exports = function(grunt) {
             optimize: 'none',
             name:'app',
             paths: {
-                'jquery' : 'lib-third-party/jquery',
+                'jquery': 'lib-third-party/jquery',
+                //'zepto' : 'lib-third-party/zepto',
                 'underscore' : 'lib-third-party/underscore',
                 'backbone' : 'lib-third-party/backbone',
                 'requireLib' : 'lib-third-party/require',  //allow app-built to be bundled with requirejs
@@ -118,6 +123,12 @@ module.exports = function(grunt) {
                 'backbone': {
                     deps: ['underscore', 'jquery'],
                     exports: 'Backbone'
+                },
+                'jquery':{
+                    exports: '$'
+                },
+                'modernizer':{
+                    exports: 'Modernizr'
                 }
             }
         };
@@ -158,7 +169,7 @@ module.exports = function(grunt) {
 //============================================================================================================== Helpers
 
     //major build tasks
-    grunt.registerTask("compile-templates-and-build-app", "compile-handlebars-templates build-app");
+    grunt.registerTask("compile-templates-and-build-app", "compile-templates build-app");
     grunt.registerTask("build2", "build-app-cmd build-app-cmd");
     grunt.registerTask("build", "compile-templates-and-build-app");
     grunt.registerTask("dist", "build");

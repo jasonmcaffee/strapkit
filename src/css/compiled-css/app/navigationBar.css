@@ -1,0 +1,53 @@
+/*
+Syntax error: Undefined mixin 'mq'.
+        on line 121 of /Users/jason/dev/strapkit/src/css-preprocess/app/navigationBar.scss, in `mq'
+        from line 121 of /Users/jason/dev/strapkit/src/css-preprocess/app/navigationBar.scss
+
+116: 
+117: }
+118: 
+119: /* tablet portrait and below //@media (max-width:989px){ */
+120: 
+121: @include mq(medium-and-below) {
+122:     #menuCollapsed{
+123:         display: block;
+124:         //visibility: visible;
+125:         //float:right;
+126:         height:100%;
+
+Backtrace:
+/Users/jason/dev/strapkit/src/css-preprocess/app/navigationBar.scss:121:in `mq'
+/Users/jason/dev/strapkit/src/css-preprocess/app/navigationBar.scss:121
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/perform.rb:170:in `visit_mixin'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/perform.rb:20:in `visit'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/perform.rb:29:in `block in visit_children'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/perform.rb:41:in `with_environment'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/perform.rb:28:in `visit_children'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/perform.rb:49:in `visit_root'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/perform.rb:20:in `visit'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/tree/root_node.rb:20:in `render'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/engine.rb:309:in `_render'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/engine.rb:256:in `render'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/plugin/compiler.rb:200:in `each'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/lib/sass/plugin/compiler.rb:298:in `block in watch'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/Users/jason/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.275/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'mq'.\A         on line 121 of /Users/jason/dev/strapkit/src/css-preprocess/app/navigationBar.scss, in `mq'\A         from line 121 of /Users/jason/dev/strapkit/src/css-preprocess/app/navigationBar.scss\A \A 116: \A 117: }\A 118: \A 119: /* tablet portrait and below //@media (max-width:989px){ */\A 120: \A 121: @include mq(medium-and-below) {\A 122:     #menuCollapsed{\A 123:         display: block;\A 124:         //visibility: visible;\A 125:         //float:right;\A 126:         height:100%;"; }
