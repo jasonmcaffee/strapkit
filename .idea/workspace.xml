@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tasks/grunt-css-stylus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tasks/grunt-directory-helpers.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/grunt.js" afterPath="$PROJECT_DIR$/build/grunt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tasks/grunt-css.js" afterPath="$PROJECT_DIR$/build/tasks/grunt-css.js" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,16 +72,25 @@
       <file leaf-file-name="grunt.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/grunt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="34" selection-start="4776" selection-end="4776" vertical-scroll-proportion="-14.576923">
+            <state line="115" column="85" selection-start="4381" selection-end="4381" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="templates.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="responsiveFlexBoxDemoPageTemplate.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/compiled-templates/demos/responsiveFlexBoxDemoPageTemplate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="121" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.2857143">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="templates.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/tasks/templates.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="26" selection-start="4022" selection-end="4022" vertical-scroll-proportion="0.9823381">
+            <state line="79" column="93" selection-start="4547" selection-end="4547" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,7 +117,7 @@
       <file leaf-file-name="buttonsDemoPageTemplate.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/demos/buttonsDemoPageTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="59" selection-start="192" selection-end="192" vertical-scroll-proportion="-2.56">
+            <state line="4" column="59" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -130,10 +135,9 @@
       <file leaf-file-name="app-built.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/js/app-built.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="-0.0">
+            <state line="3" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
               <folding>
                 <marker date="1348434993000" expanded="true" signature="216533:221172" placeholder="{...}" />
-                <marker date="1348434993000" expanded="true" signature="216690:225498" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -143,9 +147,7 @@
         <entry file="file://$PROJECT_DIR$/src/js/lib-third-party/require.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="150" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -187,8 +189,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="81" />
-    <option name="y" value="69" />
+    <option name="x" value="65" />
+    <option name="y" value="22" />
     <option name="width" value="2209" />
     <option name="height" value="1337" />
   </component>
@@ -1239,14 +1241,17 @@
       <created>1348435051185</created>
       <updated>1348435051185</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="refactored requirejs build and compile-templates build so that it will work with grunt watch.">
+      <created>1348435301320</created>
+      <updated>1348435301320</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="81" y="69" width="2209" height="1337" extended-state="0" />
+    <frame x="65" y="22" width="2209" height="1337" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1261,6 +1266,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929105" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1360,112 +1366,84 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/navigation-bar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/navigationBar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="33" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/responsiveDemo.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="31" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="31" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/responsiveFlexBoxDemo.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="77" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="38" selection-start="3544" selection-end="3544" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="77" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/compiled-templates/demos/buttonsDemoPageTemplate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib-third-party/require.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="150" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/requirejs/bin/r.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14873" column="42" selection-start="577865" selection-end="577872" vertical-scroll-proportion="39.06818">
-          <folding />
-        </state>
+        <state line="14873" column="42" selection-start="577865" selection-end="577872" vertical-scroll-proportion="39.06818" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/core/plugins/handlebars/eachWithIndex.js">
+    <entry file="file://$PROJECT_DIR$/dist/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="103" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="51" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/app-built.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="-0.0">
-          <folding>
-            <marker date="1348434993000" expanded="true" signature="216533:221172" placeholder="{...}" />
-            <marker date="1348434993000" expanded="true" signature="216690:225498" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/demos/buttonsDemoPageTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="59" selection-start="192" selection-end="192" vertical-scroll-proportion="-2.56">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/grunt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="34" selection-start="4776" selection-end="4776" vertical-scroll-proportion="-14.576923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/tasks/grunt-css.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="2" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="28" column="38" selection-start="3544" selection-end="3544" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/tasks/templates.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="26" selection-start="4022" selection-end="4022" vertical-scroll-proportion="0.9823381">
+        <state line="79" column="93" selection-start="4547" selection-end="4547" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/plugins/handlebars/eachWithIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="103" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/tasks/grunt-css.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="2" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/demos/buttonsDemoPageTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="59" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="51" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/app-built.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/lib-third-party/require.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="150" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/grunt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="85" selection-start="4381" selection-end="4381" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/compiled-templates/demos/responsiveFlexBoxDemoPageTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="121" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.2857143" />
       </provider>
     </entry>
   </component>
