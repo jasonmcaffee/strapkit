@@ -7,12 +7,22 @@ strapkit@gmail.com
 
 ##TODOs
 ### media query js - add css class ala modernizr to indicate screen size "small, medium, large, etc". js config for breakpoints.
-###
+### Base Controller
+### Web Fonts
+### Scroll Enhancements - position:fixed and overflow-scroll-touch
 
 ##Overview
 This project is meant to provide a starting point for rapidly developing a web application targeting modern browsers.
 
 ##Features
+
+###UI Framework
+When you are building web applications for business UI components are likely to be custom.
+Strapkit provides some basic common css resets, layouts (grids), and responsive functionality, to help get you started.
+Navigation and transitions are also provided, for Single Page Application development.
+
+If you are building a prototype, or something for personal use, look into bootstrap or zurb foundation.
+
 ###Predefined Build Process
 Strapkit utilizes node.js and grunt.js to facilitate building optimized code.
 Currently all js and css is combined into 1 file, to mitigate http requests, but we will soon provide an Enterprise version of strapkit to allow for logical bundling and downloading of modules/resources.

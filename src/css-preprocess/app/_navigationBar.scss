@@ -1,7 +1,7 @@
 //@import "src/css-preprocess/_variables";
-@import "src/css-preprocess/core/media-queries";
-@import "src/css-preprocess/core/colors";
-@import "src/css-preprocess/core/rounded-corners";
+//@import "src/css-preprocess/core/media-queries";
+//@import "src/css-preprocess/core/colors";
+//@import "src/css-preprocess/core/rounded-corners";
 
 //dont use visibility:hidden on menuExpanded. on android 4 there is an issue: menu won't completely dissapear on click. fragment at bottom still remains visible.
 #navbar{
