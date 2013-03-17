@@ -7,9 +7,10 @@ strapkit@gmail.com
 
 ##TODOs
 ### media query js - add css class ala modernizr to indicate screen size "small, medium, large, etc". js config for breakpoints.
-### Base Controller
+### Base Controller - back button detection, etc.
 ### Web Fonts
 ### Scroll Enhancements - position:fixed and overflow-scroll-touch
+### modernizr custom tests for gradients, scrolling, etc.
 
 ##Overview
 This project is meant to provide a starting point for rapidly developing a web application targeting modern browsers.
@@ -51,7 +52,7 @@ http://strapkit.com is built using strapkit, and is included in the source so th
 * Backbone - Model and View definitions, routing.
 * Handlebars - Just the runtime, as we precompile templates at build
 * Require.js - For asynchronous module definitions.
-* Jquery - dom event and manipulation. feel free to replace with zepto, etc.
+* Jquery - dom event and manipulation. feel free to replace with zepto, etc.   (use require.js map config to do this)
 * Modernizr - feature detection
 
 ##Patterns

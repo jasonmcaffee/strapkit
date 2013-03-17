@@ -12561,7 +12561,7 @@ define('core/device/deviceInfo',[
             os: searchString(dataOS) || "unknown-os"
         };
         return device;
-    };
+    }
 
     function detectMobile(ua){
         var device = {
