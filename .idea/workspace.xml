@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c4145fa-90f5-4029-a165-952c319fde5e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/lib-third-party/FastButton.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/core/mvc/Controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app-built.js" afterPath="$PROJECT_DIR$/dist/js/app-built.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node-server/views/test.html" afterPath="$PROJECT_DIR$/node-server/views/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app.js" afterPath="$PROJECT_DIR$/src/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/core/core.js" afterPath="$PROJECT_DIR$/src/js/core/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/lib-third-party/FastButton2.js" afterPath="$PROJECT_DIR$/src/js/lib-third-party/FastButton2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js" afterPath="$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/lib/views/DemosHomeView.js" afterPath="$PROJECT_DIR$/src/js/lib/views/DemosHomeView.js" />
     </list>
     <ignored path="modernmobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,10 +68,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="ButtonsDemoView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/lib/views/ButtonsDemoView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="185" selection-start="478" selection-end="478" vertical-scroll-proportion="0.2018503">
+            <state line="33" column="18" selection-start="1198" selection-end="1467" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DemosHomeView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/lib/views/DemosHomeView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="51" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/core/mvc/Controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="81" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NavigationBar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="124" selection-start="1987" selection-end="1987" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,7 +107,7 @@
       <file leaf-file-name="FastButton2.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/lib-third-party/FastButton2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="86" column="43" selection-start="3382" selection-end="3382" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,25 +116,25 @@
       <file leaf-file-name="StrapkitController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="36" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+            <state line="16" column="7" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/lib/views/HomeView.js">
+      <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="31" column="73" selection-start="1551" selection-end="1551" vertical-scroll-proportion="-19.84">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="View.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/core/mvc/View.js">
+      <file leaf-file-name="buttonsDemoPageTemplate.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/demos/buttonsDemoPageTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -111,34 +143,16 @@
       <file leaf-file-name="core.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/core/core.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="41" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0">
+            <state line="25" column="12" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeviceInfo.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/core/device/DeviceInfo.js">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="75" selection-start="7434" selection-end="7434" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matchMedia.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/core/ui/matchMedia.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="67" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_media-queries.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css-preprocess/core/_media-queries.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="38" selection-start="440" selection-end="470" vertical-scroll-proportion="0.0">
+            <state line="56" column="64" selection-start="1829" selection-end="1829" vertical-scroll-proportion="0.52901596">
               <folding />
             </state>
           </provider>
@@ -161,13 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/build/tasks/templates.js" />
-        <option value="$PROJECT_DIR$/src/js/core/plugins/handlebars/eachWithIndex.js" />
-        <option value="$PROJECT_DIR$/dist/js/app-built.js" />
-        <option value="$PROJECT_DIR$/src/templates/demos/buttonsDemoPageTemplate.html" />
-        <option value="$PROJECT_DIR$/build/tasks/grunt-css.js" />
-        <option value="$PROJECT_DIR$/build/grunt.js" />
-        <option value="$PROJECT_DIR$/src/templates/homePageTemplate.html" />
         <option value="$PROJECT_DIR$/src/css-preprocess/app/_homePage.scss" />
         <option value="$PROJECT_DIR$/src/css-preprocess/core/_colors.scss" />
         <option value="$PROJECT_DIR$/src/css-preprocess/app/_navigationBar.scss" />
@@ -176,7 +183,14 @@
         <option value="$PROJECT_DIR$/src/js/core/device/DeviceInfo.js" />
         <option value="$PROJECT_DIR$/src/js/core/ui/matchMedia.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/js/lib/views/ButtonsDemoView.js" />
+        <option value="$PROJECT_DIR$/src/js/lib/views/DemosHomeView.js" />
+        <option value="$PROJECT_DIR$/src/js/app.js" />
+        <option value="$PROJECT_DIR$/src/js/core/mvc/Controller.js" />
+        <option value="$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js" />
+        <option value="$PROJECT_DIR$/node-server/views/test.html" />
         <option value="$PROJECT_DIR$/src/js/core/core.js" />
+        <option value="$PROJECT_DIR$/src/js/lib-third-party/FastButton2.js" />
       </list>
     </option>
   </component>
@@ -363,6 +377,10 @@
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -387,6 +405,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modernmobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strapkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1343,7 +1383,11 @@
       <created>1363481601579</created>
       <updated>1363481601579</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="got rid of initial FastButton implementation.">
+      <created>1363482038780</created>
+      <updated>1363482038780</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1407,7 +1451,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost added js match media with class names, but decided to stick with pure css media queries." />
+    <option name="LAST_COMMIT_MESSAGE" value="got rid of initial FastButton implementation." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1420,7 +1464,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="navbar menu working in android 2.3. no translates. need separte css file for android fixes." />
     <MESSAGE value="changed color scheme to blue" />
     <MESSAGE value="media queries mixin evolved. began responsive master detail list." />
     <MESSAGE value="responsive master detail list. in progress." />
@@ -1445,6 +1488,7 @@
     <MESSAGE value="css cleanup." />
     <MESSAGE value="css cleanup and js cleanup" />
     <MESSAGE value="almost added js match media with class names, but decided to stick with pure css media queries." />
+    <MESSAGE value="got rid of initial FastButton implementation." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1462,64 +1506,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/grunt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="70" selection-start="5138" selection-end="5138" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/core/util/log.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/DemosController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="40" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css-preprocess/app/_navigationBar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="36" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="36" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/views/HomeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/core/mvc/View.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib-third-party/modernizer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/core/ui/hideAddressBar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1548,23 +1534,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib-third-party/FastButton2.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="185" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/mvc/View.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/core/core.js">
+    <entry file="file://$PROJECT_DIR$/src/templates/demos/buttonsDemoPageTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="41" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/js/lib/views/ButtonsDemoView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="185" selection-start="478" selection-end="478" vertical-scroll-proportion="0.2018503">
+        <state line="33" column="18" selection-start="1198" selection-end="1467" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/lib/controllers/StrapkitController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="7" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node-server/views/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="73" selection-start="1551" selection-end="1551" vertical-scroll-proportion="-19.84">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/lib/widgets/NavigationBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="124" selection-start="1987" selection-end="1987" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="12" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/lib-third-party/FastButton2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="43" selection-start="3382" selection-end="3382" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/mvc/Controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="81" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/lib/views/DemosHomeView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="51" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="64" selection-start="1829" selection-end="1829" vertical-scroll-proportion="0.52901596">
           <folding />
         </state>
       </provider>

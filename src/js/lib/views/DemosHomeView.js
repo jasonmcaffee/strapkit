@@ -2,9 +2,8 @@ define([
     'core/util/log',
     'backbone',
     'jquery',
-    'compiled-templates/demos/demosHomePageTemplate',
-    'lib-third-party/FastButton'
-], function(log, Backbone, $, demosHomePageTemplate, FastButton){
+    'compiled-templates/demos/demosHomePageTemplate'
+], function(log, Backbone, $, demosHomePageTemplate){
 
     var DemosHomeView = Backbone.View.extend({
         el:'#pages',

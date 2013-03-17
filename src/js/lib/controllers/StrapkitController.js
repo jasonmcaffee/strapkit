@@ -1,18 +1,20 @@
 define([
-    'core/util/log',
+    'core/core',
     'lib/views/HomeView',
     'jquery'
-], function(log, HomeView, $){
+], function(core, HomeView, $){
+    core.log('StrapkitController module loaded');
 
-    function StrapkitController(){
-        log('StrapkitController constructor called.');
-        this.homeView = new HomeView();
-    }
-
-    StrapkitController.prototype.showHomePage = function(){
-        log('StrapkitController.showHomePage');
-        this.homeView.render();
-    };
+    var StrapkitController = core.mvc.Controller.extend({
+        initialize:function(){
+            core.log('StrapkitController constructor called.');
+            this.homeView = new HomeView();
+        },
+        action:function(params){
+            core.log('StrapkitController.showHomePage');
+            this.homeView.render();
+        }
+    });
 
     return StrapkitController;
 });

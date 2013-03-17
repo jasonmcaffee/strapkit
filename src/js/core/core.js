@@ -4,12 +4,13 @@ define([
     'core/plugins/handlebars/eachWithIndex',
     'core/plugins/handlebars/eachProperty',
     'core/mvc/View',
+    'core/mvc/Controller',
     'core/touch/customEvents',
     'core/device/deviceInfo',
     'modernizer',
     'lib-third-party/FastButton2',
     'core/ui/hideAddressBar'
-], function(log, Backbone, eachWithIndexPlugin, eachPropertyPlugin, View, customEvents, deviceInfo, modernizer, fastButton2, hideAddressBar){
+], function(log, Backbone, eachWithIndexPlugin, eachPropertyPlugin, View, Controller, customEvents, deviceInfo, modernizer, fastButton2, hideAddressBar){
     log('core module loaded');
 
     var core = {
@@ -33,7 +34,8 @@ define([
         },
         mvc : {
             View : View,
-            Model : Backbone.Model
+            Model : Backbone.Model,
+            Controller : Controller
         },
         log : log,
         deviceInfo : deviceInfo

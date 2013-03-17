@@ -74,10 +74,18 @@ define([
         if(theTarget.nodeType == 3) theTarget = theTarget.parentNode;
 
         //this randomly doesn't work when showing hiding elements. using trigger instead.
-//        var theEvent = document.createEvent('MouseEvents');
-//        theEvent.initEvent('click', true, true);
-//        theTarget.dispatchEvent(theEvent);
-        $(theTarget).trigger('click');
+        //        var theEvent = document.createEvent('MouseEvents');
+        //        theEvent.initEvent('click', true, true);
+        //        theTarget.dispatchEvent(theEvent);
+
+        //anchor hrefs dont get navigated to with just $theTarget.trigger('click');
+        //http://stackoverflow.com/questions/9904170/trigger-a-click-on-a-anchor-link
+        if(theTarget.nodeType == 1 && theTarget.nodeName == "A"){
+            console.log('triggering click for anchor tag');
+            $(theTarget).get(0).click();
+        }else{
+            $(theTarget).trigger('click');
+        }
     }
 
 

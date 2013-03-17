@@ -1,23 +1,22 @@
 define([
-    'core/util/log',
     'core/core',
     'jquery',
     'backbone',
     'lib/controllers/DemosController',
     'lib/controllers/StrapkitController',
     'lib/widgets/NavigationBar'
-], function(log, core, $, Backbone, DemosController, StrapkitController, NavigationBar){
+], function(core, $, Backbone, DemosController, StrapkitController, NavigationBar){
 
     function App(){
-        log('app constructor called.');
+        core.log('app constructor called.');
 
         //load plugins, etc
-        core.initPlugins();
+        core.init();
 
         var self = this;
         //make everything easier to manage by waiting until dom ready to create controllers
         $(function(){
-            log('app : document ready. creating controllers and establishing routes.');
+            core.log('app : document ready. creating controllers and establishing routes.');
             //create controllers
             self.demosController = new DemosController();
             self.strapkitController = new StrapkitController();
@@ -29,7 +28,7 @@ define([
             self.navigationBar = new NavigationBar();
 
             //if there is no relative route, send them to the home page.
-            log('current route is : ' + Backbone.history.fragment);
+            core.log('current route is : ' + Backbone.history.fragment);
             if(Backbone.history.fragment == ""){
                 //load the home page
                 self.router.navigate('home', {trigger:true});
@@ -43,7 +42,7 @@ define([
 
 
     App.prototype.setupRoutes = function(){
-        log('App.setupRoutes called.');
+        core.log('App.setupRoutes called.');
         var self = this;
         var AppRouter = Backbone.Router.extend({
             routes: {
@@ -54,23 +53,23 @@ define([
                 "demos/home" : "demosHome"
             },
             home: function(){
-              log('router: home called');
-                self.strapkitController.showHomePage();
+              core.log('router: home called');
+                self.strapkitController._action();
             },
             buttonsDemo : function(){
-                log('router: buttonsDemo called.');
+                core.log('router: buttonsDemo called.');
                 self.demosController.showButtonsDemoPage();
             },
             responsiveDemo : function(){
-                log('router: responsiveDemo called.');
+                core.log('router: responsiveDemo called.');
                 self.demosController.showResponsiveDemoPage();
             },
             responsiveFlexBoxDemo : function(){
-                log('router: responsiveFlexBoxDemo called.');
+                core.log('router: responsiveFlexBoxDemo called.');
                 self.demosController.showResponsiveFlexBoxDemoPage();
             },
             demosHome : function(){
-                log('router: demosHome called.');
+                core.log('router: demosHome called.');
                 self.demosController.showDemosHomePage();
             }
         });
@@ -80,7 +79,7 @@ define([
     };
 
     $(function(){
-       log('document ready.');
+       core.log('document ready.');
     });
 
     return new App();

@@ -12336,6 +12336,124 @@ define('core/mvc/View',[
 
     return View;
 });
+define('core/mvc/Controller',[
+    'core/util/log',
+    'backbone'
+], function(log, backbone){
+
+    log('core.mvc.controller module loaded.');
+    //query string param constant for back button pressed indicator.
+    var backButtonPressedParam = "bb";
+
+
+    /**
+     * Base controller which all controllers should extend.
+     * Requires that an action function which accepts a params param be present.
+     * e.g. core.mvc.controller.extend({action:function(params){doStuff()});
+     */
+    function Controller(){
+        log('core.mvc.controller constructor called');
+        this.initialize.apply(this, arguments);
+        this.refreshIndicator = 0;
+    }
+
+    //attach inheritable functions to the prototype
+    _.extend(Controller.prototype, {
+        initialize:function(){
+            log('base controller initialize called');
+        },
+
+        /**
+         * filter for calls to action on the controller.
+         * allows us to intercept and perform common actions, including:
+         * 1) rewriting the url so that a bb query string param is present, so when browser back button is pressed, the
+         *    query string param will be present, and we will know back or forward has been pressed.
+         * 2) keeping track of a refreshIndicator, so we can determine if refresh has occurred.
+         * @param params - query string params
+         */
+        _action:function(params){
+            log('base controller _action called.');
+            //log('request is ' + this.request);
+            if(params && params[backButtonPressedParam]){
+                //if the refreshIndicator is greater than 0, we know that action has been called at least once.
+                //if not, the bb query param's presence let's us know refresh occurred.
+                if(this.refreshIndicator > 0){
+                    log('the user has clicked the browser forward or back button.');
+                    this._backButtonAction(params);
+                }else{
+                    log('backbutton query param was present, but refresh indicator was incorrect. refresh occurred.');
+                    this.refreshIndicator = 1;
+                    this._refreshAction(params);
+                }
+
+            }else{
+                //todo:implement this
+                //this.rewriteUrlForBackButtonDetection();
+
+                //the controller action is executing for the first time. set the refreshIndicator to 1 so that if the
+                //backbutton is pressed, the bb
+                this.refreshIndicator = 1;
+                this.action(params);
+            }
+
+        },
+        /**
+         * backButtonAction will occur when the bb query string param is present.
+         * only this controller should be aware of the param (it should never be present in an href or in a core.navigate call)
+         * @param params - same as action params
+         */
+        _backButtonAction:function(params){
+            log('base controller _backButtonAction called.');
+            if(this.backButtonAction){
+                this.backButtonAction(params);
+            }else{
+                log('back or forward button pressed occurred, but no backButtonAction defined on the controller. calling action instead');
+                this.action(params);
+            }
+        },
+        /**
+         * refreshAction will execute under two conditions:
+         * 1) user visits a page, and then refreshes.
+         * 2) user visits a page, copies the url, opens a new tab (or window) and pastes the url.
+         *
+         * typically we will treat refresh actions the same as if normal action occurs.
+         * @param params - same as action params
+         */
+        _refreshAction:function(params){
+            log('base controller _refreshAction called.');
+            if(this.refreshAction){
+                this.refreshAction(params);
+            }else{
+                log('refresh occurred but no refreshAction defined on the controller. calling action instead');
+                this.action(params);
+            }
+        }//,
+        //adds a query string param that will only be used for this controller.
+        //when the param is present when the controller action is executed, it means that the user has either clicked
+        //the back or forward browser button
+//        rewriteUrlForBackButtonDetection:function(){
+//            log('base controller rewriteUrlForBackButtonDetection called.');
+//            //break out the query string so we can check if bb is already present.
+//            var uri = core.helpers.parseUri(this.request);
+//
+//            //look at the current query string, see if bb is already present, and if there already are query string
+//            //params.  append the bb=1 to the query string.
+//            var modifiedRequest= this.request;
+//            if(uri.query ===""){
+//                modifiedRequest = this.request + "?" + backButtonPressedParam + "=1";
+//            }else if(uri.query.indexOf(backButtonPressedParam) < 0){
+//                modifiedRequest = this.request + "&" + backButtonPressedParam + "=1";
+//            }
+//            //update the url so that a param is sent if the user clicks back button.
+//            //the silent option is needed on the first try.
+//            core.navigate(modifiedRequest, {trigger:false, replace:true, silent:true});
+//        }
+    });
+
+    Controller.extend = backbone.Model.extend;//use backbone's inheritance model.
+
+    return Controller;
+});
 define('core/touch/customEvents',[
     'core/util/log',
     'jquery'
@@ -12759,239 +12877,6 @@ define("modernizer", (function (global) {
     }
 }(this)));
 
-define('lib-third-party/FastButton',[
-    'jquery'
-], function($){
-    //this works really well, but is inconvenient to initialize.
-//    $.fn.fastClick = function(handler) {
-//        return $(this).each(function(){
-//            $.FastButton($(this)[0], handler);
-//        });
-//    };
-//    //https://github.com/dave1010/jquery-fast-click/blob/master/jQuery.fastClick.js
-//    $.FastButton = function(element, handler) {
-//        var startX, startY;
-//
-//        var reset = function() {
-//            $(element).unbind('touchend');
-//            $("body").unbind('touchmove.fastClick');
-//        };
-//
-//        var onClick = function(event) {
-//            console.log('fastbutton onClick called');
-//            event.stopPropagation();
-//            reset();
-//            handler.call(this, event);
-//
-//            if (event.type === 'touchend') {
-//                $.clickbuster.preventGhostClick(startX, startY);
-//            }
-//        };
-//
-//        var onTouchMove = function(event) {
-//            if (Math.abs(event.originalEvent.touches[0].clientX - startX) > 10 ||
-//                Math.abs(event.originalEvent.touches[0].clientY - startY) > 10) {
-//                reset();
-//            }
-//        };
-//
-//        var onTouchStart = function(event) {
-//            event.stopPropagation();
-//
-//            $(element).bind('touchend', onClick);
-//            $("body").bind('touchmove.fastClick', onTouchMove);
-//
-//            startX = event.originalEvent.touches[0].clientX;
-//            startY = event.originalEvent.touches[0].clientY;
-//        };
-//
-//        $(element).bind({
-//            touchstart: onTouchStart,
-//            click: onClick
-//        });
-//    };
-//
-//    $.clickbuster = {
-//        coordinates: [],
-//
-//        preventGhostClick: function(x, y) {
-//            $.clickbuster.coordinates.push(x, y);
-//            window.setTimeout($.clickbuster.pop, 2500);
-//        },
-//
-//        pop: function() {
-//            $.clickbuster.coordinates.splice(0, 2);
-//        },
-//
-//        onClick: function(event) {
-//            var x, y, i;
-//            for (i = 0; i < $.clickbuster.coordinates.length; i += 2) {
-//                x = $.clickbuster.coordinates[i];
-//                y = $.clickbuster.coordinates[i + 1];
-//                if (Math.abs(event.clientX - x) < 25 && Math.abs(event.clientY - y) < 25) {
-//                    event.stopPropagation();
-//                    event.preventDefault();
-//                }
-//            }
-//        }
-//    };
-//
-//    $(function(){
-//        if (document.addEventListener){
-//            document.addEventListener('click', $.clickbuster.onClick, true);
-//        } else if (document.attachEvent){
-//            // for IE 7/8
-//            document.attachEvent('onclick', $.clickbuster.onClick);
-//        }
-//    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//    $(function(){
-//        document.getElementById('fastButtons').addEventListener('click', $.clickbuster.onClick, true);
-//    });
-        /**
-         * From: http://code.this.com/mobile/articles/fast_buttons.html
-         * Also see: http://stackoverflow.com/questions/6300136/trying-to-implement-googles-fast-button
-         */
-
-//        /** For IE8 and earlier compatibility: https://developer.mozilla.org/en/DOM/element.addEventListener */
-//        function addListener(el, type, listener, useCapture) {
-//            if (el.addEventListener) {
-//                el.addEventListener(type, listener, useCapture);
-//                return {
-//                    destroy: function() { el.removeEventListener(type, listener, useCapture); }
-//                };
-//            } else {
-//                // see: http://stackoverflow.com/questions/5198845/javascript-this-losing-context-in-ie
-//                var handler = function(e) { listener.handleEvent(window.event, listener); }
-//                el.attachEvent('on' + type, handler);
-//
-//                return {
-//                    destroy: function() { el.detachEvent('on' + type, handler); }
-//                };
-//            }
-//        }
-//
-//        var isTouch = "ontouchstart" in window;
-//
-//        /* Construct the FastButton with a reference to the element and click handler. */
-//        function FastButton(element, handler, useCapture) {
-//            // collect functions to call to cleanup events
-//            this.events = [];
-//            this.touchEvents = [];
-//            this.element = element;
-//            this.handler = handler;
-//            this.useCapture = useCapture;
-//            if (isTouch)
-//                this.events.push(addListener(element, 'touchstart', this, this.useCapture));
-//            this.events.push(addListener(element, 'click', this, this.useCapture));
-//        }
-//
-//        /* Remove event handling when no longer needed for this button */
-//       FastButton.prototype.destroy = function() {
-//            for (i = this.events.length - 1; i >= 0; i -= 1)
-//                this.events[i].destroy();
-//            this.events = this.touchEvents = this.element = this.handler = this.fastButton = null;
-//        };
-//
-//        /* acts as an event dispatcher */
-//        FastButton.prototype.handleEvent = function(event) {
-//            switch (event.type) {
-//                case 'touchstart': this.onTouchStart(event); break;
-//                case 'touchmove': this.onTouchMove(event); break;
-//                case 'touchend': this.onClick(event); break;
-//                case 'click': this.onClick(event); break;
-//            }
-//        };
-//
-//        /* Save a reference to the touchstart coordinate and start listening to touchmove and
-//         touchend events. Calling stopPropagation guarantees that other behaviors don’t get a
-//         chance to handle the same click event. This is executed at the beginning of touch. */
-//        FastButton.prototype.onTouchStart = function(event) {
-//            event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true);
-//            this.touchEvents.push(addListener(this.element, 'touchend', this, this.useCapture));
-//            this.touchEvents.push(addListener(document.body, 'touchmove', this, this.useCapture));
-//            this.startX = event.touches[0].clientX;
-//            this.startY = event.touches[0].clientY;
-//        };
-//
-//        /* When /if touchmove event is invoked, check if the user has dragged past the threshold of 10px. */
-//        FastButton.prototype.onTouchMove = function(event) {
-//            if (Math.abs(event.touches[0].clientX - this.startX) > 10 || Math.abs(event.touches[0].clientY - this.startY) > 10) {
-//                this.reset(); //if he did, then cancel the touch event
-//            }
-//        };
-//
-//        /* Invoke the actual click handler and prevent ghost clicks if this was a touchend event. */
-//        FastButton.prototype.onClick = function(event) {
-//            event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true);
-//            this.reset();
-//            // Use .call to call the method so that we have the correct "this": https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/call
-//            var result = this.handler.call(this.element, event);
-//            if (event.type == 'touchend')
-//                clickbuster.preventGhostClick(this.startX, this.startY);
-//            return result;
-//        };
-//
-//        FastButton.prototype.reset = function() {
-//            for (i = this.touchEvents.length - 1; i >= 0; i -= 1)
-//                this.touchEvents[i].destroy();
-//            this.touchEvents = [];
-//        };
-//
-//        var clickbuster = function() {};
-//
-//        /* Call preventGhostClick to bust all click events that happen within 25px of
-//         the provided x, y coordinates in the next 2.5s. */
-//        clickbuster.preventGhostClick = function(x, y) {
-//            clickbuster.coordinates.push(x, y);
-//            window.setTimeout(clickbuster.pop, 2500);
-//        };
-//
-//        clickbuster.pop = function() {
-//            log('clickbuster.pop called.');
-//            clickbuster.coordinates.splice(0, 2);
-//        };
-//
-//        /* If we catch a click event inside the given radius and time threshold then we call
-//         stopPropagation and preventDefault. Calling preventDefault will stop links
-//         from being activated. */
-//        clickbuster.onClick = function(event) {
-//            log('clickbuster.onClick called');
-//            for (var i = 0; i < clickbuster.coordinates.length; i += 2) {
-//                var x = clickbuster.coordinates[i];
-//                var y = clickbuster.coordinates[i + 1];
-//                if (Math.abs(event.clientX - x) < 25 && Math.abs(event.clientY - y) < 25) {
-//                    event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true);
-//                    event.preventDefault ? event.preventDefault() : (event.returnValue=false);
-//                }
-//            }
-//        };
-//
-//        if (isTouch) {
-//            // Don't need to use our custom addListener function since we only bust clicks on touch devices
-//            $(function(){
-//                document.getElementById('fastButtons').addEventListener('click', clickbuster.onClick, true);//hack. keep fastbutton isolated.
-//            });
-//            clickbuster.coordinates = [];
-//        }
-
-
-   // return FastButton;
-    //return $.FastButton;
-});
 define('lib-third-party/FastButton2',[
     'jquery'
 ], function($){
@@ -13068,10 +12953,18 @@ define('lib-third-party/FastButton2',[
         if(theTarget.nodeType == 3) theTarget = theTarget.parentNode;
 
         //this randomly doesn't work when showing hiding elements. using trigger instead.
-//        var theEvent = document.createEvent('MouseEvents');
-//        theEvent.initEvent('click', true, true);
-//        theTarget.dispatchEvent(theEvent);
-        $(theTarget).trigger('click');
+        //        var theEvent = document.createEvent('MouseEvents');
+        //        theEvent.initEvent('click', true, true);
+        //        theTarget.dispatchEvent(theEvent);
+
+        //anchor hrefs dont get navigated to with just $theTarget.trigger('click');
+        //http://stackoverflow.com/questions/9904170/trigger-a-click-on-a-anchor-link
+        if(theTarget.nodeType == 1 && theTarget.nodeName == "A"){
+            console.log('triggering click for anchor tag');
+            $(theTarget).get(0).click();
+        }else{
+            $(theTarget).trigger('click');
+        }
     }
 
 
@@ -13124,13 +13017,13 @@ define('core/core',[
     'core/plugins/handlebars/eachWithIndex',
     'core/plugins/handlebars/eachProperty',
     'core/mvc/View',
+    'core/mvc/Controller',
     'core/touch/customEvents',
     'core/device/deviceInfo',
     'modernizer',
-    'lib-third-party/FastButton',
     'lib-third-party/FastButton2',
     'core/ui/hideAddressBar'
-], function(log, Backbone, eachWithIndexPlugin, eachPropertyPlugin, View, customEvents, deviceInfo, modernizer, fastButton, fastButton2, hideAddressBar){
+], function(log, Backbone, eachWithIndexPlugin, eachPropertyPlugin, View, Controller, customEvents, deviceInfo, modernizer, fastButton2, hideAddressBar){
     log('core module loaded');
 
     var core = {
@@ -13154,7 +13047,8 @@ define('core/core',[
         },
         mvc : {
             View : View,
-            Model : Backbone.Model
+            Model : Backbone.Model,
+            Controller : Controller
         },
         log : log,
         deviceInfo : deviceInfo
@@ -13179,9 +13073,8 @@ define('lib/views/ButtonsDemoView',[
     'core/util/log',
     'backbone',
     'jquery',
-    'compiled-templates/demos/buttonsDemoPageTemplate',
-    'lib-third-party/FastButton'
-], function(log, Backbone, $, buttonsDemoPageTemplate, FastButton){
+    'compiled-templates/demos/buttonsDemoPageTemplate'
+], function(log, Backbone, $, buttonsDemoPageTemplate){
 
     var ButtonsDemoView = Backbone.View.extend({
         el:'#pages',
@@ -13209,12 +13102,12 @@ define('lib/views/ButtonsDemoView',[
 
                 //fastbutton haxory.
                 document.getElementById('fastButtons').addEventListener('click', $.clickbuster.onClick, true);
-                $('.fast-button').each(function(){
-                    log('registering fast button ' + $(this).attr('class'));
-                    $.FastButton(this, function(){
-                        log('fast-button clicked!');
-                    });
-                });
+//                $('.fast-button').each(function(){
+//                    log('registering fast button ' + $(this).attr('class'));
+//                    $.FastButton(this, function(){
+//                        log('fast-button clicked!');
+//                    });
+//                });
             });
         }
     });
@@ -13382,9 +13275,8 @@ define('lib/views/DemosHomeView',[
     'core/util/log',
     'backbone',
     'jquery',
-    'compiled-templates/demos/demosHomePageTemplate',
-    'lib-third-party/FastButton'
-], function(log, Backbone, $, demosHomePageTemplate, FastButton){
+    'compiled-templates/demos/demosHomePageTemplate'
+], function(log, Backbone, $, demosHomePageTemplate){
 
     var DemosHomeView = Backbone.View.extend({
         el:'#pages',
@@ -13703,20 +13595,22 @@ define('lib/views/HomeView',[
     return HomeView;
 });
 define('lib/controllers/StrapkitController',[
-    'core/util/log',
+    'core/core',
     'lib/views/HomeView',
     'jquery'
-], function(log, HomeView, $){
+], function(core, HomeView, $){
+    core.log('StrapkitController module loaded');
 
-    function StrapkitController(){
-        log('StrapkitController constructor called.');
-        this.homeView = new HomeView();
-    }
-
-    StrapkitController.prototype.showHomePage = function(){
-        log('StrapkitController.showHomePage');
-        this.homeView.render();
-    };
+    var StrapkitController = core.mvc.Controller.extend({
+        initialize:function(){
+            core.log('StrapkitController constructor called.');
+            this.homeView = new HomeView();
+        },
+        action:function(params){
+            core.log('StrapkitController.showHomePage');
+            this.homeView.render();
+        }
+    });
 
     return StrapkitController;
 });
@@ -13865,25 +13759,24 @@ define('lib/widgets/NavigationBar',[
 //
 //});
 define('app',[
-    'core/util/log',
     'core/core',
     'jquery',
     'backbone',
     'lib/controllers/DemosController',
     'lib/controllers/StrapkitController',
     'lib/widgets/NavigationBar'
-], function(log, core, $, Backbone, DemosController, StrapkitController, NavigationBar){
+], function(core, $, Backbone, DemosController, StrapkitController, NavigationBar){
 
     function App(){
-        log('app constructor called.');
+        core.log('app constructor called.');
 
         //load plugins, etc
-        core.initPlugins();
+        core.init();
 
         var self = this;
         //make everything easier to manage by waiting until dom ready to create controllers
         $(function(){
-            log('app : document ready. creating controllers and establishing routes.');
+            core.log('app : document ready. creating controllers and establishing routes.');
             //create controllers
             self.demosController = new DemosController();
             self.strapkitController = new StrapkitController();
@@ -13895,7 +13788,7 @@ define('app',[
             self.navigationBar = new NavigationBar();
 
             //if there is no relative route, send them to the home page.
-            log('current route is : ' + Backbone.history.fragment);
+            core.log('current route is : ' + Backbone.history.fragment);
             if(Backbone.history.fragment == ""){
                 //load the home page
                 self.router.navigate('home', {trigger:true});
@@ -13909,7 +13802,7 @@ define('app',[
 
 
     App.prototype.setupRoutes = function(){
-        log('App.setupRoutes called.');
+        core.log('App.setupRoutes called.');
         var self = this;
         var AppRouter = Backbone.Router.extend({
             routes: {
@@ -13920,23 +13813,23 @@ define('app',[
                 "demos/home" : "demosHome"
             },
             home: function(){
-              log('router: home called');
-                self.strapkitController.showHomePage();
+              core.log('router: home called');
+                self.strapkitController._action();
             },
             buttonsDemo : function(){
-                log('router: buttonsDemo called.');
+                core.log('router: buttonsDemo called.');
                 self.demosController.showButtonsDemoPage();
             },
             responsiveDemo : function(){
-                log('router: responsiveDemo called.');
+                core.log('router: responsiveDemo called.');
                 self.demosController.showResponsiveDemoPage();
             },
             responsiveFlexBoxDemo : function(){
-                log('router: responsiveFlexBoxDemo called.');
+                core.log('router: responsiveFlexBoxDemo called.');
                 self.demosController.showResponsiveFlexBoxDemoPage();
             },
             demosHome : function(){
-                log('router: demosHome called.');
+                core.log('router: demosHome called.');
                 self.demosController.showDemosHomePage();
             }
         });
@@ -13946,7 +13839,7 @@ define('app',[
     };
 
     $(function(){
-       log('document ready.');
+       core.log('document ready.');
     });
 
     return new App();
