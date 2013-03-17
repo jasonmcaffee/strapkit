@@ -7,10 +7,9 @@ define([
     'core/touch/customEvents',
     'core/device/deviceInfo',
     'modernizer',
-    'lib-third-party/FastButton',
     'lib-third-party/FastButton2',
     'core/ui/hideAddressBar'
-], function(log, Backbone, eachWithIndexPlugin, eachPropertyPlugin, View, customEvents, deviceInfo, modernizer, fastButton, fastButton2, hideAddressBar){
+], function(log, Backbone, eachWithIndexPlugin, eachPropertyPlugin, View, customEvents, deviceInfo, modernizer, fastButton2, hideAddressBar){
     log('core module loaded');
 
     var core = {
